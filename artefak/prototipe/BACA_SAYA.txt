@@ -1,0 +1,5 @@
+Cara membuka prototipe
+1. Ekstrak seluruh isi zip ke satu folder.
+2. Buka berkas index.html dengan Google Chrome atau Microsoft Edge (klik dua kali).
+3. Peta dasar memerlukan internet; tanpa internet titik tetap digambar menurut koordinat.
+4. Panduan lengkap: Buku Pedoman Penggunaan Prototipe (berkas .docx terpisah).

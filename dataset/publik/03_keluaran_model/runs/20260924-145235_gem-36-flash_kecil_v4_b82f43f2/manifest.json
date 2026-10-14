@@ -1,0 +1,105 @@
+{
+  "run_id": "20260924-145235_gem-36-flash_kecil_v4_b82f43f2",
+  "status": "terputus",
+  "waktu_mulai_utc": "2026-09-24T14:52:35+00:00",
+  "catatan": "pembanding komersial, zero-shot",
+  "uji_cepat": false,
+  "batas": null,
+  "model": {
+    "nama": "gemini-3.6-flash",
+    "repo": "Gemini API (Google AI Studio), tingkat gratis",
+    "revisi": "gemini-3.6-flash",
+    "dtype": null
+  },
+  "lingkungan": {
+    "platform": "laptop",
+    "python": "3.13.7",
+    "gpu": null,
+    "sdk": "google-genai"
+  },
+  "eksperimen": {
+    "sidik_fitur": "b82f43f2",
+    "versi_prompt": 4,
+    "versi_konfigurasi": "2026-09-24",
+    "status_seleksi": "TERKUNCI SEMENTARA",
+    "fitur_terpilih": [
+      "keutuhan_atap",
+      "puing_sekitar",
+      "wujud_bangunan",
+      "sedimen_lumpur"
+    ],
+    "sha_konfigurasi": "3263104381f8",
+    "sha_parser": "cf369f5a1b9b",
+    "sha_prompt_fitur": "5ff98a7ab362",
+    "sha_prompt_kelas": "38b6daf809e9",
+    "desain": "dua panggilan: fitur(pra+pasca) dan kelas(pasca)"
+  },
+  "sampel": {
+    "nama": "kecil",
+    "n": 40,
+    "sha_csv": "060610b7997b",
+    "komposisi": {
+      "no-damage": 20,
+      "destroyed": 10,
+      "major-damage": 10
+    }
+  },
+  "dekode": {
+    "temperature": 0.0,
+    "ukuran_citra": 448,
+    "jeda_detik": 7.0
+  },
+  "catatan_metodologis": [
+    "Model API dapat diperbarui penyedia; model_version dicatat per panggilan.",
+    "Tingkat gratis: konten dapat dipakai penyedia; chip berasal dari dataset publik xBD.",
+    "Kemungkinan kontaminasi data (model pernah melihat xBD) tidak dapat diperiksa."
+  ],
+  "waktu_komputasi": {
+    "satuan": "detik",
+    "cakupan": "latensi panggilan API yang berhasil (jaringan + antrean + komputasi server); tidak setara dengan waktu GPU lokal SVLM; tanpa jeda antarpanggilan 7.0 s dan tanpa waktu tunggu coba ulang",
+    "per_panggilan_fitur": {
+      "n": 2,
+      "total_detik": 220.2,
+      "rerata": 110.12,
+      "median": 110.12,
+      "sd": 116.94,
+      "min": 27.43,
+      "p95": 192.81,
+      "maks": 192.81
+    },
+    "per_panggilan_kelas": {
+      "n": 2,
+      "total_detik": 150.6,
+      "rerata": 75.3,
+      "median": 75.3,
+      "sd": 34.83,
+      "min": 50.67,
+      "p95": 99.92,
+      "maks": 99.92
+    },
+    "per_bangunan": {
+      "n": 2,
+      "total_detik": 370.8,
+      "rerata": 185.42,
+      "median": 185.42,
+      "sd": 151.77,
+      "min": 78.1,
+      "p95": 292.73,
+      "maks": 292.73
+    },
+    "per_bangunan_termasuk_ulang": {
+      "n": 2,
+      "total_detik": 1553.4,
+      "rerata": 776.68,
+      "median": 776.68,
+      "sd": 44.91,
+      "min": 744.93,
+      "p95": 808.44,
+      "maks": 808.44
+    },
+    "jumlah_panggilan_diulang": 3,
+    "jeda_antarpanggilan_detik": 7.0,
+    "jam_dinding_menit": 28.7
+  },
+  "n_selesai": 2
+}

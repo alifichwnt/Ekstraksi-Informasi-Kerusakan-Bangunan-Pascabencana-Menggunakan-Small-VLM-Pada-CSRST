@@ -1,0 +1,18 @@
+{
+  "run_id": "20260925-093323_diagnosa-presisi-qwen",
+  "jenis": "kewajaran",
+  "tujuan": "diagnosa presisi numerik encoder visual Qwen2.5-VL-3B (fp16 vs fp32)",
+  "citra": [
+    "destroyed:6ab7c7b7",
+    "major-damage:8fa8a4f6",
+    "no-damage:e1900b29",
+    "HITAM",
+    "DERAU"
+  ],
+  "transformers": "4.51.3",
+  "torch": "2.10.0+cu128",
+  "gpu": [
+    "Tesla T4",
+    "Tesla T4"
+  ]
+}

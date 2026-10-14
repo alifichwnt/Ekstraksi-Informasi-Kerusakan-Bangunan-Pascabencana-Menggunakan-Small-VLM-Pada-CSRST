@@ -1,0 +1,13 @@
+{
+  "fitur": {
+    "keutuhan_atap": "utuh | rusak_sebagian | hilang | tidak_jelas",
+    "perubahan_radiometri": "ada | tidak_ada | tidak_jelas",
+    "perubahan_wujud": "ada | tidak_ada | tidak_jelas",
+    "sedimen_lumpur": "ada | tidak_ada | tidak_jelas",
+    "bangunan_hilang": "ada | tidak_ada | tidak_jelas",
+    "puing_sekitar": "ada | tidak_ada | tidak_jelas"
+  },
+  "kelas_kerusakan": "tidak_rusak | rusak_ringan | rusak_sedang | rusak_total",
+  "keyakinan": "bilangan desimal 0.0 sampai 1.0",
+  "deskripsi": "satu kalimat bahasa Indonesia"
+}

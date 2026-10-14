@@ -1,0 +1,4 @@
+=== 20260924-145235_gem-36-flash_kecil_v4_b82f43f2 | mulai 2026-09-24 14:52:36 UTC | sudah 0 | sisa 40 ===
+[   1/40] uid=4ef6c44a-2b3c-4cbe-96cf-6ce63353a6b7 | palu-tsunami_00000084 | chip=4ef6c44a_pra.png,4ef6c44a_pasca.png | xBD=no-damage | kelas=tidak_rusak | keutuhan=utuh, puing=tidak_ada, wujud=tidak_berubah, sedimen=tidak_ada | 292.7s
+[   2/40] uid=2edcad43-75c8-4d80-9161-b0a2137dcb3b | palu-tsunami_00000045 | chip=2edcad43_pra.png,2edcad43_pasca.png | xBD=no-damage | kelas=rusak | keutuhan=rusak_sebagian, puing=terbatas_di_sekitar_bangunan, wujud=berubah_sebagian, sedimen=tidak_ada | 78.1s
+WAKTU (latensi API, detik): per bangunan rerata 185.42 | median 185.42 | sd 151.77 | min 78.1 | maks 292.73 | total 370.8 | jam dinding 28.7 menit

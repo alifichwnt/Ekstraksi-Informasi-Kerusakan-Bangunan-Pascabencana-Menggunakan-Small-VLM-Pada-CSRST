@@ -1,0 +1,16 @@
+﻿evaluator,baris_excel,kriteria,skor,kode,uid,kelas_xbd,model
+EVAL01,2,Akurasi,5.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL01,2,Relevansi,1.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL01,2,Kepuasan,3.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL02,2,Akurasi,2.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL02,2,Relevansi,5.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL02,2,Kepuasan,3.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL03,2,Akurasi,3.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL03,2,Relevansi,3.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL03,2,Kepuasan,3.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL04,2,Akurasi,5.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL04,2,Relevansi,5.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL04,2,Kepuasan,5.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL05,2,Akurasi,4.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL05,2,Relevansi,4.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B
+EVAL05,2,Kepuasan,4.0,E01,31124671-c8a4-44bc-acb6-ce8384738718,major-damage,InternVL3-2B

@@ -1,0 +1,5 @@
+# Konfigurasi Netlify: situs statis, tanpa perintah build.
+# Yang dipublikasikan hanya folder prototipe.
+[build]
+  publish = "artefak/prototipe"
+  command = ""

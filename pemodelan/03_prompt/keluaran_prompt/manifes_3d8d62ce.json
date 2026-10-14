@@ -1,0 +1,40 @@
+{
+  "sidik_fitur": "3d8d62ce",
+  "versi_prompt": 3,
+  "status_seleksi": "SEMENTARA",
+  "sumber_seleksi": "Penilai kedua (peneliti, Rizky Alif Ichwanto), formulir REV2, 19 September 2026",
+  "fitur_terpilih": [
+    "keutuhan_atap",
+    "perubahan_radiometri",
+    "perubahan_wujud",
+    "sedimen_lumpur",
+    "bangunan_hilang",
+    "puing_sekitar"
+  ],
+  "golongan_fitur_terpilih": {
+    "keutuhan_atap": "perubahan",
+    "perubahan_radiometri": "perubahan",
+    "perubahan_wujud": "perubahan",
+    "sedimen_lumpur": "keadaan",
+    "bangunan_hilang": "perubahan",
+    "puing_sekitar": "keadaan"
+  },
+  "butuh_citra_pra": [
+    "keutuhan_atap",
+    "perubahan_radiometri",
+    "perubahan_wujud",
+    "bangunan_hilang"
+  ],
+  "kelas_enum": [
+    "tidak_rusak",
+    "rusak_ringan",
+    "rusak_sedang",
+    "rusak_total"
+  ],
+  "pemetaan_biner": {
+    "tidak_rusak": "tidak_rusak",
+    "rusak_ringan": "rusak",
+    "rusak_sedang": "rusak",
+    "rusak_total": "rusak"
+  }
+}

@@ -1,0 +1,52 @@
+==============================================================================
+ RINGKASAN INVENTARISASI
+==============================================================================
+ Jumlah tile      : 196
+ Jumlah bangunan  : 55,789
+
+ [1]  DISTRIBUSI KELAS KERUSAKAN  — angka untuk Bab 3 dan Bab 4
+ ----------------------------------------------------------------------------
+ Kelas xBD               Jumlah     Persen   Kelas biner   
+ ----------------------------------------------------------------------------
+ no-damage               46,796     83.88%   tidak_rusak   
+ minor-damage                 1      0.00%   rusak         
+ major-damage             1,178      2.11%   rusak         
+ destroyed                7,203     12.91%   rusak         
+ un-classified              611      1.10%   DIKECUALIKAN  
+ ----------------------------------------------------------------------------
+ BINER tidak_rusak       46,796     84.81%
+ BINER rusak              8,382     15.19%
+ POPULASI SAMPEL         55,178    (un-classified dikecualikan)
+ Nisbah ketimpangan         5.6 : 1
+
+ [2]  UKURAN BANGUNAN — sisi terpanjang bounding box (piksel)
+ ----------------------------------------------------------------------------
+ n=55,789   min=4.3   p10=14.3   median=28.4   p90=50.7   max=431.4
+ Bangunan < 40 px                 : 42,869 (76.8%)
+ Menabrak lantai jendela 128 px    : 55,098 (98.8%)
+
+ [3]  KOMBINASI AKUISISI CITRA PRA-PASCA
+ ----------------------------------------------------------------------------
+  130 tile | pra 2017-01-24 -> pasca 2018-10-01
+             off-nadir 26.653793 -> 36.436947 | azimut 125.73163 -> 96.50162 | elevasi 56.402397 -> 68.848434
+             resolusi pan 0.5076194 -> 0.7035197
+   28 tile | pra 2016-10-25 -> pasca 2018-10-01
+             off-nadir 14.568068 -> 36.436947 | azimut 121.228 -> 96.50162 | elevasi 67.31285 -> 68.848434
+             resolusi pan 0.49193746 -> 0.7035197
+   27 tile | pra 2018-02-20 -> pasca 2018-10-01
+             off-nadir 25.841036000000003 -> 36.436947 | azimut 111.37478 -> 96.50162 | elevasi 60.97 -> 68.848434
+             resolusi pan 0.5604398 -> 0.7035197
+    9 tile | pra 2017-07-12 -> pasca 2018-10-01
+             off-nadir 19.996878 -> 36.436947 | azimut 45.222473 -> 96.50162 | elevasi 56.722984000000004 -> 68.848434
+             resolusi pan 0.5186912 -> 0.7035197
+    2 tile | pra 2017-11-04 -> pasca 2018-10-01
+             off-nadir 3.5586462 -> 36.436947 | azimut 139.3475 -> 96.50162 | elevasi 70.88089 -> 68.848434
+             resolusi pan 0.3095053 -> 0.7035197
+
+ [4]  PEMERIKSAAN MUTU
+ ----------------------------------------------------------------------------
+ OK Tile tanpa label pra-bencana                     0
+ OK Berkas citra .tif tidak ditemukan                0
+ !! Tile tanpa bangunan sama sekali                  3   contoh: palu-tsunami_00000049, palu-tsunami_00000077, palu-tsunami_00000156
+ OK Poligon tidak terbaca (dilewati)                 0
+ OK UID bangunan ganda                               0

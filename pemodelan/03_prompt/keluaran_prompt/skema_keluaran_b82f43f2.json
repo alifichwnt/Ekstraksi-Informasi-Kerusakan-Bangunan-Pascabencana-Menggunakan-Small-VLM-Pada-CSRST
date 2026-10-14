@@ -1,0 +1,15 @@
+{
+  "panggilan_fitur": {
+    "fitur": {
+      "keutuhan_atap": "utuh | rusak_sebagian | hilang | tidak_jelas",
+      "puing_sekitar": "tidak_ada | terbatas_di_sekitar_bangunan | meluas_menutupi_petak | tidak_jelas",
+      "wujud_bangunan": "tidak_berubah | berubah_sebagian | tidak_lagi_berupa_bangunan | tidak_jelas",
+      "sedimen_lumpur": "tidak_ada | menutupi_sebagian | menutupi_seluruhnya | tidak_jelas"
+    },
+    "deskripsi": "satu kalimat bahasa Indonesia"
+  },
+  "panggilan_kelas": {
+    "kelas_kerusakan": "tidak_rusak | rusak | hancur | tidak_jelas",
+    "keyakinan": "bilangan desimal 0.0 sampai 1.0"
+  }
+}

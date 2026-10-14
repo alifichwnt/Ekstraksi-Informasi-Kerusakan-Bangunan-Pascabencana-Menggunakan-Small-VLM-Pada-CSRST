@@ -1,0 +1,48 @@
+{
+  "sidik_fitur": "b82f43f2",
+  "versi_prompt": 4,
+  "versi_konfigurasi": "2026-09-24",
+  "status_seleksi": "TERKUNCI SEMENTARA",
+  "fitur_terpilih": [
+    "keutuhan_atap",
+    "puing_sekitar",
+    "wujud_bangunan",
+    "sedimen_lumpur"
+  ],
+  "golongan_fitur_terpilih": {
+    "keutuhan_atap": "perubahan",
+    "puing_sekitar": "keadaan",
+    "wujud_bangunan": "perubahan",
+    "sedimen_lumpur": "keadaan"
+  },
+  "kelas_enum": [
+    "tidak_rusak",
+    "rusak",
+    "hancur"
+  ],
+  "kode_tak_teramati": "tidak_jelas",
+  "pemetaan_biner": {
+    "tidak_rusak": "tidak_rusak",
+    "rusak": "rusak",
+    "hancur": "rusak"
+  },
+  "prompt": {
+    "fitur": {
+      "berkas": "prompt_fitur_v4_b82f43f2.txt",
+      "sha256_12": "5ff98a7ab362",
+      "citra": [
+        "pra",
+        "pasca"
+      ],
+      "kata": 513
+    },
+    "kelas": {
+      "berkas": "prompt_kelas_v4_b82f43f2.txt",
+      "sha256_12": "38b6daf809e9",
+      "citra": [
+        "pasca"
+      ],
+      "kata": 300
+    }
+  }
+}

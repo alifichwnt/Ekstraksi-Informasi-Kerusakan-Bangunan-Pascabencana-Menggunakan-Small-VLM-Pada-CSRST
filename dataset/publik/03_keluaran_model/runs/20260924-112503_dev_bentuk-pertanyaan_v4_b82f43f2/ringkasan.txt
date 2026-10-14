@@ -1,0 +1,116 @@
+
+internvl3-2b K0  | unik=1  | akurasi seimbang=0.33
+col_0        tidak_rusak
+label                   
+hancur                 5
+rusak                  5
+tidak_rusak            5
+
+internvl3-2b K1  | unik=2  | akurasi seimbang=0.33
+col_0        rusak  tidak_rusak
+label                          
+hancur           4            1
+rusak            5            0
+tidak_rusak      5            0
+
+internvl3-2b K1r  | unik=2  | akurasi seimbang=0.40
+col_0        hancur  rusak
+label                     
+hancur            3      2
+rusak             2      3
+tidak_rusak       0      5
+
+qwen2.5-vl-3b K0  | unik=2  | akurasi seimbang=0.27
+col_0        hancur  tidak_rusak
+label                           
+hancur            4            1
+rusak             5            0
+tidak_rusak       5            0
+
+qwen2.5-vl-3b K1  | unik=1  | akurasi seimbang=0.33
+col_0        rusak
+label             
+hancur           5
+rusak            5
+tidak_rusak      5
+
+qwen2.5-vl-3b K1r  | unik=1  | akurasi seimbang=0.33
+col_0        rusak
+label             
+hancur           5
+rusak            5
+tidak_rusak      5
+
+internvl3-2b F-keutuhan_atap  | unik=1
+mentah       rusak_sebagian
+label                      
+hancur                    5
+rusak                     5
+tidak_rusak               5
+
+internvl3-2b F-puing_sekitar  | unik=1
+mentah       GAGAL
+label             
+hancur           5
+rusak            5
+tidak_rusak      5
+
+internvl3-2b F-sedimen_lumpur  | unik=2
+mentah       menutupi_sebagian  tidak_ada
+label                                    
+hancur                       1          4
+rusak                        0          5
+tidak_rusak                  0          5
+
+internvl3-2b F-wujud_bangunan  | unik=1
+mentah       tidak_berubah
+label                     
+hancur                   5
+rusak                    5
+tidak_rusak              5
+
+qwen2.5-vl-3b F-keutuhan_atap  | unik=1
+mentah       rusak_sebagian
+label                      
+hancur                    5
+rusak                     5
+tidak_rusak               5
+
+qwen2.5-vl-3b F-puing_sekitar  | unik=1
+mentah       meluas_menutupi_petak
+label                             
+hancur                           5
+rusak                            5
+tidak_rusak                      5
+
+qwen2.5-vl-3b F-sedimen_lumpur  | unik=1
+mentah       menutupi_sebagian
+label                         
+hancur                       5
+rusak                        5
+tidak_rusak                  5
+
+qwen2.5-vl-3b F-wujud_bangunan  | unik=1
+mentah       berubah_sebagian
+label                        
+hancur                      5
+rusak                       5
+tidak_rusak                 5
+
+Qwen K1s: rerata peluang tiap pilihan menurut label xBD
+              UTUH  RUSAK  HANCUR
+label                            
+hancur       0.085  0.612   0.302
+rusak        0.095  0.610   0.295
+tidak_rusak  0.103  0.607   0.290
+AUC P(HANCUR), hancur vs tidak_rusak: 0.76  (0.5 = tidak membedakan)
+AUC P(UTUH),  tidak_rusak vs rusak+hancur: 0.76
+akurasi seimbang argmax skor: 0.33
+
+Contoh deskripsi D1:
+  intern hancur       Citra pertama menunjukkan bangunan yang masih dalam keadaan baik, dengan lantai dan pagar yang tahan lama. Di citra kedua, bangunan tersebut telah mengalami ker
+  intern rusak        Citra pertama menunjukkan bangunan yang masih sehat dan tampil baik. Di citra kedua, bangunan tersebut telah mengalami kerusakan, dengan beberapa bagian rusak a
+  intern tidak_rusak  Citra pertama menunjukkan bangunan yang masih sehat dan tampil baik, sementara citra kedua menunjukkan bangunan yang telah mengalami kerusakan, seperti benturan
+  qwen2. hancur       Bangunan di tengah citra kedua terlihat rusak dan mengalami kerusakan signifikan dibandingkan dengan citra pertama.
+  qwen2. rusak        Bangunan yang ditunjuk bidik silang magenta di tengah citra pada citra kedua terlihat rusak dan mengalami kerusakan signifikan dibandingkan dengan citra pertama
+  qwen2. tidak_rusak  Bangunan yang ditunjuk bidik silang magenta di tengah citra pada citra kedua terlihat rusak dan mengalami kerusakan signifikan dibandingkan dengan citra pertama

@@ -1,0 +1,515 @@
+=== 20260925-100029_qwen3b-lora_besar_v4_b82f43f2 | revisi 66285546d2b821cf421d4f5eb2576359d3770cd3 | presisi fp16 | muat 93.1s
+parameter dilatih 29,933,568 dari 3,784,556,544 (0.79%)
+validasi SEBELUM pelatihan (zero-shot): 0.3185 | {'hancur': 124, 'tidak_rusak': 2}
+  epoch 1 [  20/715] loss rerata-20 1.0891 | 1.81 s/contoh | uid terakhir da93d98d-c861-4420-8eb2-11881042bc31
+  epoch 1 [  40/715] loss rerata-20 1.1165 | 1.80 s/contoh | uid terakhir b6e98d34-36b6-4141-a3d1-f57c3a45f589
+  epoch 1 [  60/715] loss rerata-20 0.7562 | 1.80 s/contoh | uid terakhir dfa4e49f-51b8-4560-9750-210c30a565df
+  epoch 1 [  80/715] loss rerata-20 0.3188 | 1.80 s/contoh | uid terakhir 3c0497f5-7d2b-412f-b263-7a7337952f12
+  epoch 1 [ 100/715] loss rerata-20 0.1269 | 1.80 s/contoh | uid terakhir 0673b405-d7d3-46f1-8bd3-1f5ebfa484ef
+  epoch 1 [ 120/715] loss rerata-20 0.1080 | 1.80 s/contoh | uid terakhir c4b98aca-d0a2-4f0b-8fb0-b70d43ae3f48
+  epoch 1 [ 140/715] loss rerata-20 0.0989 | 1.80 s/contoh | uid terakhir c00356a4-d971-4e67-9cba-d76e3269c78a
+  epoch 1 [ 160/715] loss rerata-20 0.1361 | 1.80 s/contoh | uid terakhir 14693485-7020-42d8-815a-8fdcff037a55
+  epoch 1 [ 180/715] loss rerata-20 0.1294 | 1.80 s/contoh | uid terakhir 2b18ab9c-512c-42ea-9db3-f4c9477ddbcd
+  epoch 1 [ 200/715] loss rerata-20 0.1526 | 1.80 s/contoh | uid terakhir 11551f32-e819-475a-bfcf-fd6da111602c
+  epoch 1 [ 220/715] loss rerata-20 0.0985 | 1.80 s/contoh | uid terakhir 93b82771-28bf-40de-b5aa-a6da1d6ef43f
+  epoch 1 [ 240/715] loss rerata-20 0.0935 | 1.80 s/contoh | uid terakhir 02452b11-4264-428e-9c46-4e81ead820e8
+  epoch 1 [ 260/715] loss rerata-20 0.0861 | 1.80 s/contoh | uid terakhir 08391487-06ae-4877-bc5f-7608166e2ab5
+  epoch 1 [ 280/715] loss rerata-20 0.1129 | 1.80 s/contoh | uid terakhir 576545f8-f5f9-4e2a-ad60-981bf94c95c6
+  epoch 1 [ 300/715] loss rerata-20 0.0924 | 1.80 s/contoh | uid terakhir 7b1675e5-8e9e-4074-a289-1edb15ae303d
+  epoch 1 [ 320/715] loss rerata-20 0.0929 | 1.80 s/contoh | uid terakhir 4cdaaa08-5b84-48c3-8a00-84b9d4278d05
+  epoch 1 [ 340/715] loss rerata-20 0.0846 | 1.80 s/contoh | uid terakhir c4cb65ad-c85c-4dae-a8bb-0f0a2cfee794
+  epoch 1 [ 360/715] loss rerata-20 0.0886 | 1.80 s/contoh | uid terakhir 6456ebdc-7295-4345-945d-5c848285ae88
+  epoch 1 [ 380/715] loss rerata-20 0.0905 | 1.80 s/contoh | uid terakhir 0ebb7833-869c-4d0d-86de-dc5c6332fa19
+  epoch 1 [ 400/715] loss rerata-20 0.0843 | 1.80 s/contoh | uid terakhir 0c13f6e9-1941-49fb-8719-4043e0d2109e
+  epoch 1 [ 420/715] loss rerata-20 0.0983 | 1.80 s/contoh | uid terakhir 096f85e3-e756-4f2d-a308-c0af6b7b317d
+  epoch 1 [ 440/715] loss rerata-20 0.0877 | 1.80 s/contoh | uid terakhir 43cb234e-5fb5-4f55-9e39-26d17d994f8d
+  epoch 1 [ 460/715] loss rerata-20 0.0917 | 1.80 s/contoh | uid terakhir e89b9c03-6bcb-4587-993c-a391b3f64164
+  epoch 1 [ 480/715] loss rerata-20 0.0812 | 1.80 s/contoh | uid terakhir 629a44b1-8e84-4795-ae61-73b46ff737ac
+  epoch 1 [ 500/715] loss rerata-20 0.1062 | 1.80 s/contoh | uid terakhir d0000eb2-d827-4b12-97fd-696418533d6a
+  epoch 1 [ 520/715] loss rerata-20 0.0955 | 1.80 s/contoh | uid terakhir b90b1995-60e6-4ac5-9e11-30c8d65df0a0
+  epoch 1 [ 540/715] loss rerata-20 0.0849 | 1.80 s/contoh | uid terakhir b13a3b53-d945-4b25-8c81-2c0efb5f5edf
+  epoch 1 [ 560/715] loss rerata-20 0.0823 | 1.80 s/contoh | uid terakhir 2db8b419-01df-44f5-a2e2-5fe33411c645
+  epoch 1 [ 580/715] loss rerata-20 0.0858 | 1.80 s/contoh | uid terakhir 465c6990-3348-4a10-ad69-7709c0ee374f
+  epoch 1 [ 600/715] loss rerata-20 0.1011 | 1.80 s/contoh | uid terakhir e8cb42da-ab6f-4f1e-b5c5-b8dbef580990
+  epoch 1 [ 620/715] loss rerata-20 0.0859 | 1.80 s/contoh | uid terakhir c1c3cfb0-5eea-4d9b-8518-02e05ff7dd86
+  epoch 1 [ 640/715] loss rerata-20 0.0888 | 1.80 s/contoh | uid terakhir 5a30e638-15b1-4a85-b1b3-9136a90ab1a3
+  epoch 1 [ 660/715] loss rerata-20 0.0819 | 1.80 s/contoh | uid terakhir 19e14efe-bd07-4776-a805-cfd019069355
+  epoch 1 [ 680/715] loss rerata-20 0.0865 | 1.80 s/contoh | uid terakhir 3d05a902-d75b-46f2-b75f-66dad0d8c915
+  epoch 1 [ 700/715] loss rerata-20 0.0883 | 1.80 s/contoh | uid terakhir b1b44eaa-a651-4ad7-8536-982cbd1733ef
+  epoch 1 [ 715/715] loss rerata-20 0.0863 | 1.80 s/contoh | uid terakhir 669809c7-f719-4156-bae4-56a974f13155
+epoch 1 selesai | loss 0.1779 | validasi akurasi seimbang 0.3333 | {'tidak_rusak': 126}
+  epoch 2 [  20/715] loss rerata-20 0.0828 | 1.78 s/contoh | uid terakhir c803f0a1-9997-4514-bd1e-da0474da5ea9
+  epoch 2 [  40/715] loss rerata-20 0.0899 | 1.79 s/contoh | uid terakhir bee653b0-6dac-4465-bc39-95e4feace521
+  epoch 2 [  60/715] loss rerata-20 0.0863 | 1.79 s/contoh | uid terakhir c2f33c00-61b7-4b7d-adfb-835815487533
+  epoch 2 [  80/715] loss rerata-20 0.0909 | 1.79 s/contoh | uid terakhir 20913c24-6875-4caa-b76c-71fdbbabc480
+  epoch 2 [ 100/715] loss rerata-20 0.0745 | 1.79 s/contoh | uid terakhir 14f1da5f-95d2-488d-ba81-5127a3175bfc
+  epoch 2 [ 120/715] loss rerata-20 0.0986 | 1.79 s/contoh | uid terakhir 6f4742c4-176e-4597-9081-f781fdc2d362
+  epoch 2 [ 140/715] loss rerata-20 0.1001 | 1.79 s/contoh | uid terakhir 3bdd7fcf-cd3a-4a1c-a8a0-95219f9e0edf
+  epoch 2 [ 160/715] loss rerata-20 0.0770 | 1.79 s/contoh | uid terakhir 23a09411-bd1d-4639-af8c-3a814a657e12
+  epoch 2 [ 180/715] loss rerata-20 0.0841 | 1.79 s/contoh | uid terakhir 654c07d1-c52b-4e33-9295-9ddc1e8234f7
+  epoch 2 [ 200/715] loss rerata-20 0.0796 | 1.79 s/contoh | uid terakhir ea1a2378-d6c0-4deb-9eac-f542f976e90a
+  epoch 2 [ 220/715] loss rerata-20 0.0855 | 1.79 s/contoh | uid terakhir 8f6ef07f-83e3-4806-9afd-7cc3722e0928
+  epoch 2 [ 240/715] loss rerata-20 0.0803 | 1.79 s/contoh | uid terakhir f1ca1f0a-db01-4f13-b9ab-20d79c2f9eaa
+  epoch 2 [ 260/715] loss rerata-20 0.0772 | 1.79 s/contoh | uid terakhir 5a14d4bf-7e5f-4058-a4fc-da2b0409e975
+  epoch 2 [ 280/715] loss rerata-20 0.0919 | 1.79 s/contoh | uid terakhir cbcdf495-015f-486c-8397-ff6377ccf5f7
+  epoch 2 [ 300/715] loss rerata-20 0.0753 | 1.79 s/contoh | uid terakhir 5dfab3cb-6041-4925-b74f-c3faeb1a0219
+  epoch 2 [ 320/715] loss rerata-20 0.0787 | 1.79 s/contoh | uid terakhir 7b1675e5-8e9e-4074-a289-1edb15ae303d
+  epoch 2 [ 340/715] loss rerata-20 0.0714 | 1.79 s/contoh | uid terakhir 99f3635e-0351-4c0d-8688-1a41fd5bc063
+  epoch 2 [ 360/715] loss rerata-20 0.0711 | 1.79 s/contoh | uid terakhir 6d90aba6-941c-46e0-98a1-898f3cc642ce
+  epoch 2 [ 380/715] loss rerata-20 0.0810 | 1.79 s/contoh | uid terakhir 03e29bc9-8802-4c7c-baaf-b25c32924ee1
+  epoch 2 [ 400/715] loss rerata-20 0.0688 | 1.79 s/contoh | uid terakhir 465c6990-3348-4a10-ad69-7709c0ee374f
+  epoch 2 [ 420/715] loss rerata-20 0.0749 | 1.79 s/contoh | uid terakhir 9039a6b3-82ee-49f7-a10b-6763752d89e7
+  epoch 2 [ 440/715] loss rerata-20 0.0683 | 1.79 s/contoh | uid terakhir a8b2b6f4-d2bc-4b90-a296-ad01d4b109b6
+  epoch 2 [ 460/715] loss rerata-20 0.0605 | 1.79 s/contoh | uid terakhir 66689479-1f11-4c31-b75b-c1ff4775c7d9
+  epoch 2 [ 480/715] loss rerata-20 0.0596 | 1.79 s/contoh | uid terakhir cbe86670-6c50-4fbf-9f80-d55a7e082936
+  epoch 2 [ 500/715] loss rerata-20 0.0707 | 1.79 s/contoh | uid terakhir da1bb64c-bf94-420b-b582-58ad4d4f9412
+  epoch 2 [ 520/715] loss rerata-20 0.0641 | 1.79 s/contoh | uid terakhir dd68eab0-710d-4a15-ab74-5cab56dd701f
+  epoch 2 [ 540/715] loss rerata-20 0.0680 | 1.79 s/contoh | uid terakhir 456a9e2f-6885-4b75-924c-a0804bcd3893
+  epoch 2 [ 560/715] loss rerata-20 0.0445 | 1.79 s/contoh | uid terakhir b1e136ea-46c9-48ea-ad15-e0f672c93f96
+  epoch 2 [ 580/715] loss rerata-20 0.0667 | 1.79 s/contoh | uid terakhir 094599c2-e1f0-43bf-ba7f-9580c97234a3
+  epoch 2 [ 600/715] loss rerata-20 0.0775 | 1.79 s/contoh | uid terakhir c317a311-1dc2-47d7-a2f1-0f0156f9cc06
+  epoch 2 [ 620/715] loss rerata-20 0.0671 | 1.79 s/contoh | uid terakhir 3258ec4e-ad16-4d37-a83c-0071a90da54d
+  epoch 2 [ 640/715] loss rerata-20 0.0687 | 1.79 s/contoh | uid terakhir 84cfcb6e-7c86-4721-8cce-c0bc86a9de41
+  epoch 2 [ 660/715] loss rerata-20 0.0573 | 1.79 s/contoh | uid terakhir 0ec6745e-95fc-48a3-8d7b-b2defa7f5752
+  epoch 2 [ 680/715] loss rerata-20 0.0733 | 1.79 s/contoh | uid terakhir 42381bb9-99ea-446c-9a62-0b1cd2e324e8
+  epoch 2 [ 700/715] loss rerata-20 0.0575 | 1.79 s/contoh | uid terakhir 8b275332-706e-45ae-bdbe-a143fb688300
+  epoch 2 [ 715/715] loss rerata-20 0.0550 | 1.79 s/contoh | uid terakhir bfbef9bc-e952-4249-8c0b-66b3f43870c2
+epoch 2 selesai | loss 0.0745 | validasi akurasi seimbang 0.587 | {'tidak_rusak': 73, 'hancur': 34, 'rusak': 19}
+  epoch 3 [  20/715] loss rerata-20 0.0551 | 1.79 s/contoh | uid terakhir 097b07c0-7cd3-4e00-880d-b28fcd055d2a
+  epoch 3 [  40/715] loss rerata-20 0.0689 | 1.79 s/contoh | uid terakhir 04484ff7-ca51-4493-be7f-5d8b0cd11933
+  epoch 3 [  60/715] loss rerata-20 0.0618 | 1.79 s/contoh | uid terakhir 5dfab3cb-6041-4925-b74f-c3faeb1a0219
+  epoch 3 [  80/715] loss rerata-20 0.0553 | 1.79 s/contoh | uid terakhir 7adf1f0b-574b-4cf6-aa35-ddd84ad479b4
+  epoch 3 [ 100/715] loss rerata-20 0.0737 | 1.79 s/contoh | uid terakhir 2bf3f34f-4e77-4a13-84c9-89f6cea7945e
+  epoch 3 [ 120/715] loss rerata-20 0.0538 | 1.79 s/contoh | uid terakhir 23624aeb-a8b3-487b-bb7b-df8a3888dacd
+  epoch 3 [ 140/715] loss rerata-20 0.0548 | 1.79 s/contoh | uid terakhir defce658-b921-4182-9d8d-d60331f3c458
+  epoch 3 [ 160/715] loss rerata-20 0.0721 | 1.79 s/contoh | uid terakhir c22c896a-70e8-4b6e-8d04-9f8c2967a871
+  epoch 3 [ 180/715] loss rerata-20 0.0522 | 1.79 s/contoh | uid terakhir dd1cda3e-0b25-4850-a266-dd8fcfeeb16d
+  epoch 3 [ 200/715] loss rerata-20 0.0869 | 1.79 s/contoh | uid terakhir e2ccb633-e802-4f3b-83b2-aa94efbe5325
+  epoch 3 [ 220/715] loss rerata-20 0.0594 | 1.79 s/contoh | uid terakhir 7cf0edf0-7c3b-4262-afe9-034fe05e3d00
+  epoch 3 [ 240/715] loss rerata-20 0.0490 | 1.79 s/contoh | uid terakhir aa3a0f91-ed22-4adf-8e96-d859e79e126f
+  epoch 3 [ 260/715] loss rerata-20 0.0645 | 1.79 s/contoh | uid terakhir 0f6fb02d-18e0-4a5f-b297-f57e744082a1
+  epoch 3 [ 280/715] loss rerata-20 0.0632 | 1.79 s/contoh | uid terakhir 92fed694-3289-4a5d-b13e-fd617d80ad70
+  epoch 3 [ 300/715] loss rerata-20 0.0345 | 1.79 s/contoh | uid terakhir b4803cb5-d8fb-4a04-9331-9c886d3128a9
+  epoch 3 [ 320/715] loss rerata-20 0.0528 | 1.79 s/contoh | uid terakhir 0b3e7ec5-a934-4af2-9b8d-71c18d9e8848
+  epoch 3 [ 340/715] loss rerata-20 0.0432 | 1.79 s/contoh | uid terakhir fc079eb2-dc65-446f-84f9-05e7fde288a0
+  epoch 3 [ 360/715] loss rerata-20 0.0539 | 1.79 s/contoh | uid terakhir f5012c25-f931-46d6-8cc3-db37e733ffad
+  epoch 3 [ 380/715] loss rerata-20 0.0909 | 1.79 s/contoh | uid terakhir a0a619f2-79b7-4fe2-be4a-48b829fa70ea
+  epoch 3 [ 400/715] loss rerata-20 0.0574 | 1.79 s/contoh | uid terakhir cbfdc45e-f5b6-443b-bc0e-9b7fe5a523e3
+  epoch 3 [ 420/715] loss rerata-20 0.0379 | 1.79 s/contoh | uid terakhir b39a10fb-a810-47f5-8262-7374bb6bee48
+  epoch 3 [ 440/715] loss rerata-20 0.0521 | 1.79 s/contoh | uid terakhir deefaae8-4cb4-4ef0-921e-438b155104b9
+  epoch 3 [ 460/715] loss rerata-20 0.0536 | 1.79 s/contoh | uid terakhir 8db569c5-abb6-419a-97dc-c5711e5cba8b
+  epoch 3 [ 480/715] loss rerata-20 0.0617 | 1.79 s/contoh | uid terakhir b0a4f716-6c58-454e-ad28-2a4b56304d45
+  epoch 3 [ 500/715] loss rerata-20 0.0493 | 1.79 s/contoh | uid terakhir 21b11e4b-c032-41ac-8b4a-000701c8df10
+  epoch 3 [ 520/715] loss rerata-20 0.0562 | 1.79 s/contoh | uid terakhir 8c9080f8-e178-4901-81ca-5fccdb523620
+  epoch 3 [ 540/715] loss rerata-20 0.0547 | 1.79 s/contoh | uid terakhir 4beaf387-e2b5-4f23-a532-98adf4bb26a0
+  epoch 3 [ 560/715] loss rerata-20 0.0612 | 1.79 s/contoh | uid terakhir 00dcf390-27f1-4e2a-ac47-0933f1129af7
+  epoch 3 [ 580/715] loss rerata-20 0.0615 | 1.79 s/contoh | uid terakhir 336c4359-bdf3-4912-8950-47ddff752afc
+  epoch 3 [ 600/715] loss rerata-20 0.0530 | 1.79 s/contoh | uid terakhir 9feb7add-63da-40f7-ac45-045476b9dbe7
+  epoch 3 [ 620/715] loss rerata-20 0.0659 | 1.79 s/contoh | uid terakhir 47e211b0-b049-453d-a6ea-c9b4aa794a30
+  epoch 3 [ 640/715] loss rerata-20 0.0590 | 1.79 s/contoh | uid terakhir bdc7bcd4-a417-4622-b85e-ab466b07198b
+  epoch 3 [ 660/715] loss rerata-20 0.0647 | 1.79 s/contoh | uid terakhir 927a189d-918d-4dab-af53-c1ce4b0fdb2b
+  epoch 3 [ 680/715] loss rerata-20 0.0519 | 1.79 s/contoh | uid terakhir 9ff6b4a8-95a2-4811-b440-fb10c886936e
+  epoch 3 [ 700/715] loss rerata-20 0.0690 | 1.79 s/contoh | uid terakhir 57ebe9e1-00df-4275-9cce-cb7cadcdcfa1
+  epoch 3 [ 715/715] loss rerata-20 0.0568 | 1.79 s/contoh | uid terakhir 58190173-e828-4915-8d77-40227b2a3b45
+epoch 3 selesai | loss 0.0586 | validasi akurasi seimbang 0.6926 | {'tidak_rusak': 48, 'hancur': 45, 'rusak': 33}
+pelatihan selesai 75.6 menit | adapter dipakai: epoch 3
+[   1/400] uid=1bac8dbb-30d7-401e-bd9d-c2d93be0fbf8 | palu-tsunami_00000118 | chip=1bac8dbb_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.3s
+[   2/400] uid=341e30c4-e010-4bf5-b1d0-d1082b51d082 | palu-tsunami_00000060 | chip=341e30c4_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[   3/400] uid=bdacbf19-597c-44ad-b117-8016d170296e | palu-tsunami_00000023 | chip=bdacbf19_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[   4/400] uid=65507fc7-1558-48a5-b91b-41209da87174 | palu-tsunami_00000118 | chip=65507fc7_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[   5/400] uid=df3bf5a2-19c8-4222-91a9-655b2384a378 | palu-tsunami_00000152 | chip=df3bf5a2_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[   6/400] uid=34d69265-650b-4f06-bbc6-a2b0afa624a3 | palu-tsunami_00000094 | chip=34d69265_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[   7/400] uid=ec6be23c-ce08-4369-a29d-9340ec37f1e0 | palu-tsunami_00000143 | chip=ec6be23c_pasca.png | xBD=major-damage | kelas=hancur | +fitur | 4.7s
+[   8/400] uid=2270897f-23f5-4651-8ebf-38812497f78b | palu-tsunami_00000013 | chip=2270897f_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[   9/400] uid=9a9778bb-4901-404c-b713-8d1cb024f375 | palu-tsunami_00000110 | chip=9a9778bb_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  10/400] uid=85128d5c-a08a-4434-9c86-cdec8e1dc01f | palu-tsunami_00000147 | chip=85128d5c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  11/400] uid=87c0e1e2-6daa-4e0a-9221-1eac840a2698 | palu-tsunami_00000038 | chip=87c0e1e2_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  12/400] uid=9dcaea44-be04-4912-931f-7f4a344d09d5 | palu-tsunami_00000018 | chip=9dcaea44_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  13/400] uid=a82de635-5de5-4077-a7b5-5e4e3fc8c6a5 | palu-tsunami_00000120 | chip=a82de635_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  14/400] uid=15115e74-7087-460a-87af-793e1583bc41 | palu-tsunami_00000140 | chip=15115e74_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  15/400] uid=27e777b5-1b12-4463-9d83-aa2a74307018 | palu-tsunami_00000024 | chip=27e777b5_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  16/400] uid=7f3b2dc9-b0bf-49f1-9e4f-632bdaca4dce | palu-tsunami_00000034 | chip=7f3b2dc9_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  17/400] uid=4d90826c-b03f-42f1-8d4c-a2ac97df06b6 | palu-tsunami_00000006 | chip=4d90826c_pasca.png | xBD=destroyed | kelas=tidak_rusak | 1.9s
+[  18/400] uid=35c43cb3-9d73-46e5-9b9c-90ff03924330 | palu-tsunami_00000004 | chip=35c43cb3_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  19/400] uid=f3642d84-c8a4-426d-aae6-1423e82312d0 | palu-tsunami_00000029 | chip=f3642d84_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  20/400] uid=0b838e0d-9266-4a81-9bc8-8b4b995f956b | palu-tsunami_00000088 | chip=0b838e0d_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  21/400] uid=d1915e0a-5e31-4de8-acd6-322c5562fc85 | palu-tsunami_00000137 | chip=d1915e0a_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[  22/400] uid=cfbec81f-7ffc-4e39-8278-a0974b3b8be9 | palu-tsunami_00000137 | chip=cfbec81f_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[  23/400] uid=06d7bba2-715e-4c0c-9412-68a1d723179b | palu-tsunami_00000096 | chip=06d7bba2_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  24/400] uid=9dcaefb0-bb61-4139-9e1e-9f1a36ee690c | palu-tsunami_00000002 | chip=9dcaefb0_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  25/400] uid=b6bae80a-48e7-412a-a60c-ba1c4974b57e | palu-tsunami_00000137 | chip=b6bae80a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.8s
+[  26/400] uid=0a5556cd-aaa0-44d5-9a53-0ad2a26dade5 | palu-tsunami_00000018 | chip=0a5556cd_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[  27/400] uid=ecc079ec-9c3e-43bf-bf8e-3fb8b8f7646e | palu-tsunami_00000037 | chip=ecc079ec_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  28/400] uid=bc640712-0a99-422a-85af-4a340f32dd8a | palu-tsunami_00000006 | chip=bc640712_pasca.png | xBD=destroyed | kelas=tidak_rusak | 1.9s
+[  29/400] uid=19b84ac0-b91d-4e64-ac23-33a95b2e1cd0 | palu-tsunami_00000066 | chip=19b84ac0_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  30/400] uid=e3325a97-2fb1-4629-84a6-ace9b0243025 | palu-tsunami_00000089 | chip=e3325a97_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.8s
+[  31/400] uid=dbec4508-c279-4d29-9436-f44496b6eaea | palu-tsunami_00000018 | chip=dbec4508_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[  32/400] uid=0c85a264-11ea-4ba4-98c7-e81ff721389b | palu-tsunami_00000131 | chip=0c85a264_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.9s
+[  33/400] uid=f24dafa6-7085-4d12-9032-bff4c5ba86f4 | palu-tsunami_00000002 | chip=f24dafa6_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  34/400] uid=be3d20f5-12e1-468c-8714-ab52206098fe | palu-tsunami_00000098 | chip=be3d20f5_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  35/400] uid=d80ca128-1e50-417d-8445-b21bfdbe4021 | palu-tsunami_00000018 | chip=d80ca128_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.7s
+[  36/400] uid=f8482cea-4d46-41b8-8936-c72658003aed | palu-tsunami_00000152 | chip=f8482cea_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  37/400] uid=fdd3deea-0ce1-4c66-a21b-8672b5c821d5 | palu-tsunami_00000074 | chip=fdd3deea_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  38/400] uid=a194b4d5-2444-4946-9386-c09a8fdab14d | palu-tsunami_00000031 | chip=a194b4d5_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[  39/400] uid=82ea97d5-e8e0-42d5-bfd9-c9f17aec26a1 | palu-tsunami_00000011 | chip=82ea97d5_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  40/400] uid=e1900b29-a0c0-4f2b-bde5-b44bf10ed753 | palu-tsunami_00000064 | chip=e1900b29_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  41/400] uid=18818280-defb-408d-8fd6-4fef1ae60e67 | palu-tsunami_00000131 | chip=18818280_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  42/400] uid=7427a69b-827b-4e61-95da-6eb22161701b | palu-tsunami_00000079 | chip=7427a69b_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  43/400] uid=d20da037-1740-435c-9a06-a8699f83f72e | palu-tsunami_00000074 | chip=d20da037_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  44/400] uid=a157755d-d1c3-46a6-a911-ea0445aaf44f | palu-tsunami_00000084 | chip=a157755d_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[  45/400] uid=0e58faf0-d4ea-4c5e-b77b-877fc3d21248 | palu-tsunami_00000093 | chip=0e58faf0_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  46/400] uid=bb80210c-2601-42cc-a8ec-5500200f1605 | palu-tsunami_00000112 | chip=bb80210c_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  47/400] uid=75662ce1-2e6c-4557-99d5-8a067c2ed181 | palu-tsunami_00000055 | chip=75662ce1_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  48/400] uid=bec93389-d379-4c59-bec2-63733d413c72 | palu-tsunami_00000012 | chip=bec93389_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  49/400] uid=57b22ca3-a837-4650-bdcd-cf2ff7156a15 | palu-tsunami_00000063 | chip=57b22ca3_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  50/400] uid=50dfe964-6015-4e01-9f4d-9aca49d03555 | palu-tsunami_00000105 | chip=50dfe964_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  51/400] uid=70954a4c-d655-4451-b08a-c0163e0dbf18 | palu-tsunami_00000023 | chip=70954a4c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  52/400] uid=d16a5130-bbb0-4f61-8a18-237c128b970b | palu-tsunami_00000115 | chip=d16a5130_pasca.png | xBD=major-damage | kelas=tidak_rusak | +fitur | 4.9s
+[  53/400] uid=10a6b9eb-adba-43b0-ab20-161543dbd709 | palu-tsunami_00000130 | chip=10a6b9eb_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.8s
+[  54/400] uid=0923233f-4a3d-49eb-83ba-dd556ebb3f00 | palu-tsunami_00000105 | chip=0923233f_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.0s
+[  55/400] uid=5ddabfca-80a1-4e01-b5b9-a566bc5d8354 | palu-tsunami_00000143 | chip=5ddabfca_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  56/400] uid=d96899c2-2c4d-4e7e-bf2a-bafbaa5430d6 | palu-tsunami_00000060 | chip=d96899c2_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  57/400] uid=19e003c3-7025-4358-bdfe-515fff489775 | palu-tsunami_00000020 | chip=19e003c3_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  58/400] uid=51b47168-2c97-4863-8371-92f74e4bb857 | palu-tsunami_00000091 | chip=51b47168_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  59/400] uid=92fbb49b-2dd4-4526-8a05-1627cdd08e38 | palu-tsunami_00000045 | chip=92fbb49b_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  60/400] uid=eb49f078-1c95-4c71-ada7-56deb68f4d01 | palu-tsunami_00000134 | chip=eb49f078_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  61/400] uid=88c6b01f-dd59-4dd5-8d2e-926abc44143e | palu-tsunami_00000068 | chip=88c6b01f_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  62/400] uid=74512434-f32b-4a9b-b61d-c4a16a740a58 | palu-tsunami_00000110 | chip=74512434_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  63/400] uid=601b3196-77da-47e6-811d-7b897d7d5cec | palu-tsunami_00000060 | chip=601b3196_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[  64/400] uid=bc35337e-b926-4080-9d7a-5b756cbbe436 | palu-tsunami_00000125 | chip=bc35337e_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  65/400] uid=8c439efd-3a13-4b0f-b68c-b6e331365799 | palu-tsunami_00000085 | chip=8c439efd_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  66/400] uid=1a81e470-7d6e-4ebb-ad95-1636664f107e | palu-tsunami_00000147 | chip=1a81e470_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  67/400] uid=4f7e94d3-fbcf-4cee-a9cb-383dc1b2438c | palu-tsunami_00000057 | chip=4f7e94d3_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[  68/400] uid=6d7535ca-7482-489d-96b0-60ed911155d2 | palu-tsunami_00000096 | chip=6d7535ca_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  69/400] uid=e6c78471-dafa-4c33-9396-581a4d5a7d66 | palu-tsunami_00000059 | chip=e6c78471_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  70/400] uid=7544f68c-b12c-4d80-b845-650846ba27fa | palu-tsunami_00000093 | chip=7544f68c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  71/400] uid=7361cad8-c466-4078-8f8f-3667cd294c01 | palu-tsunami_00000056 | chip=7361cad8_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[  72/400] uid=ab992065-3d87-497d-8241-9f6d3ece16a7 | palu-tsunami_00000039 | chip=ab992065_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  73/400] uid=0e2e941c-d9d5-442d-b9c7-203cdff208da | palu-tsunami_00000017 | chip=0e2e941c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  74/400] uid=4faed48e-a2ab-4a91-8751-1dcbbe97152e | palu-tsunami_00000118 | chip=4faed48e_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  75/400] uid=23df176b-1299-48f6-b9a3-e307ae116a7e | palu-tsunami_00000109 | chip=23df176b_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  76/400] uid=8e817385-05c3-4dd7-b9d5-5d2b724e6075 | palu-tsunami_00000047 | chip=8e817385_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  77/400] uid=f3db8857-2a17-4ff4-ad3d-edbdae4468ec | palu-tsunami_00000124 | chip=f3db8857_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  78/400] uid=680fecf7-a263-4ea2-93ea-a04881f9a189 | palu-tsunami_00000008 | chip=680fecf7_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[  79/400] uid=9d265cf9-6186-4328-b91c-e00a86604852 | palu-tsunami_00000131 | chip=9d265cf9_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  80/400] uid=9df77a5b-a6e8-4937-876c-62f19d272ad4 | palu-tsunami_00000125 | chip=9df77a5b_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  81/400] uid=03fe2a1a-abda-46ac-9928-0db34eb36e87 | palu-tsunami_00000083 | chip=03fe2a1a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  82/400] uid=90bde0f5-e6ca-455b-83a0-f2bfb749846d | palu-tsunami_00000084 | chip=90bde0f5_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.9s
+[  83/400] uid=f72fba0d-5ff6-49aa-9ca6-deaeb14e2fa1 | palu-tsunami_00000118 | chip=f72fba0d_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  84/400] uid=1f230dd4-4515-4c5c-a6ca-60568e1c1790 | palu-tsunami_00000053 | chip=1f230dd4_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  85/400] uid=c1473420-86de-4daf-8caf-68c1dc1e2057 | palu-tsunami_00000125 | chip=c1473420_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[  86/400] uid=9ee33e94-9005-42a1-a7d4-c3b86bae373d | palu-tsunami_00000117 | chip=9ee33e94_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  87/400] uid=8f19cbe3-7898-40df-8144-d89ba31d6f4d | palu-tsunami_00000032 | chip=8f19cbe3_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[  88/400] uid=f4219a0a-bfed-4a59-9091-5cf99ad16b93 | palu-tsunami_00000008 | chip=f4219a0a_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[  89/400] uid=cdffcd5f-9807-46df-bb18-67037c05c601 | palu-tsunami_00000017 | chip=cdffcd5f_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[  90/400] uid=81458467-181c-45e6-9615-3be8bf222c2f | palu-tsunami_00000064 | chip=81458467_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[  91/400] uid=2a1d2a16-6b5a-4485-939a-8b4ffe929b9f | palu-tsunami_00000136 | chip=2a1d2a16_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.8s
+[  92/400] uid=37f5199b-4181-4829-ab9a-68ea341cfb1b | palu-tsunami_00000115 | chip=37f5199b_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[  93/400] uid=9d6e070d-1d53-4fc9-a2ed-76647cfeb79e | palu-tsunami_00000087 | chip=9d6e070d_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[  94/400] uid=452d9f09-eef6-431f-bf21-cef7dad8b567 | palu-tsunami_00000056 | chip=452d9f09_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[  95/400] uid=e4063cb8-cce7-4e16-9e80-17e482a6c54c | palu-tsunami_00000094 | chip=e4063cb8_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[  96/400] uid=f04ff60d-1f4e-4890-861d-cce5a6eaf228 | palu-tsunami_00000013 | chip=f04ff60d_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[  97/400] uid=708688f6-c824-4ea9-a64f-16164a08a90d | palu-tsunami_00000019 | chip=708688f6_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[  98/400] uid=de688632-e7b8-4bd1-a67c-4197a9d7f941 | palu-tsunami_00000056 | chip=de688632_pasca.png | xBD=major-damage | kelas=hancur | +fitur | 4.4s
+[  99/400] uid=25df02a0-599d-4942-9aa7-73c0a6fef469 | palu-tsunami_00000069 | chip=25df02a0_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 100/400] uid=3b2f4ed4-ac81-4cbf-b62b-5ef6db17b354 | palu-tsunami_00000098 | chip=3b2f4ed4_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 101/400] uid=0d64220a-1463-4898-ba64-4b6722bb4074 | palu-tsunami_00000020 | chip=0d64220a_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 102/400] uid=087e7e5e-94a3-41c1-89c3-8fbc71c585b8 | palu-tsunami_00000143 | chip=087e7e5e_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 103/400] uid=e590c3ed-b9d9-4a19-a171-e473aa29eb46 | palu-tsunami_00000087 | chip=e590c3ed_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 104/400] uid=fa90adab-ba24-4900-a377-6230c46eceaa | palu-tsunami_00000037 | chip=fa90adab_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 105/400] uid=a3612c02-62c8-46f5-88db-720aad0da0d7 | palu-tsunami_00000067 | chip=a3612c02_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 106/400] uid=2edcad43-75c8-4d80-9161-b0a2137dcb3b | palu-tsunami_00000045 | chip=2edcad43_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.1s
+[ 107/400] uid=d4529357-0640-40a9-b869-3e068ac0c537 | palu-tsunami_00000137 | chip=d4529357_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 108/400] uid=575e4e19-70b7-410c-9e87-04693631c1b2 | palu-tsunami_00000048 | chip=575e4e19_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 109/400] uid=e710b131-73c2-49f5-a238-bf67c85f730b | palu-tsunami_00000136 | chip=e710b131_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 110/400] uid=18c3b974-4a30-4de0-8c52-0b11f414782b | palu-tsunami_00000143 | chip=18c3b974_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 111/400] uid=6c0589e9-9624-4cd2-ba75-788f6130ac2e | palu-tsunami_00000140 | chip=6c0589e9_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 112/400] uid=53cf370d-1680-456c-ac6a-d427907f2e0f | palu-tsunami_00000008 | chip=53cf370d_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 113/400] uid=cdc73260-5b16-4def-8086-f89b3a2fbb10 | palu-tsunami_00000030 | chip=cdc73260_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 114/400] uid=ef8fd325-2bb6-4e52-a499-f783112c2a58 | palu-tsunami_00000130 | chip=ef8fd325_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 115/400] uid=537b2c10-62ee-4c95-ab95-9d9002289326 | palu-tsunami_00000053 | chip=537b2c10_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 116/400] uid=3164a6c3-a412-45d8-bbd1-1b8e28125147 | palu-tsunami_00000044 | chip=3164a6c3_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 117/400] uid=117b13bc-d509-480f-8161-5ddc88248899 | palu-tsunami_00000027 | chip=117b13bc_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 118/400] uid=9aa7dca9-ad3f-47cf-b23e-8482db80abd3 | palu-tsunami_00000112 | chip=9aa7dca9_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 119/400] uid=67c28333-9554-4c3f-a0eb-4a65a0ba4720 | palu-tsunami_00000130 | chip=67c28333_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 120/400] uid=f3cf0cef-ce20-4438-8dc1-56a2310737b5 | palu-tsunami_00000019 | chip=f3cf0cef_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 121/400] uid=1c690248-10ff-47c3-9612-1a5478bee432 | palu-tsunami_00000060 | chip=1c690248_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 122/400] uid=acf95469-70a9-4593-995e-05b0ebb3def6 | palu-tsunami_00000087 | chip=acf95469_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 123/400] uid=85f8d22f-bd07-4d3c-b721-613bdf343390 | palu-tsunami_00000097 | chip=85f8d22f_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 124/400] uid=e25976b0-f6e2-4e8e-aaf3-5b29391cb6c4 | palu-tsunami_00000093 | chip=e25976b0_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 125/400] uid=fa352ca9-d0f8-440f-a65c-240c566fb6d3 | palu-tsunami_00000151 | chip=fa352ca9_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 126/400] uid=7a9ae23c-8dca-4244-9908-bde324d4607f | palu-tsunami_00000082 | chip=7a9ae23c_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.8s
+[ 127/400] uid=ed98032f-e165-4f37-8e97-f5854b2780da | palu-tsunami_00000088 | chip=ed98032f_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 128/400] uid=d830fbf3-3afe-4ed9-bad6-54027e908e3b | palu-tsunami_00000047 | chip=d830fbf3_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 129/400] uid=d2286898-badc-40ac-a712-d25bc219f177 | palu-tsunami_00000068 | chip=d2286898_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 130/400] uid=70161f64-42c9-49e0-93a5-4727623dd5eb | palu-tsunami_00000066 | chip=70161f64_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 131/400] uid=56ba38d0-9bc1-45af-81d3-a50c83d54443 | palu-tsunami_00000093 | chip=56ba38d0_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 132/400] uid=4ef6c44a-2b3c-4cbe-96cf-6ce63353a6b7 | palu-tsunami_00000084 | chip=4ef6c44a_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.7s
+[ 133/400] uid=9fbc878d-9cde-4fff-963c-ea26f480f3a1 | palu-tsunami_00000032 | chip=9fbc878d_pasca.png | xBD=destroyed | kelas=rusak | 1.7s
+[ 134/400] uid=882920c2-6cb5-4cb3-a4c2-8794ee6caf1f | palu-tsunami_00000109 | chip=882920c2_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.1s
+[ 135/400] uid=3c3bdddb-8722-45db-95c9-426163cd2b9b | palu-tsunami_00000017 | chip=3c3bdddb_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 136/400] uid=54e1d058-bd65-4c4e-acc1-2962ad1a1826 | palu-tsunami_00000037 | chip=54e1d058_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 137/400] uid=8d3d373d-11d7-4191-9cfb-542ab49f8f6c | palu-tsunami_00000112 | chip=8d3d373d_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 138/400] uid=72d3a953-598c-4306-87ba-e83bfdf94bb2 | palu-tsunami_00000045 | chip=72d3a953_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 139/400] uid=fb9b902b-5d99-455b-8225-aa5f1ef22306 | palu-tsunami_00000069 | chip=fb9b902b_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 140/400] uid=210f45fe-518d-47a5-85e3-c94a809041c9 | palu-tsunami_00000125 | chip=210f45fe_pasca.png | xBD=major-damage | kelas=hancur | 1.8s
+[ 141/400] uid=1917791e-044e-49ae-8f87-2c16e54764a0 | palu-tsunami_00000146 | chip=1917791e_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 142/400] uid=4f69e424-d5b6-466a-9200-a4e5f350e2ee | palu-tsunami_00000069 | chip=4f69e424_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 143/400] uid=02ef19d9-280d-4679-8907-d175aa54e658 | palu-tsunami_00000125 | chip=02ef19d9_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 144/400] uid=15b4f4ed-a82d-4dab-8042-86bd37831dfe | palu-tsunami_00000134 | chip=15b4f4ed_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 145/400] uid=ca9df09a-a37f-4be0-887d-81780386281d | palu-tsunami_00000022 | chip=ca9df09a_pasca.png | xBD=no-damage | kelas=hancur | 1.8s
+[ 146/400] uid=e41a56df-1684-4ab5-98b0-0af7396734a1 | palu-tsunami_00000015 | chip=e41a56df_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 147/400] uid=946c3891-7dac-45a2-b34f-ff7e22aeb487 | palu-tsunami_00000044 | chip=946c3891_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 148/400] uid=6624b139-a24a-4d60-acf2-4715e0b9965d | palu-tsunami_00000085 | chip=6624b139_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 149/400] uid=8accb91e-93e9-4d77-b0c4-617c492ffd4f | palu-tsunami_00000089 | chip=8accb91e_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.0s
+[ 150/400] uid=19526efb-fdf2-4e25-940c-4b6bbec7b7f8 | palu-tsunami_00000131 | chip=19526efb_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 151/400] uid=cbc324cb-1c40-4313-aeeb-b4b711f8adcf | palu-tsunami_00000152 | chip=cbc324cb_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 152/400] uid=ba7f5b7b-01ec-4d35-b81b-37def6740c1d | palu-tsunami_00000088 | chip=ba7f5b7b_pasca.png | xBD=major-damage | kelas=hancur | 1.8s
+[ 153/400] uid=77cba0b1-1499-45ed-b070-064829b52e69 | palu-tsunami_00000056 | chip=77cba0b1_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 154/400] uid=6c7f62b8-06d4-44b9-be26-fed19ed03f83 | palu-tsunami_00000054 | chip=6c7f62b8_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 155/400] uid=513ff613-7914-428d-a139-5f7cb6c9c5b0 | palu-tsunami_00000058 | chip=513ff613_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 156/400] uid=f0958e7e-4029-492e-a55b-147343deaa4f | palu-tsunami_00000128 | chip=f0958e7e_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.1s
+[ 157/400] uid=89308ce5-d387-48ac-8f8e-705de3d5c268 | palu-tsunami_00000095 | chip=89308ce5_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 158/400] uid=bbf2741f-a023-4e52-a8c2-b0a246a9bea0 | palu-tsunami_00000087 | chip=bbf2741f_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 159/400] uid=62df30c4-2452-4730-ab2f-e722664ffb90 | palu-tsunami_00000014 | chip=62df30c4_pasca.png | xBD=major-damage | kelas=hancur | 1.8s
+[ 160/400] uid=0c47dc23-daa3-484f-b995-819bcf3b4329 | palu-tsunami_00000060 | chip=0c47dc23_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 161/400] uid=3c18a217-93a0-4498-b58e-11aebbdd8d5d | palu-tsunami_00000060 | chip=3c18a217_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.1s
+[ 162/400] uid=ee144f8c-d8b2-4214-9fbe-d856c8f249b0 | palu-tsunami_00000118 | chip=ee144f8c_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 163/400] uid=de3d5244-a473-405b-bed8-c68c6e352b9c | palu-tsunami_00000080 | chip=de3d5244_pasca.png | xBD=destroyed | kelas=rusak | +fitur | 4.8s
+[ 164/400] uid=f77c0a9a-1593-437c-a641-ff13e264b82a | palu-tsunami_00000119 | chip=f77c0a9a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 165/400] uid=bc9991c2-8f01-4e54-96b2-43326e30c2c0 | palu-tsunami_00000096 | chip=bc9991c2_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 166/400] uid=a3a0fee7-a01d-4eb9-888c-f7eaf4bda35b | palu-tsunami_00000105 | chip=a3a0fee7_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 167/400] uid=32d0015c-bd30-4298-a2cc-087a23706235 | palu-tsunami_00000147 | chip=32d0015c_pasca.png | xBD=major-damage | kelas=tidak_rusak | +fitur | 5.0s
+[ 168/400] uid=09ddb742-92c6-415d-abd9-31d524761310 | palu-tsunami_00000146 | chip=09ddb742_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 169/400] uid=0919b775-b353-4c8e-9db5-ffb0db976357 | palu-tsunami_00000013 | chip=0919b775_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 170/400] uid=92cef66a-fa74-415a-b4db-ef643a836655 | palu-tsunami_00000008 | chip=92cef66a_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 171/400] uid=5aec3c4f-3490-4bb9-ab21-292e3755aaa2 | palu-tsunami_00000004 | chip=5aec3c4f_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 172/400] uid=3be46862-41e9-47e8-a51d-6ff590b5c010 | palu-tsunami_00000098 | chip=3be46862_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 173/400] uid=cd8522ae-9e83-4a49-a132-fe2d82cadd59 | palu-tsunami_00000038 | chip=cd8522ae_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 174/400] uid=3c836892-bfce-45d7-8db7-e8b71c01f1d0 | palu-tsunami_00000114 | chip=3c836892_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 175/400] uid=6587477e-cad3-47db-a51c-94da65eb69b5 | palu-tsunami_00000095 | chip=6587477e_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 176/400] uid=ceb4d046-8162-420f-bd37-98c4f0d3f79d | palu-tsunami_00000018 | chip=ceb4d046_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 177/400] uid=d07a31cb-99bd-4a7c-a879-9e00a9e07fd3 | palu-tsunami_00000058 | chip=d07a31cb_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 178/400] uid=103e3655-a064-484f-89be-5767fe28c207 | palu-tsunami_00000019 | chip=103e3655_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 179/400] uid=caab3f46-b49b-41f7-9fdc-911ed6f84b75 | palu-tsunami_00000094 | chip=caab3f46_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.0s
+[ 180/400] uid=41c3fcea-bac9-43fe-abf7-0be5f070c993 | palu-tsunami_00000081 | chip=41c3fcea_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 181/400] uid=89cf67b3-6871-4d45-9e31-dcdec368bb87 | palu-tsunami_00000091 | chip=89cf67b3_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 182/400] uid=b7e19644-11fb-47c5-a7d4-9097531d2bbd | palu-tsunami_00000089 | chip=b7e19644_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 183/400] uid=987e638a-eb7c-4be3-9669-4b412d42d697 | palu-tsunami_00000074 | chip=987e638a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 184/400] uid=8c19010b-b121-4eb2-adb7-27fec3468839 | palu-tsunami_00000063 | chip=8c19010b_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 185/400] uid=c2930e60-e2c2-46dc-b538-4737e4eedebb | palu-tsunami_00000063 | chip=c2930e60_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 186/400] uid=ede51cf1-554f-4281-a918-318c94fa66c3 | palu-tsunami_00000086 | chip=ede51cf1_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 187/400] uid=8ce0c666-47de-4c12-993f-9929f92e8a56 | palu-tsunami_00000009 | chip=8ce0c666_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 188/400] uid=4671f262-d7cf-4152-bb62-612b4c0dd830 | palu-tsunami_00000019 | chip=4671f262_pasca.png | xBD=destroyed | kelas=hancur | 1.9s
+[ 189/400] uid=239f9fd1-8009-449e-8d95-df64d7f0dfbd | palu-tsunami_00000047 | chip=239f9fd1_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 190/400] uid=852d4955-6006-4efd-b996-a1bca3bedf8e | palu-tsunami_00000083 | chip=852d4955_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 191/400] uid=87c405c9-4fc7-4e23-92f7-4f74d907052f | palu-tsunami_00000059 | chip=87c405c9_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 192/400] uid=f75c4b2c-be7d-49e1-bbd3-f687dc0910d9 | palu-tsunami_00000081 | chip=f75c4b2c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 193/400] uid=029e0b3f-9a6b-449f-8db5-38a4e0e056b1 | palu-tsunami_00000029 | chip=029e0b3f_pasca.png | xBD=major-damage | kelas=hancur | 1.8s
+[ 194/400] uid=05016e69-a7fd-4980-99f8-2beb396c79f5 | palu-tsunami_00000024 | chip=05016e69_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 195/400] uid=01607446-9050-4e03-a242-b15f33523c18 | palu-tsunami_00000096 | chip=01607446_pasca.png | xBD=major-damage | kelas=rusak | +fitur | 4.6s
+[ 196/400] uid=31124671-c8a4-44bc-acb6-ce8384738718 | palu-tsunami_00000023 | chip=31124671_pasca.png | xBD=major-damage | kelas=rusak | +fitur | 4.4s
+[ 197/400] uid=8fa8a4f6-c3a9-45c0-a949-5422d6734e52 | palu-tsunami_00000093 | chip=8fa8a4f6_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 198/400] uid=03d730eb-28f0-4772-bbe5-341008d58344 | palu-tsunami_00000060 | chip=03d730eb_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 199/400] uid=1b39e92b-dcaa-430c-9797-9051fb433929 | palu-tsunami_00000115 | chip=1b39e92b_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 200/400] uid=a282f949-03c0-4738-8d5c-dc29571976c1 | palu-tsunami_00000125 | chip=a282f949_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 201/400] uid=e656feac-474c-4fba-9269-7e2048f5ef70 | palu-tsunami_00000060 | chip=e656feac_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 202/400] uid=13ecab57-6538-4139-adbd-7b61857ae7c3 | palu-tsunami_00000030 | chip=13ecab57_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 203/400] uid=00b4a486-0e41-4a7e-84fd-20f7181e35c2 | palu-tsunami_00000015 | chip=00b4a486_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.5s
+[ 204/400] uid=d7b1543b-ba32-40dc-9dae-fb0fbbcccbce | palu-tsunami_00000118 | chip=d7b1543b_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.6s
+[ 205/400] uid=6ab7c7b7-0554-41eb-8930-950edb28e599 | palu-tsunami_00000065 | chip=6ab7c7b7_pasca.png | xBD=destroyed | kelas=rusak | 1.7s
+[ 206/400] uid=bddaa811-c513-47f2-b276-9fe466625717 | palu-tsunami_00000060 | chip=bddaa811_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 207/400] uid=e9950e15-c39b-4e94-b96d-fee136624fc8 | palu-tsunami_00000091 | chip=e9950e15_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 208/400] uid=59c66501-1af4-488d-a7b9-ae90ec1a5e0e | palu-tsunami_00000059 | chip=59c66501_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 209/400] uid=f059b9b6-3d8b-4793-9730-51d25b57ec79 | palu-tsunami_00000131 | chip=f059b9b6_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 210/400] uid=79169a42-6a5d-4f8c-a667-88e3e9dd687c | palu-tsunami_00000088 | chip=79169a42_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 211/400] uid=98ccb3c9-d780-4189-ae55-6d4924af834e | palu-tsunami_00000048 | chip=98ccb3c9_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 212/400] uid=f3750a21-abf9-4c8b-8fa2-20a80ecd877f | palu-tsunami_00000088 | chip=f3750a21_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 213/400] uid=ba9a502a-e0fa-464b-b4e6-98995f5e9f55 | palu-tsunami_00000013 | chip=ba9a502a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 214/400] uid=ab6d762f-118a-44d4-840a-e30d7f72397b | palu-tsunami_00000112 | chip=ab6d762f_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 215/400] uid=b8af4a95-4342-4656-be23-9279960a8447 | palu-tsunami_00000047 | chip=b8af4a95_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 216/400] uid=8a8edcb7-09dd-40c2-a507-bf54c51d4a34 | palu-tsunami_00000044 | chip=8a8edcb7_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 217/400] uid=854740bd-5743-49ae-9a39-a4b8330c6a7d | palu-tsunami_00000015 | chip=854740bd_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 218/400] uid=477fa42b-a5bb-47b3-9379-7a38d25888e7 | palu-tsunami_00000131 | chip=477fa42b_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 219/400] uid=fc470d14-acc4-4db6-a490-278165fdfe6c | palu-tsunami_00000088 | chip=fc470d14_pasca.png | xBD=major-damage | kelas=rusak | +fitur | 4.5s
+[ 220/400] uid=926d3932-895d-4f42-8422-337c451016ab | palu-tsunami_00000060 | chip=926d3932_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 221/400] uid=6d161938-cd73-4eae-b7c4-7d81f2cf3e8f | palu-tsunami_00000042 | chip=6d161938_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 222/400] uid=43613856-9acf-4b0d-a064-7d76d7cac77e | palu-tsunami_00000058 | chip=43613856_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.1s
+[ 223/400] uid=41889edb-d681-4dfe-b14b-efcc3380950c | palu-tsunami_00000008 | chip=41889edb_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 224/400] uid=c847caaa-05f2-42b7-b0ac-e3d7e034d4fc | palu-tsunami_00000095 | chip=c847caaa_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 225/400] uid=e315dd32-dea8-407a-a0a1-c71986585eeb | palu-tsunami_00000002 | chip=e315dd32_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 226/400] uid=2417fabc-0afa-45b8-bea6-8cfc55dcccd5 | palu-tsunami_00000067 | chip=2417fabc_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 227/400] uid=accb64c6-4302-4baf-a63b-dd38d823a83b | palu-tsunami_00000097 | chip=accb64c6_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 228/400] uid=9b7c839d-df4d-49b3-b819-98ba41f00d1b | palu-tsunami_00000060 | chip=9b7c839d_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 229/400] uid=bb19ecfc-910b-4913-af58-f759555e68e9 | palu-tsunami_00000073 | chip=bb19ecfc_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 230/400] uid=dfb37a26-4607-4cbd-8fdd-c92abaf7918e | palu-tsunami_00000030 | chip=dfb37a26_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 231/400] uid=fc2033e9-2d5b-4bf2-b8bb-03648682fe6b | palu-tsunami_00000029 | chip=fc2033e9_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 232/400] uid=d1aae4fc-1143-42cf-b397-97d261ab8cf2 | palu-tsunami_00000069 | chip=d1aae4fc_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.5s
+[ 233/400] uid=3246bb76-bfda-4e54-ae97-6f832f3d050d | palu-tsunami_00000019 | chip=3246bb76_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 234/400] uid=d844a615-b3b3-40fc-90d0-40c1eb2162fb | palu-tsunami_00000098 | chip=d844a615_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 235/400] uid=8c4f23e4-128d-41eb-923f-2dcaec4d1b23 | palu-tsunami_00000068 | chip=8c4f23e4_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 236/400] uid=9dbde1a7-8653-4a38-ab5a-2d07f8330fd3 | palu-tsunami_00000115 | chip=9dbde1a7_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 237/400] uid=9700d051-cf6f-4133-8ff5-64636ff12feb | palu-tsunami_00000018 | chip=9700d051_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 238/400] uid=796d6fb6-46e9-4fc8-87d2-30b222ea460e | palu-tsunami_00000143 | chip=796d6fb6_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 239/400] uid=da17418a-e890-4acb-aec6-cd501b8f7b59 | palu-tsunami_00000018 | chip=da17418a_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 240/400] uid=6c2f2174-d0d5-41ec-81d7-ef59969697a6 | palu-tsunami_00000073 | chip=6c2f2174_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 241/400] uid=409cd2a6-bbb1-495d-96af-c38d98f39bcf | palu-tsunami_00000031 | chip=409cd2a6_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 242/400] uid=5edce977-bfb7-470e-8637-e890270f2a7b | palu-tsunami_00000147 | chip=5edce977_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 243/400] uid=df38051f-a16a-49a5-94bd-da38847ad2fd | palu-tsunami_00000013 | chip=df38051f_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 244/400] uid=6f30c85f-c67e-479c-8590-cef140d93bfe | palu-tsunami_00000093 | chip=6f30c85f_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 245/400] uid=303ea1c4-8e52-48b4-864d-e8922c061762 | palu-tsunami_00000152 | chip=303ea1c4_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 246/400] uid=f9ffc4e0-4cf1-4d2c-898d-27bafade6c27 | palu-tsunami_00000113 | chip=f9ffc4e0_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 247/400] uid=5f9e1dcc-00a1-4c04-bf73-1ddfa5d9e6fc | palu-tsunami_00000147 | chip=5f9e1dcc_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 248/400] uid=ca13f7bd-8113-4865-aaea-a1c914e5467e | palu-tsunami_00000068 | chip=ca13f7bd_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.1s
+[ 249/400] uid=64419c1d-328a-4254-9aab-531280f43283 | palu-tsunami_00000122 | chip=64419c1d_pasca.png | xBD=destroyed | kelas=tidak_rusak | 1.9s
+[ 250/400] uid=5248ed4e-4ae6-4c6e-a1d4-9ddedec6f202 | palu-tsunami_00000018 | chip=5248ed4e_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 251/400] uid=70e989ba-ae90-4746-b71b-f0966e07ba46 | palu-tsunami_00000074 | chip=70e989ba_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 252/400] uid=7d1868d1-ca95-4d92-8ad1-10d7f9c5905d | palu-tsunami_00000069 | chip=7d1868d1_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 253/400] uid=292db6c8-acbd-47ee-8288-a9476442b784 | palu-tsunami_00000070 | chip=292db6c8_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 254/400] uid=9ad3ced0-25d8-4099-8be6-6d87a0e199a1 | palu-tsunami_00000143 | chip=9ad3ced0_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[ 255/400] uid=8730c58a-fb36-4c55-87a1-2c0d7fe0477d | palu-tsunami_00000140 | chip=8730c58a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 256/400] uid=6147bf59-0050-4c9b-b43f-72e8bfaa2f64 | palu-tsunami_00000131 | chip=6147bf59_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 257/400] uid=836baf32-32c6-45ff-b64f-d18db2fde2ac | palu-tsunami_00000147 | chip=836baf32_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 258/400] uid=22fe49c8-edb6-4f71-86fc-f0577f573e25 | palu-tsunami_00000017 | chip=22fe49c8_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 259/400] uid=250206d0-98e5-48f3-93a8-7b05db9024ed | palu-tsunami_00000136 | chip=250206d0_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 260/400] uid=1bb99e85-9182-4461-aeba-993a7b01252c | palu-tsunami_00000105 | chip=1bb99e85_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 261/400] uid=79d181bc-003a-4e32-808b-e5637b4de915 | palu-tsunami_00000122 | chip=79d181bc_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 262/400] uid=be55fe90-d863-4aad-8ece-3ddb18b3abf0 | palu-tsunami_00000078 | chip=be55fe90_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 263/400] uid=bcdccb05-d76f-49a0-a2a2-87fba13ca154 | palu-tsunami_00000095 | chip=bcdccb05_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 264/400] uid=953b8cc1-c899-49ac-9e8c-ee44f99a5f51 | palu-tsunami_00000116 | chip=953b8cc1_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 265/400] uid=ad6ba8f6-c625-460d-ab99-2aa3fc4eb564 | palu-tsunami_00000105 | chip=ad6ba8f6_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 266/400] uid=7d458e1e-1e20-4073-9390-fa2cdfb0109a | palu-tsunami_00000038 | chip=7d458e1e_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 267/400] uid=38ade0ec-2ab1-4fc3-8170-9f81246b3aaa | palu-tsunami_00000093 | chip=38ade0ec_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 268/400] uid=3914cc69-8cde-405d-a61c-77818931d371 | palu-tsunami_00000019 | chip=3914cc69_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 269/400] uid=8b47e2e9-71b4-48b2-8b1a-86facc1758cd | palu-tsunami_00000113 | chip=8b47e2e9_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[ 270/400] uid=7c2e6a78-b6cc-4780-b10c-70f0fcdb7da7 | palu-tsunami_00000120 | chip=7c2e6a78_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 271/400] uid=eed33638-2408-4ddb-ba62-9e7f7b3454d9 | palu-tsunami_00000047 | chip=eed33638_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 272/400] uid=5d8f66be-8f7d-4712-8882-7a5520bf2dcd | palu-tsunami_00000112 | chip=5d8f66be_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 273/400] uid=ebd40f13-6637-4102-8442-3530de4962b7 | palu-tsunami_00000136 | chip=ebd40f13_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 274/400] uid=d395fdd8-3342-41ba-9bae-8bc4cf071507 | palu-tsunami_00000063 | chip=d395fdd8_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 275/400] uid=6244adba-af11-47db-b564-1aa50fdc3581 | palu-tsunami_00000086 | chip=6244adba_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 276/400] uid=1826c6da-c6db-4783-bc88-f8bac7ec72b8 | palu-tsunami_00000054 | chip=1826c6da_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 277/400] uid=00070296-5b19-4e93-b958-cf981b0ab24e | palu-tsunami_00000069 | chip=00070296_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 278/400] uid=58cc3d34-bf6a-428a-9de6-bfb27301e98b | palu-tsunami_00000031 | chip=58cc3d34_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[ 279/400] uid=3eab4aa5-f755-4b25-a55c-7c0c09c8a5ed | palu-tsunami_00000070 | chip=3eab4aa5_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 280/400] uid=74417724-f086-4a9e-aee1-1929c3916ddc | palu-tsunami_00000068 | chip=74417724_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 281/400] uid=1e4b2e7c-f9bb-4022-9212-f7185bb3d2ca | palu-tsunami_00000094 | chip=1e4b2e7c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 282/400] uid=9c98dd4a-2fcd-45e4-8bab-43286005e231 | palu-tsunami_00000033 | chip=9c98dd4a_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 283/400] uid=94f80924-81af-4189-b2d1-9bef38ec61fb | palu-tsunami_00000080 | chip=94f80924_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 284/400] uid=6eadc597-0fef-4b3b-9df5-c4e362f20bec | palu-tsunami_00000044 | chip=6eadc597_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 285/400] uid=74b9937e-c425-4eca-85ea-4f9084fbed2d | palu-tsunami_00000093 | chip=74b9937e_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 286/400] uid=b4ca3535-7cd8-4e8f-ab57-6919cbd2d6a8 | palu-tsunami_00000068 | chip=b4ca3535_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 287/400] uid=6ab9387c-a133-471e-877e-e2ba7bdbc192 | palu-tsunami_00000064 | chip=6ab9387c_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 288/400] uid=0cc50ed3-f1e1-4273-9a6f-3f98a3863d7c | palu-tsunami_00000093 | chip=0cc50ed3_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 289/400] uid=1f33362b-8fe4-4492-9bfd-789baaab5051 | palu-tsunami_00000151 | chip=1f33362b_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 290/400] uid=15a74ecf-eb2c-43eb-a374-07b9e655d614 | palu-tsunami_00000069 | chip=15a74ecf_pasca.png | xBD=destroyed | kelas=tidak_rusak | +fitur | 5.0s
+[ 291/400] uid=a5625bbf-6fb0-4d37-a3a0-c2e1ad06fa3a | palu-tsunami_00000058 | chip=a5625bbf_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 292/400] uid=f8399561-89e2-4f05-b348-47448af80343 | palu-tsunami_00000045 | chip=f8399561_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 293/400] uid=9701a705-dbec-4cbe-903e-400dc6b8e895 | palu-tsunami_00000087 | chip=9701a705_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 294/400] uid=a7b64357-58a5-4619-977a-0829e21c33db | palu-tsunami_00000068 | chip=a7b64357_pasca.png | xBD=destroyed | kelas=tidak_rusak | 1.9s
+[ 295/400] uid=4ecf4f25-1142-4631-9bae-8e1e192430a5 | palu-tsunami_00000020 | chip=4ecf4f25_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 296/400] uid=b0250b9c-507d-441c-bec0-323505679401 | palu-tsunami_00000088 | chip=b0250b9c_pasca.png | xBD=major-damage | kelas=tidak_rusak | +fitur | 4.9s
+[ 297/400] uid=a662d13f-1856-4f18-9169-3b55c9577a1e | palu-tsunami_00000147 | chip=a662d13f_pasca.png | xBD=no-damage | kelas=rusak | +fitur | 4.4s
+[ 298/400] uid=4176eb67-f4cf-4b45-b9a6-79d09d967423 | palu-tsunami_00000115 | chip=4176eb67_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 299/400] uid=5bfa47bc-7177-4524-b58a-5183aace5be1 | palu-tsunami_00000124 | chip=5bfa47bc_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 300/400] uid=a06be781-68fa-4a01-bd3b-edcf8f0203f6 | palu-tsunami_00000131 | chip=a06be781_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 301/400] uid=b3d4e8f9-5986-43a4-abe2-0c69d72beaab | palu-tsunami_00000124 | chip=b3d4e8f9_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 302/400] uid=9dc37898-7334-49f8-9232-0797a30578be | palu-tsunami_00000150 | chip=9dc37898_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 303/400] uid=b62e1ad1-7490-423e-a981-5f2bb13f6e46 | palu-tsunami_00000085 | chip=b62e1ad1_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 304/400] uid=b9f5a18f-6587-426e-8b00-be06048a6bd6 | palu-tsunami_00000126 | chip=b9f5a18f_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 305/400] uid=d555f4c2-9d85-4361-8f4c-3580096f72a2 | palu-tsunami_00000137 | chip=d555f4c2_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 306/400] uid=9578cc59-60c2-47af-a9d9-bdf58cbbe3f0 | palu-tsunami_00000067 | chip=9578cc59_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 307/400] uid=f863ffed-9bc0-43f4-aebb-964176b78c0b | palu-tsunami_00000081 | chip=f863ffed_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 308/400] uid=5ca09e68-7ec6-4fa9-a1b9-c6c4b2b8da69 | palu-tsunami_00000084 | chip=5ca09e68_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.9s
+[ 309/400] uid=287f34c2-e7a8-41e2-8545-44d3ac813c19 | palu-tsunami_00000038 | chip=287f34c2_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 310/400] uid=94c3e08e-902a-4037-b907-26e6b0fc0d46 | palu-tsunami_00000138 | chip=94c3e08e_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 311/400] uid=677514f0-3c41-4e6b-984f-ccbf9c80add7 | palu-tsunami_00000150 | chip=677514f0_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 312/400] uid=17383de8-59d5-4d33-953c-98ea89718220 | palu-tsunami_00000081 | chip=17383de8_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 313/400] uid=f80d43b7-017e-46c8-8d70-bc6ea43b03f9 | palu-tsunami_00000013 | chip=f80d43b7_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 314/400] uid=707eb9f3-0ce4-4176-a947-a67f7fdc005b | palu-tsunami_00000012 | chip=707eb9f3_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 315/400] uid=51a5909d-44ef-4e26-9100-29850ac35299 | palu-tsunami_00000013 | chip=51a5909d_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 316/400] uid=afb5eb63-a298-4cbd-b45a-ce3c0c480ea9 | palu-tsunami_00000070 | chip=afb5eb63_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 317/400] uid=36847721-411e-46c1-b734-736edd5a6000 | palu-tsunami_00000117 | chip=36847721_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 318/400] uid=bf3ac1a5-14db-470d-9fbc-7669c6b481bb | palu-tsunami_00000112 | chip=bf3ac1a5_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 319/400] uid=a424d5a5-a01e-49b9-908f-c9f6b797a4f5 | palu-tsunami_00000013 | chip=a424d5a5_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 320/400] uid=2bf99a38-cb3f-444d-ac97-50c7ad82f8eb | palu-tsunami_00000051 | chip=2bf99a38_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 321/400] uid=8294d7a5-5351-4162-8dd1-ec05b018da18 | palu-tsunami_00000131 | chip=8294d7a5_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.5s
+[ 322/400] uid=e850ed4c-f6d1-4348-b49b-8b16f70e91bd | palu-tsunami_00000093 | chip=e850ed4c_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 323/400] uid=9652be41-bec3-4c81-9e69-6e33054ee059 | palu-tsunami_00000113 | chip=9652be41_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 324/400] uid=47112904-b181-4bfe-a5e3-f090e0f8b0ab | palu-tsunami_00000018 | chip=47112904_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 325/400] uid=09971930-8fb9-49c5-852b-b72cea0a2a7d | palu-tsunami_00000109 | chip=09971930_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 326/400] uid=b150a465-cefa-411c-a0fe-d662e3b0b878 | palu-tsunami_00000060 | chip=b150a465_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 327/400] uid=1eaaa8c6-ffbc-4bef-aa00-fc5c1c86c104 | palu-tsunami_00000047 | chip=1eaaa8c6_pasca.png | xBD=major-damage | kelas=hancur | +fitur | 4.7s
+[ 328/400] uid=1f862d1f-f99e-48a2-a41b-a48fbb9b9fd8 | palu-tsunami_00000056 | chip=1f862d1f_pasca.png | xBD=destroyed | kelas=hancur | +fitur | 4.5s
+[ 329/400] uid=c0e97bed-1c46-4ec4-94bd-5df653c688b2 | palu-tsunami_00000063 | chip=c0e97bed_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 330/400] uid=e8f622ef-1af9-4a2e-b911-df7d36c9031c | palu-tsunami_00000041 | chip=e8f622ef_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 331/400] uid=99b1f3dd-5d7d-47c5-943b-98b248ec39b2 | palu-tsunami_00000125 | chip=99b1f3dd_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 332/400] uid=7b0f0d47-0055-4554-ad2c-8148c601a2e2 | palu-tsunami_00000018 | chip=7b0f0d47_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 333/400] uid=9a9ab98f-d154-4dd9-97db-d414252da0cd | palu-tsunami_00000005 | chip=9a9ab98f_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.9s
+[ 334/400] uid=ba43aa9f-76f3-47b0-8d9a-21b2d1629117 | palu-tsunami_00000131 | chip=ba43aa9f_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 335/400] uid=6016c190-feea-4642-bb56-6a25d62ca990 | palu-tsunami_00000053 | chip=6016c190_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 336/400] uid=91327329-95b5-4239-afde-f5753be60de0 | palu-tsunami_00000045 | chip=91327329_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 337/400] uid=030f66ae-6f0d-4ea9-8121-181bc2d0f243 | palu-tsunami_00000079 | chip=030f66ae_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 338/400] uid=5da861c3-9196-4927-bbeb-177649ab7575 | palu-tsunami_00000062 | chip=5da861c3_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 339/400] uid=d97ecd27-fa4f-4df4-b325-006db4b551e0 | palu-tsunami_00000085 | chip=d97ecd27_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 340/400] uid=649deef6-17d8-4013-ba1c-e9646465e5ec | palu-tsunami_00000068 | chip=649deef6_pasca.png | xBD=no-damage | kelas=hancur | +fitur | 4.4s
+[ 341/400] uid=9f647ef2-0b01-4a11-a7ae-3e1000f435c5 | palu-tsunami_00000113 | chip=9f647ef2_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 342/400] uid=12ee9720-0c37-46e7-a86f-868dc1490556 | palu-tsunami_00000089 | chip=12ee9720_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 343/400] uid=1af88e5a-d861-40a0-9aa9-bccb2612ca3d | palu-tsunami_00000115 | chip=1af88e5a_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[ 344/400] uid=03c79e38-ccf3-47d7-bf7f-4186223661c8 | palu-tsunami_00000140 | chip=03c79e38_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 345/400] uid=e6e7830a-f119-4c08-a45e-6579d9b9e7b6 | palu-tsunami_00000002 | chip=e6e7830a_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 346/400] uid=8c999bfc-b430-472d-aef6-9c7ca14fcddb | palu-tsunami_00000150 | chip=8c999bfc_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 347/400] uid=07f949bd-7371-46de-af73-eec6e153e867 | palu-tsunami_00000125 | chip=07f949bd_pasca.png | xBD=major-damage | kelas=rusak | +fitur | 4.6s
+[ 348/400] uid=b8525a43-31f9-4752-8e5b-fc9c13efe4cc | palu-tsunami_00000020 | chip=b8525a43_pasca.png | xBD=destroyed | kelas=hancur | 1.6s
+[ 349/400] uid=378f4359-53ac-4290-9c48-bd2b5fdff8f7 | palu-tsunami_00000031 | chip=378f4359_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[ 350/400] uid=608dfb77-4c5e-4bb3-b263-3ae1e443c8ae | palu-tsunami_00000012 | chip=608dfb77_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.8s
+[ 351/400] uid=ee1a2cb3-89a0-445b-af73-f3f9eaa4be57 | palu-tsunami_00000015 | chip=ee1a2cb3_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 352/400] uid=dce502a3-b179-43e4-9193-0df858d9be8d | palu-tsunami_00000045 | chip=dce502a3_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 353/400] uid=767a2aba-4531-46e2-9a55-9db31e0c740d | palu-tsunami_00000029 | chip=767a2aba_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 354/400] uid=b00758f4-3113-41a6-ad6f-35081f857bf2 | palu-tsunami_00000132 | chip=b00758f4_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 355/400] uid=077b3c02-bc20-4db5-a877-a975a3c0febf | palu-tsunami_00000138 | chip=077b3c02_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 356/400] uid=36030249-0b40-481d-8476-ba9d9e24df8e | palu-tsunami_00000031 | chip=36030249_pasca.png | xBD=major-damage | kelas=rusak | 1.7s
+[ 357/400] uid=36fbf3de-2812-40f0-ad1b-8e4fe1f2a4a8 | palu-tsunami_00000095 | chip=36fbf3de_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.9s
+[ 358/400] uid=3188cba6-bbec-411c-a1df-f16197ff41d9 | palu-tsunami_00000008 | chip=3188cba6_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 359/400] uid=1ada4b75-fa3c-49d6-984c-b2b825e39ca4 | palu-tsunami_00000136 | chip=1ada4b75_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 360/400] uid=bd817594-7a85-4da5-8250-9e5eff891ada | palu-tsunami_00000138 | chip=bd817594_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 361/400] uid=9b9039b6-d5a4-4050-9b9f-81e521b61517 | palu-tsunami_00000125 | chip=9b9039b6_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 362/400] uid=039d3208-1b35-43fd-823f-ee4738c220b3 | palu-tsunami_00000054 | chip=039d3208_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 363/400] uid=5463d68c-c9ed-4a92-ba77-746d3b238666 | palu-tsunami_00000112 | chip=5463d68c_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 364/400] uid=c32a2fb5-c37f-414b-8d99-cd5a83a58fb1 | palu-tsunami_00000138 | chip=c32a2fb5_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 365/400] uid=af428651-b316-4018-83bb-6ef9ba44971c | palu-tsunami_00000091 | chip=af428651_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 366/400] uid=6346c2cf-15cc-4d7c-9269-546cc9500158 | palu-tsunami_00000065 | chip=6346c2cf_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 367/400] uid=2623d079-8ca1-4a05-9fa3-c172692f69a4 | palu-tsunami_00000081 | chip=2623d079_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 4.9s
+[ 368/400] uid=149d522b-ccfc-408f-901f-f9c7d558aef0 | palu-tsunami_00000017 | chip=149d522b_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 369/400] uid=51bdb54b-aef1-4f0e-8e93-10fb8ebbdb99 | palu-tsunami_00000098 | chip=51bdb54b_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 370/400] uid=16bdb877-d043-4dbc-b7dc-20cb12fd6824 | palu-tsunami_00000126 | chip=16bdb877_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 371/400] uid=d880525f-ce55-4ace-ad9a-a924a6504301 | palu-tsunami_00000065 | chip=d880525f_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 372/400] uid=57f305e0-f35d-4aa5-bcca-c9875f5ae56b | palu-tsunami_00000064 | chip=57f305e0_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 373/400] uid=07ed7ec9-f592-4b57-b242-6bf3013c6d0a | palu-tsunami_00000131 | chip=07ed7ec9_pasca.png | xBD=destroyed | kelas=rusak | 1.6s
+[ 374/400] uid=26239d40-8aed-4657-9410-e45933a6a035 | palu-tsunami_00000099 | chip=26239d40_pasca.png | xBD=no-damage | kelas=tidak_rusak | +fitur | 5.0s
+[ 375/400] uid=ba5c62a4-16e2-4959-afe1-b97c28b9c3f6 | palu-tsunami_00000143 | chip=ba5c62a4_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 376/400] uid=73688f49-60c1-449a-a08e-7b969cd47cc3 | palu-tsunami_00000138 | chip=73688f49_pasca.png | xBD=no-damage | kelas=rusak | 1.6s
+[ 377/400] uid=a0c2fac3-34e2-48c8-990a-fb1e64a81a31 | palu-tsunami_00000030 | chip=a0c2fac3_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 378/400] uid=fae99288-93fb-4bb4-8ef2-4da8b637b5ee | palu-tsunami_00000114 | chip=fae99288_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 379/400] uid=c74ba0a1-f438-4df5-9408-41bfebd5e9a4 | palu-tsunami_00000136 | chip=c74ba0a1_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 380/400] uid=7f4fa216-ea18-4c95-a162-649650b546e7 | palu-tsunami_00000056 | chip=7f4fa216_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 381/400] uid=7c22cb94-b937-493f-a1db-f5cdaae0fce7 | palu-tsunami_00000020 | chip=7c22cb94_pasca.png | xBD=destroyed | kelas=hancur | 1.7s
+[ 382/400] uid=c5acca68-71fa-4da7-9940-2b585375a794 | palu-tsunami_00000130 | chip=c5acca68_pasca.png | xBD=major-damage | kelas=tidak_rusak | 1.9s
+[ 383/400] uid=da767b15-1261-4d3c-8218-4fcf389cf25a | palu-tsunami_00000067 | chip=da767b15_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 384/400] uid=386d694a-a39d-4c4c-9277-df2d318940a2 | palu-tsunami_00000072 | chip=386d694a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 385/400] uid=2c635280-450d-4c7f-845a-05193a3dad13 | palu-tsunami_00000054 | chip=2c635280_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 386/400] uid=e77615a5-ee58-4e0f-b30f-c775e49236ff | palu-tsunami_00000125 | chip=e77615a5_pasca.png | xBD=major-damage | kelas=rusak | 1.6s
+[ 387/400] uid=b3126d3d-2508-4aac-925c-a356bec29ded | palu-tsunami_00000041 | chip=b3126d3d_pasca.png | xBD=no-damage | kelas=hancur | 1.7s
+[ 388/400] uid=8e069ffe-34b0-4626-8a73-bf552987215f | palu-tsunami_00000073 | chip=8e069ffe_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 389/400] uid=3d830bad-c177-469b-ad7f-097e36f19fda | palu-tsunami_00000085 | chip=3d830bad_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 390/400] uid=55806a9c-6c01-411f-b832-16b71c34083e | palu-tsunami_00000063 | chip=55806a9c_pasca.png | xBD=major-damage | kelas=hancur | 1.8s
+[ 391/400] uid=b9bd1c5e-cfb4-4852-ae36-74367e659f4e | palu-tsunami_00000147 | chip=b9bd1c5e_pasca.png | xBD=destroyed | kelas=tidak_rusak | 1.9s
+[ 392/400] uid=b86077b8-9428-4ee9-9a77-99d0d40ec55d | palu-tsunami_00000084 | chip=b86077b8_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 393/400] uid=3a506920-6378-4828-9a3a-f77b00b9b7b7 | palu-tsunami_00000056 | chip=3a506920_pasca.png | xBD=major-damage | kelas=hancur | 1.7s
+[ 394/400] uid=7044cda1-8160-4169-baea-80cac68c9dca | palu-tsunami_00000126 | chip=7044cda1_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 395/400] uid=08438f40-1d98-47ea-b1c2-4109a730814f | palu-tsunami_00000058 | chip=08438f40_pasca.png | xBD=no-damage | kelas=tidak_rusak | 2.0s
+[ 396/400] uid=1c64b422-ce18-41c5-9224-0c5ac5627e0e | palu-tsunami_00000037 | chip=1c64b422_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s
+[ 397/400] uid=77152218-a840-41db-9863-80a7ffa7cdc2 | palu-tsunami_00000140 | chip=77152218_pasca.png | xBD=no-damage | kelas=rusak | 1.7s
+[ 398/400] uid=9b75aade-0643-41cb-9bca-c82710fb814f | palu-tsunami_00000053 | chip=9b75aade_pasca.png | xBD=destroyed | kelas=hancur | 1.8s
+[ 399/400] uid=3652ef3d-36d9-4181-a211-b0c675bbae45 | palu-tsunami_00000120 | chip=3652ef3d_pasca.png | xBD=major-damage | kelas=tidak_rusak | 2.0s
+[ 400/400] uid=eb47eb9a-621d-4b6a-ba6b-db95bb5c3caf | palu-tsunami_00000097 | chip=eb47eb9a_pasca.png | xBD=no-damage | kelas=tidak_rusak | 1.9s

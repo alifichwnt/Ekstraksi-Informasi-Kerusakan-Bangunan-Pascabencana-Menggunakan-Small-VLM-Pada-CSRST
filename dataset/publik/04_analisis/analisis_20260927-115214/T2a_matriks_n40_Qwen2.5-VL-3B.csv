@@ -1,0 +1,4 @@
+﻿,tidak_rusak,rusak,hancur,tidak_sah
+xBD:tidak_rusak,0,0,20,0
+xBD:rusak,0,0,10,0
+xBD:hancur,1,0,9,0

@@ -1,0 +1,320 @@
+{
+  "_catatan": "SATU SUMBER KEBENARAN untuk daftar fitur beserta definisi operasionalnya. Prompt model, skema JSON keluaran, butir formulir evaluator, dan Tabel Definisi Operasional Bab 3 semuanya dibangkitkan dari berkas ini oleh 04_susun_prompt.py. Jangan pernah mengetik ulang daftar fitur atau levelnya di tempat lain.",
+  "seleksi": {
+    "status": "BELUM DIISI",
+    "jumlah_terpilih": 4,
+    "_dasar_jumlah": "Ketetapan peneliti, bukan bagian penilaian. Dua dasarnya: (1) batas teknis model, pengujian 21 September menunjukkan model 2-3 miliar parameter gagal menjawab ketika diminta menilai enam fitur sekaligus dalam satu prompt; (2) beban evaluator, setiap evaluator menilai 40 chip. Pembimbing pada 22 September menyatakan empat fitur sudah memadai.",
+    "penilai": {
+      "ahli": "Dosen pembimbing (belum diisi)",
+      "kedua": "Rizky Alif Ichwanto, peneliti (belum diisi pada daftar 10 kandidat)"
+    },
+    "aturan_seri": "Peringkat dihitung otomatis dari skor Likert, sehingga skor sama menghasilkan peringkat sama. Bila jumlah fitur yang masuk empat besar melebihi empat karena seri, peneliti menghubungi penilai untuk menentukan urutan di antara yang seri saja.",
+    "terpilih": []
+  },
+  "kelas": {
+    "enum": [
+      "tidak_rusak",
+      "rusak",
+      "hancur"
+    ],
+    "skala_ukur": "ordinal",
+    "kode_tak_teramati": "tidak_jelas",
+    "pemetaan_xbd": {
+      "no-damage": "tidak_rusak",
+      "major-damage": "rusak",
+      "destroyed": "hancur"
+    },
+    "kelas_xbd_dikecualikan": {
+      "minor-damage": "n=1 pada subset Palu, tidak dapat mewakili kelas",
+      "un-classified": "n=611, tidak memiliki label kerusakan"
+    },
+    "pemetaan_biner": {
+      "tidak_rusak": "tidak_rusak",
+      "rusak": "rusak",
+      "hancur": "rusak"
+    },
+    "rubrik": {
+      "tidak_rusak": "Bangunan tampak sama dengan kondisi pra-bencana. Atap utuh, tapak bangunan tidak berubah, tidak ada puing di sekitarnya.",
+      "rusak": "Bangunan masih dikenali sebagai bangunan, tetapi sebagian atap atau strukturnya runtuh, atau sebagian tertutup lumpur dan puing.",
+      "hancur": "Bangunan runtuh seluruhnya, hanyut dari tapaknya, atau tidak lagi tampak sebagai struktur bangunan pada citra pasca."
+    },
+    "rujukan_level": "Ketiga kelas adalah padanan satu lawan satu terhadap tiga derajat xBD Joint Damage Scale (Gupta dkk., 2019) yang benar-benar hadir pada subset Palu: no-damage, major-damage, dan destroyed. Derajat minor-damage hanya memiliki satu unit sehingga dikecualikan. Jadi ketiga kelas ini bukan pengelompokan yang dipaksakan pada data, melainkan tepat kelas-kelas yang tersedia. Padanan EMS-98: Grade 1, Grade 3-4, dan Grade 5. Padanan BNPB: tidak rusak, rusak sedang sampai berat, dan rusak total.",
+    "_catatan_biner": "Pemetaan ke biner dipertahankan sebagai analisis sekunder, bukan analisis utama. Keputusan bimbingan 22 September menetapkan tiga kelas sebagai keluaran model."
+  },
+  "kandidat": [
+    {
+      "kunci": "keutuhan_atap",
+      "no": 1,
+      "label": "Keutuhan atap",
+      "kelompok": "Tabel II (proposal)",
+      "enum": [
+        "utuh",
+        "rusak_sebagian",
+        "hilang",
+        "tidak_jelas"
+      ],
+      "definisi": "Kondisi atap bangunan pada citra pasca dibandingkan citra pra: utuh, rusak sebagian, atau hilang sama sekali.",
+      "butuh_pra": true,
+      "golongan": "perubahan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "utuh",
+        "rusak_sebagian",
+        "hilang"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "Progresi xBD no-damage -> major-damage -> destroyed; sejajar EMS-98 Grade 1 -> 3 -> 5. Atap disebut eksplisit sebagai elemen yang dinilai pada xBD dan UNOSAT.",
+      "keteramatan": "BAIK. Atap adalah permukaan yang paling langsung terekam dari arah nadir. Bangunan median 28,9 px pada 0,5 m/px; setelah chip diperbesar ke 448 px, atap tampil sekitar 101 px."
+    },
+    {
+      "kunci": "puing_sekitar",
+      "no": 2,
+      "label": "Puing di sekitar bangunan",
+      "kelompok": "Tabel II (proposal)",
+      "enum": [
+        "tidak_ada",
+        "terbatas_di_sekitar_bangunan",
+        "meluas_menutupi_petak",
+        "tidak_jelas"
+      ],
+      "definisi": "Material berserakan di sekitar bangunan pada citra pasca: tidak ada, terbatas pada halaman dan sekeliling bangunan, atau meluas menutupi sebagian besar petak citra.",
+      "butuh_pra": false,
+      "golongan": "keadaan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_ada",
+        "terbatas_di_sekitar_bangunan",
+        "meluas_menutupi_petak"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "xBD memakai keberadaan puing sebagai penanda major-damage dan destroyed. Tingkatannya dibuat menurut luas sebaran, bukan menurut banyak-sedikitnya material, karena luas sebaran lebih dapat diandalkan antarpenilai pada 0,5 m/px.",
+      "keteramatan": "SEDANG. Berada di luar tapak bangunan sehingga bergantung pada margin jendela chip; jendela 128 px menyediakan margin memadai. Pembedaan terbatas dan meluas paling jelas pada kawasan likuefaksi."
+    },
+    {
+      "kunci": "integritas_tapak_bangunan",
+      "no": 3,
+      "label": "Integritas tapak bangunan",
+      "kelompok": "Tabel II (proposal), peleburan dua kandidat",
+      "golongan": "perubahan",
+      "butuh_pra": true,
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_berubah",
+        "berubah_sebagian",
+        "tidak_lagi_berupa_bangunan"
+      ],
+      "enum": [
+        "tidak_berubah",
+        "berubah_sebagian",
+        "tidak_lagi_berupa_bangunan",
+        "tidak_jelas"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "definisi": "Keadaan garis batas dan keutuhan tapak bangunan pada citra pasca dibandingkan citra pra: tidak berubah, berubah sebagian karena sebagian struktur runtuh, atau tidak lagi tampak sebagai struktur bangunan.",
+      "rujukan_level": "Ketiga tingkat sejajar dengan xBD no-damage, major-damage, dan destroyed, serta EMS-98 Grade 1, Grade 3-4, dan Grade 5. Peleburan atas arahan pembimbing 22 September, menggantikan kandidat Perubahan wujud bangunan dan Bangunan hilang yang sebelumnya terpisah namun bersarang: setiap bangunan hilang pasti berubah wujud, tidak sebaliknya.",
+      "keteramatan": "BAIK. Perubahan garis batas tapak adalah perubahan paling kasar dan paling mudah terbaca pada citra nadir."
+    },
+    {
+      "kunci": "perubahan_radiometri",
+      "no": 4,
+      "label": "Perubahan radiometri",
+      "kelompok": "Tabel II (proposal)",
+      "enum": [
+        "tidak_ada",
+        "sebagian_area_atap",
+        "seluruh_area_atap",
+        "tidak_jelas"
+      ],
+      "definisi": "Perubahan kecerahan atau warna pada area atap antara citra pra dan pasca: tidak ada, terjadi pada sebagian area atap, atau pada seluruh area atap.",
+      "butuh_pra": true,
+      "golongan": "perubahan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_ada",
+        "sebagian_area_atap",
+        "seluruh_area_atap"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "Diturunkan dari teknik deteksi perubahan radiometrik pada pemetaan cepat Copernicus EMS, bukan dari derajat kerusakan. Merupakan indikator TIDAK LANGSUNG: perubahan rona menjadi petunjuk kerusakan hanya bila sebab non-bencana dapat disingkirkan.",
+      "keteramatan": "RENDAH sampai SEDANG, dan PALING TERPAPAR KONFOUND. Azimut matahari bergeser 125,7 -> 96,5 derajat, elevasi naik 56,4 -> 68,8 derajat, resolusi pankromatik berbeda 39 persen. Pengendaliannya: penguncian pada satu pasangan akuisisi, sehingga besaran konfound konstan bagi seluruh unit dan tidak dapat berbeda antarkelas."
+    },
+    {
+      "kunci": "perubahan_tekstur",
+      "no": 5,
+      "label": "Perubahan tekstur",
+      "kelompok": "Tabel II (proposal)",
+      "enum": [
+        "tidak_ada",
+        "sebagian_area_atap",
+        "seluruh_area_atap",
+        "tidak_jelas"
+      ],
+      "definisi": "Perubahan kehalusan permukaan atap antara citra pra dan pasca menjadi lebih kasar atau tidak teratur: tidak ada, pada sebagian area atap, atau pada seluruh area atap.",
+      "butuh_pra": true,
+      "golongan": "perubahan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_ada",
+        "sebagian_area_atap",
+        "seluruh_area_atap"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "Sama seperti perubahan_radiometri: turunan teknik deteksi perubahan, bukan derajat kerusakan.",
+      "keteramatan": "RENDAH. Citra pasca inheren 39 persen lebih kasar (0,704 m berbanding 0,508 m), sehingga tekstur dapat berubah tanpa ada kerusakan sama sekali."
+    },
+    {
+      "kunci": "sedimen_lumpur",
+      "no": 6,
+      "label": "Sedimen atau lumpur pada atap dan halaman",
+      "kelompok": "Tabel II (proposal)",
+      "enum": [
+        "tidak_ada",
+        "menutupi_sebagian",
+        "menutupi_seluruhnya",
+        "tidak_jelas"
+      ],
+      "definisi": "Lapisan sedimen atau lumpur pada atap dan halaman bangunan di citra pasca: tidak ada, menutupi sebagian, atau menutupi seluruh tapak bangunan dan sekitarnya.",
+      "butuh_pra": false,
+      "golongan": "keadaan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_ada",
+        "menutupi_sebagian",
+        "menutupi_seluruhnya"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "xBD menyebut bangunan yang tertutup sebagian sebagai major-damage dan yang tertutup seluruhnya sebagai destroyed, sehingga ketiga tingkat ini sejajar langsung dengan skala tersebut.",
+      "keteramatan": "BAIK. Endapan memiliki rona dan tekstur yang kontras terhadap permukaan sekitarnya; sangat relevan untuk likuefaksi Palu."
+    },
+    {
+      "kunci": "bentuk_dinding",
+      "no": 7,
+      "label": "Bentuk dinding",
+      "kelompok": "Tabel II (proposal)",
+      "enum": [
+        "utuh",
+        "rusak_sebagian",
+        "runtuh",
+        "tidak_jelas"
+      ],
+      "definisi": "Komponen struktural pembatas ruangan; kondisinya utuh, rusak sebagian, atau runtuh.",
+      "butuh_pra": false,
+      "golongan": "keadaan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "utuh",
+        "rusak_sebagian",
+        "runtuh"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "EMS-98 menempatkan keruntuhan dinding sebagai pembeda utama antar-derajat (Grade 3 sampai Grade 5). BNPB juga memakai kondisi dinding sebagai dasar rusak ringan, sedang, dan berat.",
+      "keteramatan": "RENDAH. Pada citra nadir 0,5 m/px dinding umumnya hanya terlihat tidak langsung melalui bayangan. Off-nadir citra pasca 36,4 derajat membuat sisi bangunan sedikit lebih terekspos dibanding citra pra 26,7 derajat, tetapi tetap tidak memadai."
+    },
+    {
+      "kunci": "bangunan_bergeser",
+      "no": 8,
+      "label": "Bangunan bergeser, terputar, atau miring dari tapak semula",
+      "kelompok": "Tambahan: konteks gempa-tsunami",
+      "enum": [
+        "tidak_ada",
+        "miring_atau_terputar",
+        "berpindah_dari_tapak_semula",
+        "tidak_jelas"
+      ],
+      "definisi": "Perubahan posisi atau orientasi bangunan antara citra pra dan pasca: tidak berubah, masih pada tapak semula tetapi miring atau terputar, atau berpindah seluruhnya dari tapak semula.",
+      "butuh_pra": true,
+      "golongan": "perubahan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_ada",
+        "miring_atau_terputar",
+        "berpindah_dari_tapak_semula"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "Fenomena perpindahan bangunan dalam keadaan relatif utuh akibat aliran tanah terlikuefaksi (flowslide) dan rayapan lateral (lateral spreading). Skala kerusakan gempa konvensional seperti EMS-98 tidak mencakupnya karena mengandaikan bangunan tetap pada fondasinya, dan xBD Joint Damage Scale juga tidak memuat derajat khusus untuk perpindahan. Pada gempa Palu 2018 fenomena ini terjadi secara luas di Petobo, Balaroa, dan Jono Oge. RUJUKAN YANG DIAJUKAN (wajib diverifikasi ke sumber asli sebelum dikutip): Bradley dkk. (2019), Nature Geoscience 12:935-939; Watkinson & Hall (2019), Nature Geoscience 12:940-945; Sassa & Takagawa (2019), Landslides 16:195-200; laporan rekognisi GEER untuk gempa Palu-Donggala 2018.",
+      "keteramatan": "SEDANG. Perbedaan off-nadir 26,7 menjadi 36,4 derajat menimbulkan pergeseran tampak 1 sampai 3 piksel pada rumah satu sampai dua lantai, sehingga tingkat miring_atau_terputar harus dibedakan dari artefak geometri. Tingkat berpindah_dari_tapak_semula jauh lebih besar daripada artefak itu sehingga terbaca jelas."
+    },
+    {
+      "kunci": "terbenam_sedimen",
+      "no": 9,
+      "label": "Bangunan terbenam sedimen atau lumpur likuefaksi",
+      "kelompok": "Tambahan: konteks gempa-tsunami",
+      "enum": [
+        "tidak_ada",
+        "terbenam_sebagian",
+        "terbenam_seluruhnya",
+        "tidak_jelas"
+      ],
+      "definisi": "Bangunan tertimbun material lumpur atau pasir akibat likuefaksi: tidak tertimbun, tertimbun sebagian sehingga sebagian batas bangunan kabur, atau tertimbun seluruhnya sehingga batas bangunan hilang.",
+      "butuh_pra": false,
+      "golongan": "keadaan",
+      "skala_ukur": "ordinal",
+      "level": [
+        "tidak_ada",
+        "terbenam_sebagian",
+        "terbenam_seluruhnya"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "Perluasan sedimen_lumpur untuk kasus bangunan tertimbun sebagian atau seluruhnya. xBD memasukkan 'tertutup lumpur' pada derajat destroyed.",
+      "keteramatan": "SEDANG. Batas bangunan menjadi kabur, yang justru menjadi cirinya."
+    },
+    {
+      "kunci": "jejak_sapuan",
+      "no": 10,
+      "label": "Jejak sapuan tsunami di sekitar bangunan",
+      "kelompok": "Tambahan: konteks gempa-tsunami",
+      "enum": [
+        "ada",
+        "tidak_ada",
+        "tidak_jelas"
+      ],
+      "definisi": "Terdapat jalur atau pola sapuan pada permukaan tanah di sekitar bangunan yang menunjukkan aliran air tsunami, termasuk vegetasi rebah searah dan material terseret.",
+      "butuh_pra": false,
+      "golongan": "keadaan",
+      "skala_ukur": "nominal biner",
+      "level": [
+        "ada",
+        "tidak_ada"
+      ],
+      "kode_tak_teramati": "tidak_jelas",
+      "rujukan_level": "Tidak tercakup skala kerusakan bangunan mana pun karena berada di luar bangunan; merupakan indikator konteks paparan, bukan indikator kerusakan struktural. Perlu rujukan literatur tsunami. Dipertahankan biner karena luas jejak sapuan tidak dapat dibedakan secara andal dari pola tanah terbuka lain pada 0,5 m/px; memaksakan tingkatan di sini akan menurunkan keandalan tanpa menambah informasi.",
+      "keteramatan": "SEDANG, terbatas pada zona pesisir Teluk Palu."
+    }
+  ],
+  "skala_pengukuran": {
+    "_prinsip": "Setiap kandidat fitur adalah VARIABEL INDIKATOR: sesuatu yang teramati pada citra, dipakai untuk menyimpulkan tingkat kerusakan struktural yang tidak teramati langsung. Karena itu setiap kandidat wajib memiliki empat hal: definisi operasional, skala ukur, level beserta rujukannya, dan penilaian keteramatan pada 0,5 m/piksel arah nadir.",
+    "kode_tak_teramati": "tidak_jelas",
+    "_aturan_kode_tak_teramati": "'tidak_jelas' BUKAN tingkat kerusakan dan BUKAN anggota skala. Ia adalah kode ketidakteramatan (missing) yang dipakai ketika bangunan sasaran tertutup awan, bayangan pekat, atau vegetasi. Pada analisis ia diperlakukan sebagai missing value dan TIDAK ikut dikodekan sebagai angka pada matriks masukan SHAP. Mengodekannya sebagai kategori terakhir akan membuatnya terbaca sebagai 'lebih rusak daripada level terberat', sehingga atribusi SHAP menjadi tidak sah. Copernicus EMS memisahkan hal yang sama melalui kategori 'Not analysed' di luar skala kerusakan.",
+    "_aturan_penelusuran_level": "Setiap level wajib dapat ditelusuri ke salah satu dari dua hal: (a) derajat pada skala kerusakan bangunan yang sudah baku, atau (b) batas keteramatan pada 0,5 m/piksel arah nadir. Level yang tidak dapat ditelusuri ke keduanya dicoret.",
+    "_peringatan_kutipan": "Rujukan di bawah dicantumkan pada tingkat nama standar dan gagasan pokoknya. Rumusan persis setiap derajat WAJIB diambil dari dokumen aslinya sebelum dikutip di buku skripsi, terutama paper xBD. Jangan mengutip dari berkas konfigurasi ini.",
+    "rujukan_skala": {
+      "EMS-98": "Grunthal, G. (ed., 1998). European Macroseismic Scale 1998. Lima derajat kerusakan bangunan (Grade 1 dapat diabaikan sampai Grade 5 kehancuran). Rujukan dasar penilaian kerusakan bangunan akibat gempa.",
+      "xBD": "Gupta, R. dkk. (2019). xBD: A Dataset for Assessing Building Damage from Satellite Imagery. CVPR Workshops. Joint Damage Scale: no-damage, minor-damage, major-damage, destroyed, masing-masing dengan definisi visual dari citra. INI SKALA YANG DIPAKAI LABEL GROUND TRUTH PENELITIAN INI.",
+      "Copernicus EMS": "Turunan operasional EMS-98 untuk pemetaan cepat berbasis citra: Not affected, Negligible to slight, Moderately damaged, Highly damaged, Completely destroyed, ditambah Not analysed di luar skala.",
+      "UNOSAT": "Skema penilaian kerusakan berbasis citra satelit: Destroyed, Severe damage, Moderate damage, Possible damage.",
+      "BNPB": "Padanan nasional untuk pengkajian kebutuhan pascabencana: rusak ringan, rusak sedang, rusak berat."
+    },
+    "golongan_variabel": {
+      "keadaan": "Dapat dinilai dari citra pasca saja. Tidak memerlukan citra pra.",
+      "perubahan": "Hanya dapat dinilai dengan membandingkan citra pra dan pasca. Bila citra pra tidak diberikan, variabel golongan ini secara definisi tidak dapat dijawab, dan jawaban yang benar adalah kode tak teramati."
+    }
+  },
+  "usulan_revisi": {
+    "status": "SELESAI, disetujui pembimbing 22 September 2026",
+    "catatan": "Peleburan sudah diterapkan pada daftar kandidat."
+  },
+  "riwayat_keputusan": [
+    {
+      "tanggal": "2026-09-22",
+      "sumber": "Bimbingan dengan dosen pembimbing",
+      "butir": [
+        "Kandidat Genangan dihilangkan.",
+        "Kandidat Perubahan wujud bangunan dan Bangunan hilang dilebur menjadi Integritas tapak bangunan.",
+        "Kandidat Bangunan bergeser disetujui dipakai, dengan syarat rujukan akademis yang jelas.",
+        "Kelas kerusakan menjadi tiga: tidak rusak, rusak, hancur, dengan rujukan ilmiah pada Bab 2 dan 3.",
+        "Nilai fitur tidak boleh didominasi skala biner karena berisiko underfitting pada tugas tiga kelas.",
+        "Jumlah fitur terpilih ditetapkan empat."
+      ]
+    }
+  ]
+}

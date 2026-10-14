@@ -1,0 +1,39 @@
+{
+  "run_id": "20260924-112503_dev_bentuk-pertanyaan_v4_b82f43f2",
+  "jenis": "pengembangan",
+  "status": "selesai",
+  "waktu_mulai_utc": "2026-09-24T11:25:03+00:00",
+  "tujuan": "memilih bentuk pertanyaan setelah pilot v4 memberi jawaban konstan",
+  "uid_set_pengembangan": [
+    "6ab7c7b7-0554-41eb-8930-950edb28e599",
+    "0d64220a-1463-4898-ba64-4b6722bb4074",
+    "8b47e2e9-71b4-48b2-8b1a-86facc1758cd",
+    "a424d5a5-a01e-49b9-908f-c9f6b797a4f5",
+    "341e30c4-e010-4bf5-b1d0-d1082b51d082",
+    "8fa8a4f6-c3a9-45c0-a949-5422d6734e52",
+    "53cf370d-1680-456c-ac6a-d427907f2e0f",
+    "5f9e1dcc-00a1-4c04-bf73-1ddfa5d9e6fc",
+    "09971930-8fb9-49c5-852b-b72cea0a2a7d",
+    "9dcaea44-be04-4912-931f-7f4a344d09d5",
+    "e1900b29-a0c0-4f2b-bde5-b44bf10ed753",
+    "03fe2a1a-abda-46ac-9928-0db34eb36e87",
+    "5da861c3-9196-4927-bbeb-177649ab7575",
+    "09ddb742-92c6-415d-abd9-31d524761310",
+    "287f34c2-e7a8-41e2-8545-44d3ac813c19"
+  ],
+  "aturan": "uid set pengembangan DIKELUARKAN dari metrik akhir",
+  "varian": {
+    "K1": "Ini citra satelit sesudah bencana. Perhatikan bangunan yang ditunjuk bidik silang magenta di tengah citra. Bagaimana kondisi bangunan itu? Jawab hanya dengan satu kata: UTUH, RUSAK, atau HANCUR.",
+    "K1r": "Ini citra satelit sesudah bencana. Perhatikan bangunan yang ditunjuk bidik silang magenta di tengah citra. Bagaimana kondisi bangunan itu? Jawab hanya dengan satu kata: HANCUR, RUSAK, atau UTUH.",
+    "F-keutuhan_atap": "Citra pertama diambil sebelum bencana, citra kedua sesudah bencana, pada lokasi yang sama. Bandingkan atap bangunan yang ditunjuk bidik silang magenta di tengah citra pada citra pertama dan citra kedua. Bagaimana atap itu pada citra kedua? Jawab hanya dengan salah satu: UTUH, RUSAK_SEBAGIAN, atau HILANG.",
+    "F-puing_sekitar": "Citra pertama diambil sebelum bencana, citra kedua sesudah bencana, pada lokasi yang sama. Perhatikan sekeliling bangunan yang ditunjuk bidik silang magenta di tengah citra pada citra kedua. Bagaimana sebaran puing di sekitarnya? Jawab hanya dengan salah satu: TIDAK_ADA, TERBATAS_DI_SEKITAR_BANGUNAN, atau MELUAS_MENUTUPI_PETAK.",
+    "F-wujud_bangunan": "Citra pertama diambil sebelum bencana, citra kedua sesudah bencana, pada lokasi yang sama. Bandingkan bentuk dan garis batas bangunan yang ditunjuk bidik silang magenta di tengah citra pada citra pertama dan citra kedua. Bagaimana wujudnya pada citra kedua? Jawab hanya dengan salah satu: TIDAK_BERUBAH, BERUBAH_SEBAGIAN, atau TIDAK_LAGI_BERUPA_BANGUNAN.",
+    "F-sedimen_lumpur": "Citra pertama diambil sebelum bencana, citra kedua sesudah bencana, pada lokasi yang sama. Perhatikan bangunan yang ditunjuk bidik silang magenta di tengah citra dan halamannya pada citra kedua. Seberapa luas lumpur atau sedimen yang menutupinya? Jawab hanya dengan salah satu: TIDAK_ADA, MENUTUPI_SEBAGIAN, atau MENUTUPI_SELURUHNYA.",
+    "D1": "Citra pertama diambil sebelum bencana, citra kedua sesudah bencana, pada lokasi yang sama. Dalam satu kalimat bahasa Indonesia, jelaskan kondisi bangunan yang ditunjuk bidik silang magenta di tengah citra pada citra kedua dibandingkan citra pertama."
+  },
+  "lingkungan": {
+    "torch": "2.10.0+cu128",
+    "transformers": "4.51.3",
+    "gpu": "Tesla T4"
+  }
+}

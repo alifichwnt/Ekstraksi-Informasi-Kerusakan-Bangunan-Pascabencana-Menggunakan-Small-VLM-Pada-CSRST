@@ -1,0 +1,12 @@
+RUN 20260925-100029_qwen3b-lora_besar_v4_b82f43f2
+model qwen2.5-vl-3b + LoRA (epoch 3) | uji n=400
+Matriks (baris = label xBD):
+kelas_kerusakan  hancur  rusak  tidak_rusak
+label_kelas                                
+hancur               83     11            6
+rusak                19     35           46
+tidak_rusak           3     25          172
+akurasi 0.725 | akurasi seimbang 0.680
+Riwayat validasi: [[1, 0.3333], [2, 0.587], [3, 0.6926]]
+Validasi zero-shot: 0.3185
+Waktu: latih 75.6 menit | kelas per panggilan 1.82 s

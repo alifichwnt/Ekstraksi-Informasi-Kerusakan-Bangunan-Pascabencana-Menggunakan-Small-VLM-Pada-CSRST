@@ -1,0 +1,5 @@
+=== 20260924-162001_oai-6-sol_kecil3_v4_b82f43f2 | mulai 2026-09-24 16:20:03 UTC | sudah 0 | sisa 3 ===
+[   1/3] uid=4ef6c44a-2b3c-4cbe-96cf-6ce63353a6b7 | palu-tsunami_00000084 | chip=4ef6c44a_pra.png,4ef6c44a_pasca.png | xBD=no-damage | kelas=rusak | keutuhan=rusak_sebagian, puing=terbatas_di_sekitar_bangunan, wujud=berubah_sebagian, sedimen=menutupi_sebagian | 17.1s
+[   2/3] uid=2a1d2a16-6b5a-4485-939a-8b4ffe929b9f | palu-tsunami_00000136 | chip=2a1d2a16_pra.png,2a1d2a16_pasca.png | xBD=destroyed | kelas=hancur | keutuhan=hilang, puing=meluas_menutupi_petak, wujud=tidak_lagi_berupa_bangunan, sedimen=menutupi_sebagian | 26.1s
+[   3/3] uid=1eaaa8c6-ffbc-4bef-aa00-fc5c1c86c104 | palu-tsunami_00000047 | chip=1eaaa8c6_pra.png,1eaaa8c6_pasca.png | xBD=major-damage | kelas=rusak | keutuhan=rusak_sebagian, puing=meluas_menutupi_petak, wujud=berubah_sebagian, sedimen=menutupi_sebagian | 13.8s
+WAKTU (latensi API, detik): per bangunan rerata 18.99 | median 17.13 | sd 6.35 | min 13.77 | maks 26.06 | total 57.0 | jam dinding 1.3 menit

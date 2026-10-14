@@ -1,0 +1,18 @@
+# ---- laptop: penyiapan data, formulir, model pembanding, analisis, prototipe
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+openpyxl
+krippendorff
+Pillow
+tifffile
+openai          # hanya untuk 04_inferensi/09o_pembanding_openai.py
+google-genai    # hanya untuk 04_inferensi/09g_pembanding_gemini.py
+
+# ---- Kaggle Notebook (GPU T4): dipasang di dalam notebook
+# torch, torchvision          (bawaan Kaggle)
+# transformers==4.51.3
+# accelerate timm einops sentencepiece    (09_inferensi_svlm_KAGGLE.ipynb)
+# peft==0.15.2                            (14_finetune_lora_qwen_KAGGLE.ipynb)

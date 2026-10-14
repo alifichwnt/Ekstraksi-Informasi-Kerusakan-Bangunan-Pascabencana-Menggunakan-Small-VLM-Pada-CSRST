@@ -1,0 +1,57 @@
+{
+  "run_id": "20260924-105613_gem-25-flash_kecil3_v4_b82f43f2",
+  "status": "berjalan",
+  "waktu_mulai_utc": "2026-09-24T10:56:13+00:00",
+  "catatan": "pembanding komersial, zero-shot",
+  "uji_cepat": true,
+  "batas": 3,
+  "model": {
+    "nama": "gemini-2.5-flash",
+    "repo": "Gemini API (Google AI Studio), tingkat gratis",
+    "revisi": null,
+    "dtype": null
+  },
+  "lingkungan": {
+    "platform": "laptop",
+    "python": "3.13.7",
+    "gpu": null,
+    "sdk": "google-genai"
+  },
+  "eksperimen": {
+    "sidik_fitur": "b82f43f2",
+    "versi_prompt": 4,
+    "versi_konfigurasi": "2026-09-24",
+    "status_seleksi": "TERKUNCI SEMENTARA",
+    "fitur_terpilih": [
+      "keutuhan_atap",
+      "puing_sekitar",
+      "wujud_bangunan",
+      "sedimen_lumpur"
+    ],
+    "sha_konfigurasi": "3263104381f8",
+    "sha_parser": "fde966dd6cbf",
+    "sha_prompt_fitur": "5ff98a7ab362",
+    "sha_prompt_kelas": "38b6daf809e9",
+    "desain": "dua panggilan: fitur(pra+pasca) dan kelas(pasca)"
+  },
+  "sampel": {
+    "nama": "kecil",
+    "n": 3,
+    "sha_csv": "060610b7997b",
+    "komposisi": {
+      "no-damage": 1,
+      "destroyed": 1,
+      "major-damage": 1
+    }
+  },
+  "dekode": {
+    "temperature": 0.0,
+    "ukuran_citra": 448,
+    "jeda_detik": 7.0
+  },
+  "catatan_metodologis": [
+    "Model API dapat diperbarui penyedia; model_version dicatat per panggilan.",
+    "Tingkat gratis: konten dapat dipakai penyedia; chip berasal dari dataset publik xBD.",
+    "Kemungkinan kontaminasi data (model pernah melihat xBD) tidak dapat diperiksa."
+  ]
+}

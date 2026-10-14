@@ -1,0 +1,69 @@
+{
+  "run_id": "20260925-094806_qwen3b-lora_besarUJICEPAT_v4_b82f43f2",
+  "status": "selesai",
+  "uji_cepat": true,
+  "catatan": "fine-tuning LoRA kelas, prompt kelas v4",
+  "waktu_mulai_utc": "2026-09-25T09:48:06+00:00",
+  "waktu_selesai_utc": "2026-09-25T09:51:40+00:00",
+  "model": {
+    "nama": "qwen2.5-vl-3b-lora",
+    "repo": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revisi": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "dtype": "fp16",
+    "adapter": "adapter/",
+    "sha_adapter": "c48aa080595d"
+  },
+  "lingkungan": {
+    "platform": "kaggle",
+    "torch": "2.10.0+cu128",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "gpu": "Tesla T4",
+    "jumlah_gpu": 2
+  },
+  "eksperimen": {
+    "sidik_fitur": "b82f43f2",
+    "versi_prompt": 4,
+    "fitur_terpilih": [
+      "keutuhan_atap",
+      "puing_sekitar",
+      "wujud_bangunan",
+      "sedimen_lumpur"
+    ],
+    "status_seleksi": "TERKUNCI SEMENTARA",
+    "sha_konfigurasi": "3263104381f8",
+    "sha_parser": "fde966dd6cbf",
+    "sha_prompt_fitur": "5ff98a7ab362",
+    "sha_prompt_kelas": "38b6daf809e9",
+    "desain": "fine-tuning LoRA kelas; uji: kelas 400 + fitur 40 (sampel kecil)"
+  },
+  "sampel": {
+    "nama": "besar",
+    "n": 6,
+    "sha_csv": "19fb218ac8b7"
+  },
+  "dekode": {
+    "do_sample": false,
+    "max_new_tokens": {
+      "kelas": 64,
+      "fitur": 256
+    },
+    "ukuran_citra": 448
+  },
+  "waktu_komputasi": {
+    "satuan": "detik",
+    "detik_muat_model": 62.7,
+    "detik_pelatihan": 60.3,
+    "per_panggilan_kelas": {
+      "n": 6,
+      "rerata": 2.75,
+      "median": 2.75,
+      "sd": 0.04,
+      "total_detik": 16.5
+    },
+    "jam_dinding_uji_menit": 0.9,
+    "memori_gpu_puncak_uji_gb": 8.62,
+    "gpu": "Tesla T4"
+  },
+  "pelatihan": "pelatihan.json"
+}

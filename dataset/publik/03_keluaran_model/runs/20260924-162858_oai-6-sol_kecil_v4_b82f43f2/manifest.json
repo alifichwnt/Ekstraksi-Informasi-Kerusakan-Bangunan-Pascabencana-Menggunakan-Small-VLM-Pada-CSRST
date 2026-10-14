@@ -1,0 +1,107 @@
+{
+  "run_id": "20260924-162858_oai-6-sol_kecil_v4_b82f43f2",
+  "status": "selesai",
+  "waktu_mulai_utc": "2026-09-24T16:28:58+00:00",
+  "catatan": "pembanding komersial, zero-shot",
+  "uji_cepat": false,
+  "batas": null,
+  "model": {
+    "nama": "gpt-6-sol",
+    "repo": "OpenAI API (chat.completions)",
+    "tingkat_awal": "berbayar",
+    "revisi": "gpt-6-sol",
+    "dtype": null
+  },
+  "lingkungan": {
+    "platform": "laptop",
+    "python": "3.13.7",
+    "gpu": null,
+    "sdk": "openai"
+  },
+  "eksperimen": {
+    "sidik_fitur": "b82f43f2",
+    "versi_prompt": 4,
+    "versi_konfigurasi": "2026-09-24",
+    "status_seleksi": "TERKUNCI SEMENTARA",
+    "fitur_terpilih": [
+      "keutuhan_atap",
+      "puing_sekitar",
+      "wujud_bangunan",
+      "sedimen_lumpur"
+    ],
+    "sha_konfigurasi": "3263104381f8",
+    "sha_parser": "cf369f5a1b9b",
+    "sha_prompt_fitur": "5ff98a7ab362",
+    "sha_prompt_kelas": "38b6daf809e9",
+    "desain": "dua panggilan: fitur(pra+pasca) dan kelas(pasca)"
+  },
+  "sampel": {
+    "nama": "kecil",
+    "n": 40,
+    "sha_csv": "060610b7997b",
+    "komposisi": {
+      "no-damage": 20,
+      "destroyed": 10,
+      "major-damage": 10
+    }
+  },
+  "dekode": {
+    "temperature": 0.0,
+    "ukuran_citra": 448,
+    "jeda_detik": 2.0
+  },
+  "catatan_metodologis": [
+    "Model API dapat diperbarui penyedia; model_version dicatat per panggilan.",
+    "Data API OpenAI secara bawaan tidak dipakai untuk pelatihan; chip berasal dari dataset publik xBD.",
+    "Kemungkinan kontaminasi data (model pernah melihat xBD) tidak dapat diperiksa."
+  ],
+  "waktu_komputasi": {
+    "satuan": "detik",
+    "cakupan": "latensi panggilan API yang berhasil (jaringan + antrean + komputasi server); tidak setara dengan waktu GPU lokal SVLM; tanpa jeda antarpanggilan 2.0 s dan tanpa waktu tunggu coba ulang",
+    "per_panggilan_fitur": {
+      "n": 40,
+      "total_detik": 376.6,
+      "rerata": 9.42,
+      "median": 9.66,
+      "sd": 2.57,
+      "min": 5.14,
+      "p95": 13.15,
+      "maks": 16.64
+    },
+    "per_panggilan_kelas": {
+      "n": 40,
+      "total_detik": 244.9,
+      "rerata": 6.12,
+      "median": 4.93,
+      "sd": 5.19,
+      "min": 2.54,
+      "p95": 9.84,
+      "maks": 29.47
+    },
+    "per_bangunan": {
+      "n": 40,
+      "total_detik": 621.5,
+      "rerata": 15.54,
+      "median": 14.38,
+      "sd": 6.15,
+      "min": 7.68,
+      "p95": 26.45,
+      "maks": 42.1
+    },
+    "per_bangunan_termasuk_ulang": {
+      "n": 40,
+      "total_detik": 783.4,
+      "rerata": 19.58,
+      "median": 14.7,
+      "sd": 16.4,
+      "min": 7.73,
+      "p95": 58.71,
+      "maks": 81.48
+    },
+    "jumlah_panggilan_diulang": 4,
+    "jeda_antarpanggilan_detik": 2.0,
+    "jam_dinding_menit": 15.7
+  },
+  "n_selesai": 40,
+  "waktu_selesai_utc": "2026-09-24T16:44:41+00:00"
+}

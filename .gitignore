@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Rahasia — jangan pernah diunggah
+*api_key*
+*.env
+.env*
+
+# Berkas besar yang tidak disertakan
+*.zip
+*.safetensors
+adapter/
+
+# Editor dan sistem
+.vscode/
+desktop.ini
+Thumbs.db
+.DS_Store

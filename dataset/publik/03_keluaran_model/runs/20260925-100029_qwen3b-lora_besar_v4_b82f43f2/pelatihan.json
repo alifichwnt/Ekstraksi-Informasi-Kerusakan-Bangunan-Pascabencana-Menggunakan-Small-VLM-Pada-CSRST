@@ -1,0 +1,177 @@
+{
+  "metode": "LoRA",
+  "r": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "target_modules": "model\\.layers\\.\\d+\\.(self_attn\\.(q|k|v|o)_proj|mlp\\.(gate|up|down)_proj)",
+  "encoder_visual": "dibekukan",
+  "lr": 0.0001,
+  "epoch": 3,
+  "akumulasi_gradien": 8,
+  "warmup": 20,
+  "presisi": "fp16",
+  "benih": 42,
+  "parameter_dilatih": 29933568,
+  "parameter_total": 3784556544,
+  "n_latih": 715,
+  "n_validasi": 126,
+  "sha_sampel_latih": "296c15e6c767",
+  "komposisi_latih": {
+    "hancur": 255,
+    "tidak_rusak": 255,
+    "rusak": 205
+  },
+  "validasi_zero_shot": {
+    "akurasi": 0.3413,
+    "akurasi_seimbang": 0.3185,
+    "matriks": [
+      [
+        0,
+        0,
+        45,
+        0
+      ],
+      [
+        0,
+        0,
+        36,
+        0
+      ],
+      [
+        2,
+        0,
+        43,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sebaran_prediksi": {
+      "hancur": 124,
+      "tidak_rusak": 2
+    }
+  },
+  "riwayat": [
+    {
+      "epoch": 1,
+      "loss_rerata": 0.1779,
+      "detik_epoch": 1531.0,
+      "akurasi": 0.3571,
+      "akurasi_seimbang": 0.3333,
+      "matriks": [
+        [
+          45,
+          0,
+          0,
+          0
+        ],
+        [
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          45,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "sebaran_prediksi": {
+        "tidak_rusak": 126
+      }
+    },
+    {
+      "epoch": 2,
+      "loss_rerata": 0.0745,
+      "detik_epoch": 1510.7,
+      "akurasi": 0.6111,
+      "akurasi_seimbang": 0.587,
+      "matriks": [
+        [
+          37,
+          7,
+          1,
+          0
+        ],
+        [
+          25,
+          9,
+          2,
+          0
+        ],
+        [
+          11,
+          3,
+          31,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "sebaran_prediksi": {
+        "tidak_rusak": 73,
+        "hancur": 34,
+        "rusak": 19
+      }
+    },
+    {
+      "epoch": 3,
+      "loss_rerata": 0.0586,
+      "detik_epoch": 1495.7,
+      "akurasi": 0.7063,
+      "akurasi_seimbang": 0.6926,
+      "matriks": [
+        [
+          34,
+          10,
+          1,
+          0
+        ],
+        [
+          11,
+          18,
+          7,
+          0
+        ],
+        [
+          3,
+          5,
+          37,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "sebaran_prediksi": {
+        "tidak_rusak": 48,
+        "hancur": 45,
+        "rusak": 33
+      }
+    }
+  ],
+  "epoch_dipakai": 3,
+  "detik_pelatihan": 4538.8,
+  "sha_adapter": "b048c2483358",
+  "target_format": "{\"kelas_kerusakan\": \"<kelas>\"}",
+  "uji_cepat": false
+}

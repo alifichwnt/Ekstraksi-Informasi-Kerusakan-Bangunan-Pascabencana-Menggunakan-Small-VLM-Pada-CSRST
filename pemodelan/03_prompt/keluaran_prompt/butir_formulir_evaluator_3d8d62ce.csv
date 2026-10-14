@@ -1,0 +1,9 @@
+﻿no,jenis,kunci,skala_ukur,pertanyaan,keterangan,pilihan
+1,pilihan,keutuhan_atap,ordinal,Keutuhan atap,"Kondisi atap bangunan pada citra pasca dibandingkan citra pra: utuh, rusak sebagian, atau hilang sama sekali.",utuh / rusak_sebagian / hilang / tidak_jelas
+2,pilihan,perubahan_radiometri,nominal biner,Perubahan radiometri,Perubahan kecerahan atau warna area atap yang konsisten dengan kerusakan atau permukaan yang berubah.,ada / tidak_ada / tidak_jelas
+3,pilihan,perubahan_wujud,nominal biner,Perubahan wujud bangunan,"Bentuk keseluruhan bangunan berubah antara citra pra dan pasca, misalnya sebagian struktur runtuh atau denah tampak tidak lagi utuh.",ada / tidak_ada / tidak_jelas
+4,pilihan,sedimen_lumpur,nominal biner,Sedimen atau lumpur pada atap dan halaman,Area di sekitar atau di atas bangunan tertutup lapisan material bertekstur berbeda namun konsisten dengan endapan pascabencana.,ada / tidak_ada / tidak_jelas
+5,pilihan,bangunan_hilang,nominal biner,Bangunan hilang,"Bangunan yang ada pada citra pra tidak lagi tampak sebagai struktur bangunan pada citra pasca, melainkan menjadi lahan kosong atau tumpukan puing.",ada / tidak_ada / tidak_jelas
+6,pilihan,puing_sekitar,nominal biner,Puing di sekitar bangunan,Material berserakan (puing) yang mengelilingi bangunan atau berada pada area terdekat di citra pasca.,ada / tidak_ada / tidak_jelas
+7,isian_bebas,deskripsi,-,Tuliskan satu kalimat yang menerangkan kondisi bangunan yang ditunjuk bidik silang.,"Kalimat ini menjadi rujukan bagi metrik teks (BLEU, METEOR, ROUGE).",
+8,pilihan,kelas_biner,nominal biner,"Menurut Anda, bangunan tersebut termasuk?",Dipakai sebagai pemeriksaan mutu evaluator terhadap label xBD.,tidak rusak / rusak

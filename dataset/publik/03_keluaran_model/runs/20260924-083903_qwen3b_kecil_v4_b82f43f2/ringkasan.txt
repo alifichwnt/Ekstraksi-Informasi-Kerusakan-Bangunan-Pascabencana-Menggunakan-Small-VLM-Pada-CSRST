@@ -1,0 +1,45 @@
+RUN 20260924-083903_qwen3b_kecil_v4_b82f43f2
+model qwen2.5-vl-3b | sampel kecil n=40 | prompt v4 sidik b82f43f2
+galat inferensi   : fitur 0 | kelas 0
+fitur sah penuh   : 40/40
+kelas terurai sah : 40/40
+kelas tidak_jelas : 0/40
+tingkat perbaikan fitur: Counter({'pagar_kode': 40})
+tingkat perbaikan kelas: Counter({'pagar_kode': 40})
+
+Matriks kebingungan (baris = label xBD):
+prediksi     tidak_rusak  hancur
+label xBD                       
+tidak_rusak            0      20
+rusak                  0      10
+hancur                 1       9
+
+akurasi 3 kelas (hanya jawaban sah, n=40): 0.225
+
+fitur keutuhan_atap:
+fitur_keutuhan_atap  hilang
+label_kelas                
+hancur                   10
+rusak                    10
+tidak_rusak              20
+
+fitur puing_sekitar:
+fitur_puing_sekitar  tidak_ada
+label_kelas                   
+hancur                      10
+rusak                       10
+tidak_rusak                 20
+
+fitur wujud_bangunan:
+fitur_wujud_bangunan  tidak_berubah
+label_kelas                        
+hancur                           10
+rusak                            10
+tidak_rusak                      20
+
+fitur sedimen_lumpur:
+fitur_sedimen_lumpur  menutupi_seluruhnya
+label_kelas                              
+hancur                                 10
+rusak                                  10
+tidak_rusak                            20

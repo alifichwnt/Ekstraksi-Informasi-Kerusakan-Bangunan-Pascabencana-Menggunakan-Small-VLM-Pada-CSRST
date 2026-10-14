@@ -1,0 +1,23 @@
+JEJAK PENYARINGAN SAMPEL LATIH
+  populasi berlabel                55,789
+  3 kelas dipakai                  55,177
+  jendela utuh & <= 128 px         41,343
+  di luar 106 tile uji               9,463  (85 tile)
+
+KOMPOSISI (baris = kelas)
+peran         latih  validasi  All
+kelas_xbd                         
+destroyed       255        45  300
+major-damage    205        36  241
+no-damage       255        45  300
+All             715       126  841
+
+tile terlibat: 75 | tile uji yang tumpang tindih: 0 (harus 0)
+
+sebaran grup akuisisi pra:
+grup_pra
+2018-02-20    489
+2016-10-25    165
+2017-07-12     93
+2017-01-24     86
+2017-11-04      8

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Informasi Kerusakan Bangunan Palu 2018</title>
+    <link rel="icon" href="assets/logo-stis.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body>
+    <header class="kepala">
+      <div class="kepala-isi">
+        <div class="identitas">
+          <a
+            class="logo-tautan"
+            href="index.html"
+            title="Muat ulang halaman"
+            aria-label="Muat ulang halaman"
+          >
+            <img
+              class="logo"
+              src="assets/logo-stis.png"
+              alt="Logo Politeknik Statistika STIS"
+              onerror="this.remove()"
+            />
+          </a>
+          <div>
+            <h1>Informasi Kerusakan Bangunan Pascabencana</h1>
+            <p class="sub">Gempa bumi dan tsunami Palu, 28 September 2018</p>
+          </div>
+        </div>
+        <nav class="tab" role="tablist">
+          <button role="tab" data-tab="cerita" aria-selected="true">
+            Informasi Umum
+          </button>
+          <button role="tab" data-tab="dasbor" aria-selected="false">
+            Dashboard
+          </button>
+          <button role="tab" data-tab="tanya" aria-selected="false">
+            Tanya-Jawab
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ INFORMASI UMUM (web story) ============ -->
+      <section id="tab-cerita" class="panel aktif" role="tabpanel">
+        <article class="cerita" id="cerita"></article>
+      </section>
+
+      <!-- ============ DASHBOARD ============ -->
+      <section id="tab-dasbor" class="panel" role="tabpanel">
+        <div class="ringkas" id="kpi"></div>
+        <div class="penyaring">
+          <label
+            >Kelas model
+            <select id="f-kelas">
+              <option value="">Semua</option>
+              <option value="tidak_rusak">Tidak rusak</option>
+              <option value="rusak">Rusak</option>
+              <option value="hancur">Hancur</option>
+            </select>
+          </label>
+          <label
+            >Label xBD
+            <select id="f-xbd">
+              <option value="">Semua</option>
+              <option value="tidak_rusak">No-damage (tidak rusak)</option>
+              <option value="rusak">Major-damage (rusak)</option>
+              <option value="hancur">Destroyed (hancur)</option>
+            </select>
+          </label>
+          <label
+            >Kesesuaian
+            <select id="f-cocok">
+              <option value="">Semua</option>
+              <option value="ya">Sesuai label xBD</option>
+              <option value="tidak">Tidak sesuai</option>
+            </select>
+          </label>
+          <label
+            >Kode bangunan
+            <select id="f-kode"></select>
+          </label>
+          <div class="penyaring-tombol">
+            <button id="f-reset" class="tombol-sekunder" type="button">
+              Atur ulang
+            </button>
+            <button id="f-unduh" class="tombol-sekunder" type="button">
+              Unduh CSV
+            </button>
+          </div>
+        </div>
+        <p class="info-saring" id="info-saring" aria-live="polite"></p>
+        <div class="dasbor-grid">
+          <div class="kartu peta-kartu">
+            <div class="kartu-judul">
+              Peta titik bangunan <span class="legenda" id="legenda"></span>
+            </div>
+            <label class="sakelar"
+              ><input type="checkbox" id="f-grid" /> Tampilkan ringkasan per
+              kotak grid (±1 km)</label
+            >
+            <div id="peta"></div>
+            <p class="catatan" id="catatan-peta"></p>
+          </div>
+          <div class="kartu detail-kartu" id="detail">
+            <div class="kosong">
+              Pilih titik pada peta, baris pada daftar, atau kode bangunan pada
+              penyaring untuk melihat rincian bangunan.
+            </div>
+          </div>
+        </div>
+        <div class="kartu">
+          <div class="kartu-judul">
+            Daftar bangunan <span class="kecil" id="jumlah-daftar"></span>
+          </div>
+          <div class="tabel-bungkus">
+            <table class="daftar">
+              <thead>
+                <tr>
+                  <th>Kode</th>
+                  <th>Kelas model</th>
+                  <th>Label xBD</th>
+                  <th>Keutuhan atap</th>
+                  <th>Puing</th>
+                  <th>Wujud</th>
+                  <th>Sedimen/lumpur</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TANYA-JAWAB ============ -->
+      <section id="tab-tanya" class="panel" role="tabpanel">
+        <div class="tanya-grid">
+          <div class="kartu area-pilih">
+            <div class="kartu-judul">Pilih bangunan</div>
+            <label class="label-blok"
+              >Kode bangunan
+              <select id="t-kode"></select>
+            </label>
+            <div id="t-bgn" class="t-bgn kecil">
+              Belum ada bangunan dipilih. Pertanyaan umum tetap dapat diajukan.
+            </div>
+            <div class="kartu-judul sub-judul">
+              Atau pilih dari pasangan citra
+              <span class="kecil" id="t-hal"></span>
+            </div>
+            <div id="t-galeri" class="galeri"></div>
+            <div class="galeri-nav">
+              <button id="t-sebelum" class="tombol-sekunder" type="button">
+                ‹ Sebelumnya
+              </button>
+              <button id="t-acak" class="tombol-sekunder" type="button">
+                Acak
+              </button>
+              <button id="t-sesudah" class="tombol-sekunder" type="button">
+                Berikutnya ›
+              </button>
+            </div>
+          </div>
+          <div class="kartu obrolan-kartu area-obrolan">
+            <div class="kartu-judul">
+              Ruang tanya-jawab
+              <span class="kecil"
+                >jawaban diambil dari hasil yang sudah dihitung, bukan
+                dibangkitkan ulang</span
+              >
+            </div>
+            <div id="obrolan" class="obrolan" aria-live="polite"></div>
+            <form id="t-form" class="t-form">
+              <input
+                id="t-teks"
+                type="text"
+                placeholder="Tulis pertanyaan, mis. bagaimana kondisi atapnya?"
+                autocomplete="off"
+              />
+              <button class="tombol" type="submit">Kirim</button>
+            </form>
+          </div>
+          <div class="kartu area-panduan">
+            <div class="kartu-judul">Panduan mencoba tanya-jawab</div>
+            <ol class="langkah kecil-langkah">
+              <li>
+                Pilih bangunan melalui daftar kode atau dengan mengeklik salah
+                satu pasangan citra. Kiri citra sebelum bencana, kanan sesudah.
+              </li>
+              <li>
+                Klik salah satu <b>Rekomendasi Pertanyaan</b> di ruang
+                tanya-jawab, atau ketik pertanyaan sendiri lalu tekan
+                <b>Kirim</b>.
+              </li>
+              <li>
+                Pertanyaan umum (jumlah bangunan per kelas, keandalan hasil,
+                model, data) dapat diajukan tanpa memilih bangunan.
+              </li>
+              <li>
+                Kode bangunan dapat juga disebut langsung dalam pertanyaan, mis.
+                “bagaimana atap PL-015?”.
+              </li>
+              <li>
+                Pertanyaan di luar cakupan data (mis. biaya perbaikan atau data
+                penghuni) akan dijawab bahwa informasinya tidak tersedia.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="kaki">
+      Copyright © 2026 | Politeknik Statistika STIS | RIZKY ALIF ICHWANTO | 4SD2
+      | SKRIPSI 2025/2026
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="data/data.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

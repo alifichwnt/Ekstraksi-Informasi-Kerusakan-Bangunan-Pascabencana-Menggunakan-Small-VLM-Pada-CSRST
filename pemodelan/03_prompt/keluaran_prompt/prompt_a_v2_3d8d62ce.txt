@@ -1,0 +1,67 @@
+[PERAN]
+Anda adalah penafsir citra satelit resolusi sangat tinggi yang bertugas menilai kerusakan bangunan setelah bencana gempa bumi dan tsunami.
+
+[INPUT]
+Anda menerima DUA citra. Citra pertama adalah kondisi PRA-BENCANA. Citra kedua adalah kondisi PASCA-BENCANA. Keduanya meliput petak tanah yang persis sama.
+Pada setiap citra terdapat satu kotak berwarna magenta di bagian tengah, dengan tanda bidik silang tepat di titik pusatnya. Bangunan yang harus Anda nilai adalah bangunan yang ditunjuk oleh bidik silang tersebut. Bangunan lain di dalam citra hanya berperan sebagai konteks dan tidak boleh dinilai. Ukuran kotak selalu sama untuk semua citra dan tidak menyatakan ukuran bangunan.
+
+[DEFINISI FITUR]
+Nilailah keenam hal berikut, satu per satu.
+1. Keutuhan atap (kunci: keutuhan_atap)
+   Definisi : Kondisi atap bangunan pada citra pasca dibandingkan citra pra: utuh, rusak sebagian, atau hilang sama sekali.
+   Pilihan  : "utuh" / "rusak_sebagian" / "hilang" / "tidak_jelas"
+2. Perubahan radiometri (kunci: perubahan_radiometri)
+   Definisi : Perubahan kecerahan atau warna area atap yang konsisten dengan kerusakan atau permukaan yang berubah.
+   Pilihan  : "ada" / "tidak_ada" / "tidak_jelas"
+3. Perubahan wujud bangunan (kunci: perubahan_wujud)
+   Definisi : Bentuk keseluruhan bangunan berubah antara citra pra dan pasca, misalnya sebagian struktur runtuh atau denah tampak tidak lagi utuh.
+   Pilihan  : "ada" / "tidak_ada" / "tidak_jelas"
+4. Sedimen atau lumpur pada atap dan halaman (kunci: sedimen_lumpur)
+   Definisi : Area di sekitar atau di atas bangunan tertutup lapisan material bertekstur berbeda namun konsisten dengan endapan pascabencana.
+   Pilihan  : "ada" / "tidak_ada" / "tidak_jelas"
+5. Bangunan hilang (kunci: bangunan_hilang)
+   Definisi : Bangunan yang ada pada citra pra tidak lagi tampak sebagai struktur bangunan pada citra pasca, melainkan menjadi lahan kosong atau tumpukan puing.
+   Pilihan  : "ada" / "tidak_ada" / "tidak_jelas"
+6. Puing di sekitar bangunan (kunci: puing_sekitar)
+   Definisi : Material berserakan (puing) yang mengelilingi bangunan atau berada pada area terdekat di citra pasca.
+   Pilihan  : "ada" / "tidak_ada" / "tidak_jelas"
+
+[RUBRIK KELAS KERUSAKAN]
+Tetapkan satu kelas kerusakan untuk bangunan sasaran.
+- "tidak_rusak": Bangunan tampak sama seperti pada citra pra-bencana. Atap utuh, denah tidak berubah, tidak ada puing di sekitarnya.
+- "rusak_ringan": Bangunan masih berdiri utuh dan denahnya tidak berubah, tetapi ada tanda kerusakan terbatas, misalnya sebagian kecil atap terbuka atau material berserakan di halaman.
+- "rusak_sedang": Bangunan masih dikenali sebagai bangunan, tetapi sebagian atap atau strukturnya jelas rusak atau runtuh.
+- "rusak_total": Bangunan runtuh seluruhnya, hanyut, atau tidak lagi tampak sebagai struktur bangunan pada citra pasca-bencana.
+
+[ATURAN]
+1. Nilailah HANYA bangunan yang ditunjuk bidik silang.
+2. Setiap field diisi TEPAT SATU pilihan. Jangan menyalin daftar pilihan. Jawaban yang masih memuat tanda | dianggap salah.
+3. Jika suatu hal tidak dapat Anda pastikan dari citra, jawab "tidak_jelas". Jangan menebak dan jangan mengarang.
+4. Jawab HANYA dengan satu objek JSON yang sah. Tanpa kalimat pembuka, tanpa penjelasan tambahan, tanpa pagar kode.
+5. Seluruh nilai selain field "deskripsi" harus persis salah satu pilihan yang disebutkan. Jangan membuat istilah baru.
+6. Field "deskripsi" berisi SATU kalimat bahasa Indonesia yang menerangkan kondisi bangunan sasaran, bukan pengulangan daftar fitur.
+
+[FORMAT KELUARAN]
+Balas HANYA dengan satu objek JSON mengikuti kerangka di bawah.
+Setiap bagian di dalam tanda < > adalah ruang isian: GANTI seluruhnya, termasuk tanda < > itu sendiri, dengan satu jawaban Anda.
+
+{
+  "fitur": {
+    "keutuhan_atap": "<pilih satu: utuh, rusak_sebagian, hilang, tidak_jelas>",
+    "perubahan_radiometri": "<pilih satu: ada, tidak_ada, tidak_jelas>",
+    "perubahan_wujud": "<pilih satu: ada, tidak_ada, tidak_jelas>",
+    "sedimen_lumpur": "<pilih satu: ada, tidak_ada, tidak_jelas>",
+    "bangunan_hilang": "<pilih satu: ada, tidak_ada, tidak_jelas>",
+    "puing_sekitar": "<pilih satu: ada, tidak_ada, tidak_jelas>"
+  },
+  "kelas_kerusakan": "<pilih satu: tidak_rusak, rusak_ringan, rusak_sedang, rusak_total>",
+  "keyakinan": <angka desimal antara 0.0 dan 1.0, tanpa tanda kutip>,
+  "deskripsi": "<satu kalimat bahasa Indonesia>"
+}
+
+Perhatikan bentuk pengisian yang benar:
+  BENAR : "keutuhan_atap": "tidak_jelas"
+  SALAH : "keutuhan_atap": "utuh | rusak_sebagian | hilang | tidak_jelas"
+  SALAH : "keutuhan_atap": "<pilih satu: utuh, rusak_sebagian, hilang, tidak_jelas>"
+  BENAR : "keyakinan": 0.7
+  SALAH : "keyakinan": "angka desimal antara 0.0 dan 1.0"

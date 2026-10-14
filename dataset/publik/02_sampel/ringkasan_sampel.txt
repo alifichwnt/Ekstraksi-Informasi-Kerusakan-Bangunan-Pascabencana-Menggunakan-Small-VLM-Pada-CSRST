@@ -1,0 +1,51 @@
+==============================================================================
+========================= RINGKASAN PENARIKAN SAMPEL =========================
+==============================================================================
+
+ Grup akuisisi dikunci : pra 2017-01-24 -> pasca 2018-10-01
+ Jendela chip          : 128 x 128 px
+ Benih acak            : 42
+ Kuota per tile        : 5 chip per stratum
+
+ [1]  JEJAK PENYARINGAN KERANGKA SAMPEL
+ ----------------------------------------------------------------------------
+ Populasi awal (seluruh bangunan berlabel)             55,789
+ S1 grup akuisisi pra 2017-01-24                       44,450
+ S2 buang un-classified dan minor-damage               43,917
+ S3 jendela 128 px utuh di dalam tile                  33,145
+ S4 sisi terpanjang <= 128 px                          33,060
+ KERANGKA SAMPEL AKHIR                                 33,060   (59.3% dari populasi awal)
+
+ [2]  SEBARAN KERANGKA SAMPEL MENURUT KELAS
+ ----------------------------------------------------------------------------
+ no-damage         28,929   tersedia setelah kuota tile:    574   target:  200
+ destroyed          3,394   tersedia setelah kuota tile:    317   target:  100
+ major-damage         737   tersedia setelah kuota tile:    253   target:  100
+
+ [3]  SAMPEL BESAR (pengujian otomatis)
+ ----------------------------------------------------------------------------
+ no-damage          200    50.0%
+ destroyed          100    25.0%
+ major-damage       100    25.0%
+ -> biner rusak     200    50.0%
+ JUMLAH             400
+ Tile terlibat      106   (maks 12 chip dari satu tile)
+ Ukuran bangunan  median 31.3 px | p10 14.3 | p90 52.1
+
+ [4]  SAMPEL KECIL (evaluasi manusia, subset sampel besar)
+ ----------------------------------------------------------------------------
+ no-damage           20    50.0%
+ destroyed           10    25.0%
+ major-damage        10    25.0%
+ -> biner rusak      20    50.0%
+ JUMLAH              40
+ Tile terlibat       31   (maks 3 chip dari satu tile)
+ Ukuran bangunan  median 31.4 px | p10 16.0 | p90 56.5
+
+ [5]  BERKAS KELUARAN
+ ----------------------------------------------------------------------------
+ kerangka_sampel.csv         F:\KULIAH STIS\TINGKAT IV - SD\SKRIPSWEET\MANUVER SKRIPSI AFTER SENSUS\KOMPONEN_3\Output Sampel\kerangka_sampel.csv
+ sampel_besar.csv            F:\KULIAH STIS\TINGKAT IV - SD\SKRIPSWEET\MANUVER SKRIPSI AFTER SENSUS\KOMPONEN_3\Output Sampel\sampel_besar.csv
+ sampel_kecil.csv            F:\KULIAH STIS\TINGKAT IV - SD\SKRIPSWEET\MANUVER SKRIPSI AFTER SENSUS\KOMPONEN_3\Output Sampel\sampel_kecil.csv
+
+==============================================================================

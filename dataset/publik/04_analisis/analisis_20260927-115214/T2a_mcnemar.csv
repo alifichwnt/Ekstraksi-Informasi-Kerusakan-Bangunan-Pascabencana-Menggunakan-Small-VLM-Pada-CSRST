@@ -1,0 +1,7 @@
+﻿himpunan,model_A,model_B,hanya_A_benar,hanya_B_benar,uji,statistik,p
+n385,Qwen2.5-VL-3B + LoRA,Qwen2.5-VL-3B,203,15,chi-kuadrat terkoreksi,160.40825688073394,9.214034096491374e-37
+n385,Qwen2.5-VL-3B + LoRA,InternVL3-2B,113,28,chi-kuadrat terkoreksi,50.04255319148936,1.5044767191940385e-12
+n385,InternVL3-2B,Qwen2.5-VL-3B,195,92,chi-kuadrat terkoreksi,36.250871080139376,1.7348245211170238e-09
+n40,gpt-6-sol,Qwen2.5-VL-3B,6,2,eksak binomial,,0.2890625
+n40,gpt-6-sol,InternVL3-2B,13,20,chi-kuadrat terkoreksi,1.0909090909090908,0.2962698714842834
+n40,Qwen2.5-VL-3B + LoRA,gpt-6-sol,22,5,chi-kuadrat terkoreksi,9.481481481481481,0.0020755629257427034

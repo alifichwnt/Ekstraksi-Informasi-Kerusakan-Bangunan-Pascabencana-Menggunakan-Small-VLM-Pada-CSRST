@@ -1,0 +1,25 @@
+{
+  "dibangun": "2026-09-27T15:00:51",
+  "skrip_sha": "cb905f7a0a56",
+  "run_kelas": [
+    "Qwen2.5-VL-3B + LoRA",
+    "20260925-100029_qwen3b-lora_besar_v4_b82f43f2"
+  ],
+  "run_fitur": [
+    "InternVL3-2B (zero-shot)",
+    "20260924-213226_ivl2b_besar_v4_b82f43f2"
+  ],
+  "folder_analisis": "analisis_20260927-115214",
+  "masukan": {
+    "KOMPONEN_3\\Output Sampel\\sampel_besar.csv": "19fb218ac8b7",
+    "KOMPONEN_5\\runs\\20260925-100029_qwen3b-lora_besar_v4_b82f43f2\\hasil_terurai_pcf369f5a.csv": "660beaa1a48b",
+    "KOMPONEN_5\\runs\\20260924-213226_ivl2b_besar_v4_b82f43f2\\hasil_terurai_pcf369f5a.csv": "8bf0ca450997"
+  },
+  "sumber_app": {
+    "app.css": "68eaec427b7f",
+    "app.js": "235b90f100f4",
+    "index.html": "096a70bc6dc7",
+    "logo-stis.png": "c9e3afae2311"
+  },
+  "n_bangunan": 400
+}

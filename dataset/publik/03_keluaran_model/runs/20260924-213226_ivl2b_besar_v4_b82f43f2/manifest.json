@@ -1,0 +1,113 @@
+{
+  "run_id": "20260924-213226_ivl2b_besar_v4_b82f43f2",
+  "status": "selesai",
+  "waktu_mulai_utc": "2026-09-24T21:32:26+00:00",
+  "catatan": "run penuh v4",
+  "uji_cepat": false,
+  "model": {
+    "nama": "internvl3-2b",
+    "repo": "OpenGVLab/InternVL3-2B",
+    "revisi": "899155015275a9b7338c7f4677e19c784e0e5a21",
+    "dtype": "bfloat16"
+  },
+  "lingkungan": {
+    "platform": "kaggle",
+    "python": "3.12.13",
+    "torch": "2.10.0+cu128",
+    "transformers": "4.51.3",
+    "gpu": "Tesla T4",
+    "jumlah_gpu": 2
+  },
+  "eksperimen": {
+    "sidik_fitur": "b82f43f2",
+    "versi_prompt": 4,
+    "versi_konfigurasi": "2026-09-24",
+    "status_seleksi": "TERKUNCI SEMENTARA",
+    "fitur_terpilih": [
+      "keutuhan_atap",
+      "puing_sekitar",
+      "wujud_bangunan",
+      "sedimen_lumpur"
+    ],
+    "sha_konfigurasi": "3263104381f8",
+    "sha_parser": "fde966dd6cbf",
+    "sha_prompt_fitur": "5ff98a7ab362",
+    "sha_prompt_kelas": "38b6daf809e9",
+    "desain": "dua panggilan: fitur(pra+pasca) dan kelas(pasca)"
+  },
+  "sampel": {
+    "nama": "besar",
+    "n": 400,
+    "sha_csv": "19fb218ac8b7",
+    "komposisi": {
+      "no-damage": 200,
+      "destroyed": 100,
+      "major-damage": 100
+    }
+  },
+  "dekode": {
+    "do_sample": false,
+    "max_new_tokens": {
+      "fitur": 256,
+      "kelas": 64
+    },
+    "benih": 42,
+    "ukuran_citra": 448
+  },
+  "lanjutan_dari": null,
+  "catatan_determinisme": "Dekode greedy (do_sample=False). Operasi GPU tetap dapat memberi selisih kecil antar-perangkat atau antar-versi pustaka; karena itu versi dan GPU dicatat di atas.",
+  "waktu_komputasi": {
+    "detik_muat_model": 93.1,
+    "memori_gpu_setelah_muat_gb": 4.18,
+    "satuan": "detik",
+    "cakupan": "per panggilan model: praproses citra + generate + decode; tanpa muat model",
+    "per_panggilan_fitur": {
+      "n": 400,
+      "total_detik": 3511.9,
+      "rerata": 8.78,
+      "median": 8.86,
+      "sd": 0.26,
+      "min": 7.26,
+      "p95": 8.97,
+      "maks": 9.19
+    },
+    "per_panggilan_kelas": {
+      "n": 400,
+      "total_detik": 1219.7,
+      "rerata": 3.05,
+      "median": 3.05,
+      "sd": 0.04,
+      "min": 2.71,
+      "p95": 3.09,
+      "maks": 3.19
+    },
+    "per_bangunan": {
+      "n": 400,
+      "total_detik": 4731.6,
+      "rerata": 11.83,
+      "median": 11.91,
+      "sd": 0.27,
+      "min": 10.05,
+      "p95": 12.03,
+      "maks": 12.34
+    },
+    "per_bangunan_tanpa_pertama": {
+      "n": 399,
+      "total_detik": 4720.7,
+      "rerata": 11.83,
+      "median": 11.91,
+      "sd": 0.27,
+      "min": 10.05,
+      "p95": 12.03,
+      "maks": 12.34
+    },
+    "jam_dinding_loop_menit": 78.9,
+    "memori_gpu_puncak_inferensi_gb": 4.72,
+    "gpu": "Tesla T4",
+    "throughput_bangunan_per_jam": 304.3
+  },
+  "waktu_selesai_utc": "2026-09-24T22:53:07+00:00",
+  "durasi_menit": 80.7,
+  "n_selesai": 400,
+  "detik_rerata_per_bangunan": 11.83
+}

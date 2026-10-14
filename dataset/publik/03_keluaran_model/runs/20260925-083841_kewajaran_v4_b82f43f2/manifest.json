@@ -1,0 +1,25 @@
+{
+  "run_id": "20260925-083841_kewajaran_v4_b82f43f2",
+  "jenis": "kewajaran",
+  "status": "selesai",
+  "waktu_mulai_utc": "2026-09-25T08:38:41+00:00",
+  "tujuan": "memisahkan 'model tidak memakai citra' dari 'model melihat tetapi tidak menilai kerusakan'",
+  "uid": [
+    "6ab7c7b7-0554-41eb-8930-950edb28e599",
+    "0d64220a-1463-4898-ba64-4b6722bb4074",
+    "8fa8a4f6-c3a9-45c0-a949-5422d6734e52",
+    "53cf370d-1680-456c-ac6a-d427907f2e0f",
+    "e1900b29-a0c0-4f2b-bde5-b44bf10ed753",
+    "03fe2a1a-abda-46ac-9928-0db34eb36e87"
+  ],
+  "rancangan": {
+    "T-warna": "Perhatikan kotak berwarna di tengah citra satelit ini dan bidik silang di dalamnya. Apa warna kotak tersebut? Jawab dengan satu kata.",
+    "T-ada": "Perhatikan kotak berwarna di tengah citra satelit ini dan bidik silang di dalamnya. Apakah di dalam kotak itu terdapat bangunan? Jawab hanya YA atau TIDAK.",
+    "T-atap": "Perhatikan kotak berwarna di tengah citra satelit ini dan bidik silang di dalamnya. Apa warna atap bangunan yang ditunjuk bidik silang? Jawab satu atau dua kata."
+  },
+  "lingkungan": {
+    "torch": "2.10.0+cu128",
+    "transformers": "4.51.3",
+    "gpu": "Tesla T4"
+  }
+}

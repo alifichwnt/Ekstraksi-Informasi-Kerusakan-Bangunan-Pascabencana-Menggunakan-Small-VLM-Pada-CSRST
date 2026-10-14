@@ -1,0 +1,6 @@
+﻿evaluator,kode,deskripsi,uid,kelas_xbd
+EVAL01,E01,"pada gambar pra-bencana nampak bangunan yang ditandai dengan adanya atap yang utuh dikelilingi halaman, sedangkan pada gambar pasca bencana nampak bangunan utuh ditandai dengan atap yang utuh, tidak ada material atau puing disekitar bangunan, wujud bangunnya terlihat jelas utuh dan tidak berubah, serta tidak terdapat sedimen atau lumpur pada atap atau halaman",31124671-c8a4-44bc-acb6-ce8384738718,major-damage
+EVAL02,E01,"tidak terlihat ada perbedaan pada bangunan pasca bencana, atap tetap utuh, tidak ada puing berserakan.",31124671-c8a4-44bc-acb6-ce8384738718,major-damage
+EVAL03,E01,Pada bangunan ditandai terlihat lumpur yang menutupi sebagian atap rumah,31124671-c8a4-44bc-acb6-ce8384738718,major-damage
+EVAL04,E01,Pada bangunan yang ditandai terlihat mengalami rusak karena atapnya tidak utuh,31124671-c8a4-44bc-acb6-ce8384738718,major-damage
+EVAL05,E01,"Pada bangunan yang ditandai terlihat mengalami tidak rusak karena atapnya utuh, keadaan garis batas dan keutuhan tapak bangunan pada citra pasca dibandingkan citra pra berubah sebagian karena sebagian struktur runtuh, dan material berserakan di sekitar bangunan pada citra pasca terbatas pada halaman dan sekeliling bangunan.",31124671-c8a4-44bc-acb6-ce8384738718,major-damage

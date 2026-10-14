@@ -1,0 +1,65 @@
+######## fp16
+konfigurasi                 citra  n_nan  n_inf  norma_rerata
+       fp16    destroyed:6ab7c7b7      0      0         50.59
+       fp16 major-damage:8fa8a4f6      0      0         47.52
+       fp16    no-damage:e1900b29      0      0         48.60
+       fp16                 HITAM      0      0        131.37
+       fp16                 DERAU      0      0         45.35
+kosinus:
+                       destroyed:6ab7c7b7  major-damage:8fa8a4f6  no-damage:e1900b29  HITAM  DERAU
+destroyed:6ab7c7b7                  1.000                  0.890               0.905  0.361  0.538
+major-damage:8fa8a4f6               0.890                  1.000               0.958  0.362  0.527
+no-damage:e1900b29                  0.905                  0.958               1.000  0.386  0.550
+HITAM                               0.361                  0.362               0.386  1.000  0.501
+DERAU                               0.538                  0.527               0.550  0.501  1.000
+pertanyaan               ada   kelas                   warna
+citra                                                       
+DERAU                  TIDAK  hancur                   Hitam
+HITAM                  TIDAK  hancur                   Hitam
+destroyed:6ab7c7b7        YA  hancur                   Merah
+major-damage:8fa8a4f6     YA  hancur                   Merah
+no-damage:e1900b29     TIDAK  hancur  Kotak berwarna di teng
+
+######## fp16_eager
+konfigurasi                 citra  n_nan  n_inf  norma_rerata
+ fp16_eager    destroyed:6ab7c7b7      0      0         50.58
+ fp16_eager major-damage:8fa8a4f6      0      0         47.52
+ fp16_eager    no-damage:e1900b29      0      0         48.58
+ fp16_eager                 HITAM      0      0        131.42
+ fp16_eager                 DERAU      0      0         45.33
+kosinus:
+                       destroyed:6ab7c7b7  major-damage:8fa8a4f6  no-damage:e1900b29  HITAM  DERAU
+destroyed:6ab7c7b7                  1.000                  0.890               0.905  0.361  0.537
+major-damage:8fa8a4f6               0.890                  1.000               0.958  0.362  0.527
+no-damage:e1900b29                  0.905                  0.958               1.000  0.386  0.550
+HITAM                               0.361                  0.362               0.386  1.000  0.501
+DERAU                               0.537                  0.527               0.550  0.501  1.000
+pertanyaan               ada   kelas                warna
+citra                                                    
+DERAU                  TIDAK  hancur                Hitam
+HITAM                  TIDAK  hancur                Hitam
+destroyed:6ab7c7b7        YA  hancur                Merah
+major-damage:8fa8a4f6     YA  hancur                Merah
+no-damage:e1900b29     TIDAK  hancur  Kotak berwarna biru
+
+######## fp32_2gpu
+konfigurasi                 citra  n_nan  n_inf  norma_rerata
+  fp32_2gpu    destroyed:6ab7c7b7      0      0         50.55
+  fp32_2gpu major-damage:8fa8a4f6      0      0         47.50
+  fp32_2gpu    no-damage:e1900b29      0      0         48.56
+  fp32_2gpu                 HITAM      0      0        131.47
+  fp32_2gpu                 DERAU      0      0         45.33
+kosinus:
+                       destroyed:6ab7c7b7  major-damage:8fa8a4f6  no-damage:e1900b29  HITAM  DERAU
+destroyed:6ab7c7b7                  1.000                  0.890               0.905  0.361  0.538
+major-damage:8fa8a4f6               0.890                  1.000               0.958  0.362  0.526
+no-damage:e1900b29                  0.905                  0.958               1.000  0.386  0.550
+HITAM                               0.361                  0.362               0.386  1.000  0.501
+DERAU                               0.538                  0.526               0.550  0.501  1.000
+pertanyaan               ada   kelas                   warna
+citra                                                       
+DERAU                  TIDAK  hancur                   Hitam
+HITAM                  TIDAK  hancur                   Hitam
+destroyed:6ab7c7b7        YA  hancur                   Merah
+major-damage:8fa8a4f6     YA  hancur                   Merah
+no-damage:e1900b29     TIDAK  hancur  Kotak berwarna di teng

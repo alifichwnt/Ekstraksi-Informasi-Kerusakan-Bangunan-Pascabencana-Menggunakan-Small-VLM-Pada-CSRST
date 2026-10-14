@@ -1,0 +1,45 @@
+RUN 20260924-085956_ivl2b_kecil_v4_b82f43f2
+model internvl3-2b | sampel kecil n=40 | prompt v4 sidik b82f43f2
+galat inferensi   : fitur 0 | kelas 0
+fitur sah penuh   : 40/40
+kelas terurai sah : 40/40
+kelas tidak_jelas : 0/40
+tingkat perbaikan fitur: Counter({'pagar_kode': 40})
+tingkat perbaikan kelas: Counter({'pagar_kode': 40})
+
+Matriks kebingungan (baris = label xBD):
+prediksi     tidak_rusak
+label xBD               
+tidak_rusak           20
+rusak                 10
+hancur                10
+
+akurasi 3 kelas (hanya jawaban sah, n=40): 0.500
+
+fitur keutuhan_atap:
+fitur_keutuhan_atap  rusak_sebagian  utuh
+label_kelas                              
+hancur                           10     0
+rusak                            10     0
+tidak_rusak                      19     1
+
+fitur puing_sekitar:
+fitur_puing_sekitar  terbatas_di_sekitar_bangunan  tidak_ada
+label_kelas                                                 
+hancur                                         10          0
+rusak                                          10          0
+tidak_rusak                                    19          1
+
+fitur wujud_bangunan:
+fitur_wujud_bangunan  berubah_sebagian  tidak_berubah
+label_kelas                                          
+hancur                              10              0
+rusak                               10              0
+tidak_rusak                         19              1
+
+fitur sedimen_lumpur:
+fitur_sedimen_lumpur  menutupi_sebagian  tidak_ada
+label_kelas                                       
+hancur                               10          0
+rusak                                10          0
+tidak_rusak                          19          1

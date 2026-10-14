@@ -1,0 +1,15 @@
+{
+  "satuan": "detik",
+  "detik_muat_model": 62.7,
+  "detik_pelatihan": 60.3,
+  "per_panggilan_kelas": {
+    "n": 6,
+    "rerata": 2.75,
+    "median": 2.75,
+    "sd": 0.04,
+    "total_detik": 16.5
+  },
+  "jam_dinding_uji_menit": 0.9,
+  "memori_gpu_puncak_uji_gb": 8.62,
+  "gpu": "Tesla T4"
+}

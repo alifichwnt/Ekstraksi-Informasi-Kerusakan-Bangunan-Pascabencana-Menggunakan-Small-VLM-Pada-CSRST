@@ -1,0 +1,25 @@
+﻿model,fitur,acuan,n_sah,tidak_jelas_atau_kosong,tau_b,p,sebaran_jawaban,keterangan
+Qwen2.5-VL-3B,keutuhan_atap,label xBD,385,0,,,"{""hilang"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,keutuhan_atap,kelas model,385,0,,,"{""hilang"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,puing_sekitar,label xBD,385,0,,,"{""tidak_ada"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,puing_sekitar,kelas model,385,0,,,"{""tidak_ada"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,wujud_bangunan,label xBD,385,0,,,"{""tidak_berubah"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,wujud_bangunan,kelas model,385,0,,,"{""tidak_berubah"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,sedimen_lumpur,label xBD,385,0,,,"{""menutupi_seluruhnya"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+Qwen2.5-VL-3B,sedimen_lumpur,kelas model,385,0,,,"{""menutupi_seluruhnya"": 385}",tidak dapat dihitung (jawaban fitur atau acuan konstan)
+InternVL3-2B,keutuhan_atap,label xBD,385,0,0.12248349499951443,0.011442106997327603,"{""rusak_sebagian"": 375, ""utuh"": 10}",
+InternVL3-2B,keutuhan_atap,kelas model,385,0,0.008333333333333333,0.8702827722810359,"{""rusak_sebagian"": 375, ""utuh"": 10}",
+InternVL3-2B,puing_sekitar,label xBD,385,0,0.12248349499951443,0.011442106997327603,"{""terbatas_di_sekitar_bangunan"": 375, ""tidak_ada"": 10}",
+InternVL3-2B,puing_sekitar,kelas model,385,0,0.008333333333333333,0.8702827722810359,"{""terbatas_di_sekitar_bangunan"": 375, ""tidak_ada"": 10}",
+InternVL3-2B,wujud_bangunan,label xBD,385,0,0.12248349499951443,0.011442106997327603,"{""berubah_sebagian"": 375, ""tidak_berubah"": 10}",
+InternVL3-2B,wujud_bangunan,kelas model,385,0,0.008333333333333333,0.8702827722810359,"{""berubah_sebagian"": 375, ""tidak_berubah"": 10}",
+InternVL3-2B,sedimen_lumpur,label xBD,385,0,0.12248349499951443,0.011442106997327603,"{""menutupi_sebagian"": 375, ""tidak_ada"": 10}",
+InternVL3-2B,sedimen_lumpur,kelas model,385,0,0.008333333333333333,0.8702827722810359,"{""menutupi_sebagian"": 375, ""tidak_ada"": 10}",
+gpt-6-sol,keutuhan_atap,label xBD,39,1,0.617525677978627,2.67189327327861e-05,"{""rusak_sebagian"": 21, ""hilang"": 12, ""utuh"": 6}",
+gpt-6-sol,keutuhan_atap,kelas model,38,1,0.6877290761579852,9.488335411149538e-06,"{""rusak_sebagian"": 21, ""hilang"": 11, ""utuh"": 6}",
+gpt-6-sol,puing_sekitar,label xBD,39,1,0.5222329678670935,0.00038710915324375916,"{""terbatas_di_sekitar_bangunan"": 22, ""meluas_menutupi_petak"": 11, ""tidak_ada"": 6}",
+gpt-6-sol,puing_sekitar,kelas model,38,1,0.19502764846271223,0.20917107330914364,"{""terbatas_di_sekitar_bangunan"": 21, ""meluas_menutupi_petak"": 11, ""tidak_ada"": 6}",
+gpt-6-sol,wujud_bangunan,label xBD,39,1,0.6380808991762388,1.2516758871500561e-05,"{""berubah_sebagian"": 19, ""tidak_lagi_berupa_bangunan"": 12, ""tidak_berubah"": 8}",
+gpt-6-sol,wujud_bangunan,kelas model,38,1,0.6824646611985772,9.727100729088397e-06,"{""berubah_sebagian"": 19, ""tidak_lagi_berupa_bangunan"": 11, ""tidak_berubah"": 8}",
+gpt-6-sol,sedimen_lumpur,label xBD,39,1,0.42702124073568953,0.004112705172936014,"{""menutupi_sebagian"": 28, ""tidak_ada"": 6, ""menutupi_seluruhnya"": 5}",
+gpt-6-sol,sedimen_lumpur,kelas model,38,1,0.39693354948419757,0.011500838780869693,"{""menutupi_sebagian"": 27, ""tidak_ada"": 6, ""menutupi_seluruhnya"": 5}",

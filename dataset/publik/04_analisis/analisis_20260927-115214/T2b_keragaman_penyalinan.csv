@@ -1,0 +1,9 @@
+﻿sistem,kalimat_unik,rerata_kata,proporsi_memuat_5gram_prompt,rerata_proporsi_4gram_dari_prompt
+Qwen2.5-VL-3B,4,16.25,0.225,0.10056561085972851
+InternVL3-2B,6,16.625,0.0,0.0668040293040293
+gpt-6-sol,40,17.325,0.025,0.003125
+Manusia EVAL01,12,63.25,1.0,0.05189258922939753
+Manusia EVAL02,20,12.5,0.0,0.0
+Manusia EVAL03,29,5.35,0.0,0.0
+Manusia EVAL04,3,11.3,0.0,0.0
+Manusia EVAL05,24,51.85,1.0,0.31165773638928196

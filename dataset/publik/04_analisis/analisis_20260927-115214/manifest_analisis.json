@@ -1,0 +1,60 @@
+{
+  "waktu": "2026-09-27T11:52:14",
+  "skrip_sha": "72ca3f4bc776",
+  "run": {
+    "Qwen2.5-VL-3B": "20260924-145022_qwen3b_besar_v4_b82f43f2",
+    "InternVL3-2B": "20260924-213226_ivl2b_besar_v4_b82f43f2",
+    "Qwen2.5-VL-3B + LoRA": "20260925-100029_qwen3b-lora_besar_v4_b82f43f2",
+    "gpt-6-sol": "20260924-162858_oai-6-sol_kecil_v4_b82f43f2"
+  },
+  "benih": 42,
+  "n_bootstrap": 2000,
+  "n385": 385,
+  "n40": 40,
+  "uid_set_pengembangan": [
+    "03fe2a1a-abda-46ac-9928-0db34eb36e87",
+    "09971930-8fb9-49c5-852b-b72cea0a2a7d",
+    "09ddb742-92c6-415d-abd9-31d524761310",
+    "0d64220a-1463-4898-ba64-4b6722bb4074",
+    "287f34c2-e7a8-41e2-8545-44d3ac813c19",
+    "341e30c4-e010-4bf5-b1d0-d1082b51d082",
+    "53cf370d-1680-456c-ac6a-d427907f2e0f",
+    "5da861c3-9196-4927-bbeb-177649ab7575",
+    "5f9e1dcc-00a1-4c04-bf73-1ddfa5d9e6fc",
+    "6ab7c7b7-0554-41eb-8930-950edb28e599",
+    "8b47e2e9-71b4-48b2-8b1a-86facc1758cd",
+    "8fa8a4f6-c3a9-45c0-a949-5422d6734e52",
+    "9dcaea44-be04-4912-931f-7f4a344d09d5",
+    "a424d5a5-a01e-49b9-908f-c9f6b797a4f5",
+    "e1900b29-a0c0-4f2b-bde5-b44bf10ed753"
+  ],
+  "masukan": {
+    "KOMPONEN_3\\Output Sampel\\sampel_besar.csv": "19fb218ac8b7",
+    "KOMPONEN_3\\Output Sampel\\sampel_kecil.csv": "060610b7997b",
+    "KOMPONEN_6\\Formulir\\kunci_formulir_sesi_a.csv": "a4ce0095fd03",
+    "KOMPONEN_6\\Formulir\\kunci_formulir_sesi_b.csv": "6014d4f66121",
+    "KOMPONEN_5\\runs\\20260924-145022_qwen3b_besar_v4_b82f43f2\\hasil_terurai_pcf369f5a.csv": "96adbfa1ff2c",
+    "KOMPONEN_5\\runs\\20260924-213226_ivl2b_besar_v4_b82f43f2\\hasil_terurai_pcf369f5a.csv": "8bf0ca450997",
+    "KOMPONEN_5\\runs\\20260925-100029_qwen3b-lora_besar_v4_b82f43f2\\hasil_terurai_pcf369f5a.csv": "660beaa1a48b",
+    "KOMPONEN_5\\runs\\20260924-162858_oai-6-sol_kecil_v4_b82f43f2\\hasil_terurai_pcf369f5a.csv": "37d7cffef13e",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi A - EVAL01.xlsx": "e8941e80ffe4",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi A - EVAL02.xlsx": "85663f3541ae",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi A - EVAL03.xlsx": "eb0585d5ff08",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi A - EVAL04.xlsx": "b6b8f15835c9",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi A - EVAL05.xlsx": "aeca71ce83f3",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi B - EVAL01.xlsx": "46951aacaa80",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi B - EVAL02.xlsx": "ec099b280f54",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi B - EVAL03.xlsx": "55ae2da64e66",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi B - EVAL04.xlsx": "64986cb4b119",
+    "KOMPONEN_6\\Formulir\\Formulir Sesi B - EVAL05.xlsx": "05c4e347398b"
+  },
+  "pustaka": {
+    "python": "3.13.7",
+    "pandas": "2.3.3",
+    "numpy": "2.3.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "krippendorff": "?"
+  }
+}

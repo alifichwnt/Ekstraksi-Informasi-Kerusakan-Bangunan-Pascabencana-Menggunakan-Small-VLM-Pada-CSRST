@@ -1,0 +1,50 @@
+{
+  "detik_muat_model": 74.9,
+  "memori_gpu_setelah_muat_gb": 7.51,
+  "satuan": "detik",
+  "cakupan": "per panggilan model: praproses citra + generate + decode; tanpa muat model",
+  "per_panggilan_fitur": {
+    "n": 400,
+    "total_detik": 2793.1,
+    "rerata": 6.98,
+    "median": 6.93,
+    "sd": 0.28,
+    "min": 6.12,
+    "p95": 7.4,
+    "maks": 7.64
+  },
+  "per_panggilan_kelas": {
+    "n": 400,
+    "total_detik": 796.7,
+    "rerata": 1.99,
+    "median": 1.98,
+    "sd": 0.03,
+    "min": 1.92,
+    "p95": 2.06,
+    "maks": 2.13
+  },
+  "per_bangunan": {
+    "n": 400,
+    "total_detik": 3589.9,
+    "rerata": 8.97,
+    "median": 8.93,
+    "sd": 0.27,
+    "min": 8.06,
+    "p95": 9.39,
+    "maks": 9.6
+  },
+  "per_bangunan_tanpa_pertama": {
+    "n": 399,
+    "total_detik": 3581.2,
+    "rerata": 8.98,
+    "median": 8.93,
+    "sd": 0.27,
+    "min": 8.06,
+    "p95": 9.39,
+    "maks": 9.6
+  },
+  "jam_dinding_loop_menit": 59.8,
+  "memori_gpu_puncak_inferensi_gb": 8.18,
+  "gpu": "Tesla T4",
+  "throughput_bangunan_per_jam": 401.3
+}

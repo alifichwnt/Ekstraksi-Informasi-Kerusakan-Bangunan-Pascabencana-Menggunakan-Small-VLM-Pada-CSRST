@@ -1,0 +1,60 @@
+
+===== internvl3-2b =====
+Kelas per kondisi (baris = bangunan):
+uji                                                     K-asli      K-derau      K-hitam
+kelas_xbd    uid                                                                        
+destroyed    0d64220a-1463-4898-ba64-4b6722bb4074  tidak_rusak  tidak_rusak  tidak_rusak
+             6ab7c7b7-0554-41eb-8930-950edb28e599  tidak_rusak  tidak_rusak  tidak_rusak
+major-damage 53cf370d-1680-456c-ac6a-d427907f2e0f  tidak_rusak  tidak_rusak  tidak_rusak
+             8fa8a4f6-c3a9-45c0-a949-5422d6734e52  tidak_rusak  tidak_rusak  tidak_rusak
+no-damage    03fe2a1a-abda-46ac-9928-0db34eb36e87  tidak_rusak  tidak_rusak  tidak_rusak
+             e1900b29-a0c0-4f2b-bde5-b44bf10ed753  tidak_rusak  tidak_rusak  tidak_rusak
+proporsi bangunan dengan kelas identik di asli/hitam/derau: 1.00
+Fitur asli vs hitam:
+uji                                                                                                           F-asli                                                                         F-hitam
+uid                                                                                                                                                                                                 
+03fe2a1a-abda-46ac-9928-0db34eb36e87  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian
+0d64220a-1463-4898-ba64-4b6722bb4074  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian
+53cf370d-1680-456c-ac6a-d427907f2e0f  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian
+6ab7c7b7-0554-41eb-8930-950edb28e599  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian
+8fa8a4f6-c3a9-45c0-a949-5422d6734e52                                          utuh|tidak_ada|tidak_berubah|tidak_ada  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian
+e1900b29-a0c0-4f2b-bde5-b44bf10ed753  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian  rusak_sebagian|terbatas_di_sekitar_bangunan|berubah_sebagian|menutupi_sebagian
+Pertanyaan mudah:
+uji                                                 T-ada T-ada-hitam T-atap T-warna
+kelas_xbd    uid                                                                    
+destroyed    0d64220a-1463-4898-ba64-4b6722bb4074  TIDAK.       TIDAK   Biru    Mauh
+             6ab7c7b7-0554-41eb-8930-950edb28e599     YA.       TIDAK   Biru   Merah
+major-damage 53cf370d-1680-456c-ac6a-d427907f2e0f     YA.       TIDAK   Biru    Mauh
+             8fa8a4f6-c3a9-45c0-a949-5422d6734e52     YA.       TIDAK  Putih    Mauh
+no-damage    03fe2a1a-abda-46ac-9928-0db34eb36e87  TIDAK.       TIDAK  hitam   Merah
+             e1900b29-a0c0-4f2b-bde5-b44bf10ed753     YA.       TIDAK  Merah    Mauh
+
+===== qwen2.5-vl-3b =====
+Kelas per kondisi (baris = bangunan):
+uji                                                K-asli K-derau K-hitam
+kelas_xbd    uid                                                         
+destroyed    0d64220a-1463-4898-ba64-4b6722bb4074  hancur  hancur  hancur
+             6ab7c7b7-0554-41eb-8930-950edb28e599  hancur  hancur  hancur
+major-damage 53cf370d-1680-456c-ac6a-d427907f2e0f  hancur  hancur  hancur
+             8fa8a4f6-c3a9-45c0-a949-5422d6734e52  hancur  hancur  hancur
+no-damage    03fe2a1a-abda-46ac-9928-0db34eb36e87  hancur  hancur  hancur
+             e1900b29-a0c0-4f2b-bde5-b44bf10ed753  hancur  hancur  hancur
+proporsi bangunan dengan kelas identik di asli/hitam/derau: 1.00
+Fitur asli vs hitam:
+uji                                                                               F-asli                                             F-hitam
+uid                                                                                                                                         
+03fe2a1a-abda-46ac-9928-0db34eb36e87  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya
+0d64220a-1463-4898-ba64-4b6722bb4074  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya
+53cf370d-1680-456c-ac6a-d427907f2e0f  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya
+6ab7c7b7-0554-41eb-8930-950edb28e599  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya
+8fa8a4f6-c3a9-45c0-a949-5422d6734e52  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya
+e1900b29-a0c0-4f2b-bde5-b44bf10ed753  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya  hilang|tidak_ada|tidak_berubah|menutupi_seluruhnya
+Pertanyaan mudah:
+uji                                               T-ada T-ada-hitam T-atap T-warna
+kelas_xbd    uid                                                                  
+destroyed    0d64220a-1463-4898-ba64-4b6722bb4074    YA          YA  Merah   Merah
+             6ab7c7b7-0554-41eb-8930-950edb28e599    YA          YA  Merah   Merah
+major-damage 53cf370d-1680-456c-ac6a-d427907f2e0f    YA          YA  Merah   Merah
+             8fa8a4f6-c3a9-45c0-a949-5422d6734e52    YA          YA  Merah   Merah
+no-damage    03fe2a1a-abda-46ac-9928-0db34eb36e87    YA          YA  Merah   Merah
+             e1900b29-a0c0-4f2b-bde5-b44bf10ed753    YA          YA  Merah   Merah

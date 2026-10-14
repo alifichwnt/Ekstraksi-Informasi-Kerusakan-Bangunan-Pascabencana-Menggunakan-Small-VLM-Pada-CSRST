@@ -1,0 +1,100 @@
+{
+  "metode": "LoRA",
+  "r": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "target_modules": "model\\.layers\\.\\d+\\.(self_attn\\.(q|k|v|o)_proj|mlp\\.(gate|up|down)_proj)",
+  "encoder_visual": "dibekukan",
+  "lr": 0.0001,
+  "epoch": 1,
+  "akumulasi_gradien": 8,
+  "warmup": 20,
+  "presisi": "fp16",
+  "benih": 42,
+  "parameter_dilatih": 29933568,
+  "parameter_total": 3784556544,
+  "n_latih": 16,
+  "n_validasi": 12,
+  "sha_sampel_latih": "296c15e6c767",
+  "komposisi_latih": {
+    "tidak_rusak": 6,
+    "rusak": 5,
+    "hancur": 5
+  },
+  "validasi_zero_shot": {
+    "akurasi": 0.3333,
+    "akurasi_seimbang": 0.3333,
+    "matriks": [
+      [
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sebaran_prediksi": {
+      "hancur": 12
+    }
+  },
+  "riwayat": [
+    {
+      "epoch": 1,
+      "loss_rerata": 0.9125,
+      "detik_epoch": 59.9,
+      "akurasi": 0.3333,
+      "akurasi_seimbang": 0.3333,
+      "matriks": [
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "sebaran_prediksi": {
+        "tidak_rusak": 12
+      }
+    }
+  ],
+  "epoch_dipakai": 1,
+  "detik_pelatihan": 60.3,
+  "sha_adapter": "c48aa080595d",
+  "target_format": "{\"kelas_kerusakan\": \"<kelas>\"}",
+  "uji_cepat": true
+}

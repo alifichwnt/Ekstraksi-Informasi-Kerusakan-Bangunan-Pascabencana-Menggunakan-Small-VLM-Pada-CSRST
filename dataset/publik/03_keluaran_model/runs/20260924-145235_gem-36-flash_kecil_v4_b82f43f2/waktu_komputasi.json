@@ -1,0 +1,47 @@
+{
+  "satuan": "detik",
+  "cakupan": "latensi panggilan API yang berhasil (jaringan + antrean + komputasi server); tidak setara dengan waktu GPU lokal SVLM; tanpa jeda antarpanggilan 7.0 s dan tanpa waktu tunggu coba ulang",
+  "per_panggilan_fitur": {
+    "n": 2,
+    "total_detik": 220.2,
+    "rerata": 110.12,
+    "median": 110.12,
+    "sd": 116.94,
+    "min": 27.43,
+    "p95": 192.81,
+    "maks": 192.81
+  },
+  "per_panggilan_kelas": {
+    "n": 2,
+    "total_detik": 150.6,
+    "rerata": 75.3,
+    "median": 75.3,
+    "sd": 34.83,
+    "min": 50.67,
+    "p95": 99.92,
+    "maks": 99.92
+  },
+  "per_bangunan": {
+    "n": 2,
+    "total_detik": 370.8,
+    "rerata": 185.42,
+    "median": 185.42,
+    "sd": 151.77,
+    "min": 78.1,
+    "p95": 292.73,
+    "maks": 292.73
+  },
+  "per_bangunan_termasuk_ulang": {
+    "n": 2,
+    "total_detik": 1553.4,
+    "rerata": 776.68,
+    "median": 776.68,
+    "sd": 44.91,
+    "min": 744.93,
+    "p95": 808.44,
+    "maks": 808.44
+  },
+  "jumlah_panggilan_diulang": 3,
+  "jeda_antarpanggilan_detik": 7.0,
+  "jam_dinding_menit": 28.7
+}

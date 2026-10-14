@@ -1,0 +1,54 @@
+RUN 20260924-145022_qwen3b_besar_v4_b82f43f2
+model qwen2.5-vl-3b | sampel besar n=400 | prompt v4 sidik b82f43f2
+galat inferensi   : fitur 0 | kelas 0
+fitur sah penuh   : 400/400
+kelas terurai sah : 400/400
+kelas tidak_jelas : 0/400
+tingkat perbaikan fitur: Counter({'pagar_kode': 400})
+tingkat perbaikan kelas: Counter({'pagar_kode': 400})
+
+Matriks kebingungan (baris = label xBD):
+prediksi     tidak_rusak  hancur
+label xBD                       
+tidak_rusak            0     200
+rusak                  0     100
+hancur                 4      96
+
+akurasi 3 kelas (hanya jawaban sah, n=400): 0.240
+
+fitur keutuhan_atap:
+fitur_keutuhan_atap  hilang
+label_kelas                
+hancur                  100
+rusak                   100
+tidak_rusak             200
+
+fitur puing_sekitar:
+fitur_puing_sekitar  tidak_ada
+label_kelas                   
+hancur                     100
+rusak                      100
+tidak_rusak                200
+
+fitur wujud_bangunan:
+fitur_wujud_bangunan  tidak_berubah
+label_kelas                        
+hancur                          100
+rusak                           100
+tidak_rusak                     200
+
+fitur sedimen_lumpur:
+fitur_sedimen_lumpur  menutupi_seluruhnya
+label_kelas                              
+hancur                                100
+rusak                                 100
+tidak_rusak                           200
+
+WAKTU KOMPUTASI (detik)
+  muat model            : 74.9 s | GPU Tesla T4
+  panggilan fitur       : rerata 6.98 | median 6.93 | sd 0.28 | min 6.12 | p95 7.4 | maks 7.64 | total 2793.1 (n=400)
+  panggilan kelas       : rerata 1.99 | median 1.98 | sd 0.03 | min 1.92 | p95 2.06 | maks 2.13 | total 796.7 (n=400)
+  per bangunan          : rerata 8.97 | median 8.93 | sd 0.27 | min 8.06 | p95 9.39 | maks 9.6 | total 3589.9 (n=400)
+  jam dinding loop      : 59.8 menit
+  throughput            : 401.3 bangunan/jam
+  memori GPU            : setelah muat 7.51 GB | puncak inferensi 8.18 GB

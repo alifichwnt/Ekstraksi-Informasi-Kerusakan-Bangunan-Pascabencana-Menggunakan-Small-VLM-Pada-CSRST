@@ -1,0 +1,10 @@
+﻿model,kelas_xbd,Akurasi,Kepuasan,Relevansi
+InternVL3-2B,destroyed,1.8,1.98,2.66
+InternVL3-2B,major-damage,3.1020408163265305,2.92,3.32
+InternVL3-2B,no-damage,3.59,3.13,3.36
+Qwen2.5-VL-3B,destroyed,3.24,3.0,3.4
+Qwen2.5-VL-3B,major-damage,2.7,2.82,3.44
+Qwen2.5-VL-3B,no-damage,1.95,2.07,2.78
+gpt-6-sol,destroyed,4.4,4.32,4.36
+gpt-6-sol,major-damage,3.72,3.74,4.04
+gpt-6-sol,no-damage,2.98,3.03,3.5353535353535355
